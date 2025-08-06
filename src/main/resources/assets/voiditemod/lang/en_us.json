@@ -1,0 +1,64 @@
+{
+  "item.voiditemod.smile": "Smile",
+  "item.voiditemod.raw_voidite": "Raw Voidite",
+  "item.voiditemod.voidite_ingot": "Voidite Ingot",
+  "item.voiditemod.glowing_void_berries": "Glowing Void Berries",
+  "item.voiditemod.sincehe_potato": "Sincehe Potato",
+  "item.voiditemod.sincehe_potato_seeds": "Sincehe Potato Seeds",
+  "item.voiditemod.forge_scales": "Forge Scales",
+  "item.voiditemod.voidite_plate": "Voidite Plate",
+  "item.voiditemod.annealed_voidite_ingot": "Annealed Voidite Ingot",
+  "item.voiditemod.annealed_voidite_plate": "Annealed Voidite Plate",
+
+  "block.voiditemod.block_of_smile": "Block of smiles",
+  "block.voiditemod.amogus": "Amogus, Sus",
+
+  "block.voiditemod.packed_end_sludge": "Packed End Sludge",
+  "block.voiditemod.end_sludge": "End Sludge",
+  "block.voiditemod.end_sludge_bricks": "End Sludge Bricks",
+  "block.voiditemod.suncrown_turf": "Suncrown Turf",
+  "block.voiditemod.suncrown_grass": "Suncrown Grass",
+  "block.voiditemod.end_stone_brick_pillar": "End Stone Brick Pillar",
+  "block.voiditemod.chiseled_end_stone_brick_pillar": "Chiseled End Stone Brick Pillar",
+  "block.voiditemod.purpur_light": "Purpur Lamp",
+  "block.voiditemod.voidite_ore": "Voidite Ore",
+  "block.voiditemod.block_of_voidite": "Block Of Voidite",
+  "block.voiditemod.glowing_void_berry_bush": "Glowing Void Berry Bush",
+  "block.voiditemod.sincehe_potato_crop": "Sincehe Potato Crop",
+
+  "block.voiditemod.end_sludge_bricks_slab": "End Sludge Bricks Slab",
+  "block.voiditemod.end_sludge_bricks_stairs": "End Sludge Bricks Stairs",
+  "block.voiditemod.end_sludge_bricks_wall": "End Sludge Bricks Wall",
+
+  "block.voiditemod.packed_end_sludge_slab": "Packed End Sludge Slab",
+  "block.voiditemod.packed_end_sludge_stairs": "Packed End Sludge Stairs",
+  "block.voiditemod.packed_end_sludge_wall": "Packed End Sludge Wall",
+
+  "block.voiditemod.suncrown_oak_log": "Suncrown Oak Log",
+  "block.voiditemod.stripped_suncrown_oak_log": "Stripped Suncrown Oak Log",
+  "block.voiditemod.suncrown_oak_wood": "Suncrown Oak Wood",
+  "block.voiditemod.stripped_suncrown_oak_wood": "Stripped Suncrown Oak Wood",
+  "block.voiditemod.suncrown_oak_leaves": "Suncrown Oak Leaves",
+  "block.voiditemod.suncrown_oak_planks": "Suncrown Oak Planks",
+
+  "block.voiditemod.suncrown_oak_slab": "Suncrown Oak Slab",
+  "block.voiditemod.suncrown_oak_stairs": "Suncrown Oak Stairs",
+
+  "block.voiditemod.suncrown_oak_button": "Suncrown Oak Button",
+  "block.voiditemod.suncrown_oak_pressure_plate": "Suncrown Oak Pressure Plate",
+
+  "block.voiditemod.suncrown_oak_door": "Suncrown Oak Door",
+  "block.voiditemod.suncrown_oak_trapdoor": "Suncrown Oak Trapdoor",
+
+  "block.voiditemod.suncrown_oak_fence": "Suncrown Oak Trapdoor",
+  "block.voiditemod.suncrown_oak_fence_gate": "Suncrown Oak Fence Gate",
+
+  "block.voiditemod.suncrown_oak_sapling": "Suncrown Oak Sapling",
+
+  "block.voiditemod.suncrown_sand": "Suncrown Sand",
+  "block.voiditemod.suncrown_sandstone": "Suncrown Sandstone",
+  "block.voiditemod.suncrown_sandstone_stairs": "Suncrown Sandstone Stairs",
+  "block.voiditemod.smooth_suncrown_sandstone": "Smooth Suncrown Sandstone",
+
+  "creativetab.voiditemod.end_stuff": "End Stuff"
+}

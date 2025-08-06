@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 300,
+  "experience": 1.0,
+  "group": "voidite",
+  "ingredient": {
+    "item": "voiditemod:voidite_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "voiditemod:voidite_ingot"
+  }
+}

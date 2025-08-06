@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:voidite_ingot_from_blasting_voidite_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_voidite_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "voiditemod:voidite_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_voidite_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:voidite_ingot_from_blasting_voidite_ore"
+    ]
+  }
+}

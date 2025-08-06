@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 150,
+  "experience": 3.0,
+  "group": "voidite",
+  "ingredient": {
+    "item": "voiditemod:voidite_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "voiditemod:voidite_ingot"
+  }
+}
