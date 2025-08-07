@@ -33,7 +33,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('A', ModItems.SMILE.get())
                 .unlockedBy(getHasName(ModItems.SMILE.get()), has(ModItems.SMILE.get())).save(pRecipeOutput);
 
-      /*  ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PACKED_END_SLUDGE.get())
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PACKED_END_SLUDGE.get())
                 .requires(ModBlocks.END_SLUDGE.get())
                 .requires(Items.WHEAT)
                 .unlockedBy(getHasName(ModBlocks.END_SLUDGE.get()), has(ModBlocks.END_SLUDGE.get())).save(pRecipeOutput);
@@ -69,10 +69,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                .define('A', ModBlocks.END_STONE_BRICK_PILLAR.get())
                .define('B', Blocks.QUARTZ_PILLAR)
               .unlockedBy(getHasName(ModBlocks.END_STONE_BRICK_PILLAR.get()), has(ModBlocks.END_STONE_BRICK_PILLAR.get())).save(pRecipeOutput);
-*/
+
         oreSmelting(pRecipeOutput, VOIDITE_SMELTABLES, RecipeCategory.MISC, ModItems.VOIDITE_INGOT.get(), 1f, 300, "voidite");
         oreBlasting(pRecipeOutput, VOIDITE_SMELTABLES, RecipeCategory.MISC, ModItems.VOIDITE_INGOT.get(), 3f, 150, "voidite");
-      /*  nineBlockStorageRecipes(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModItems.VOIDITE_INGOT.get(), RecipeCategory.MISC, ModBlocks.BLOCK_OF_VOIDITE.get());
+        nineBlockStorageRecipes(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModItems.VOIDITE_INGOT.get(), RecipeCategory.MISC, ModBlocks.BLOCK_OF_VOIDITE.get());
 
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PURPUR_LIGHT.get())
                 .pattern("ABA")
@@ -121,5 +121,5 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModBlocks.SUNCROWN_OAK_PLANKS.get()), has(ModBlocks.SUNCROWN_OAK_PLANKS.get())).save(pRecipeOutput);
         trapdoorBuilder(ModBlocks.SUNCROWN_OAK_TRAPDOOR.get(), Ingredient.of(ModBlocks.SUNCROWN_OAK_PLANKS.get())).group("suncrown_oak")
                 .unlockedBy(getHasName(ModBlocks.SUNCROWN_OAK_PLANKS.get()), has(ModBlocks.SUNCROWN_OAK_PLANKS.get())).save(pRecipeOutput);
-    */}
+    }
 }

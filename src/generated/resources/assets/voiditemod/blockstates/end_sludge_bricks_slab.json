@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "voiditemod:block/end_sludge_bricks_slab"
+    },
+    "type=double": {
+      "model": "voiditemod:block/end_sludge_bricks"
+    },
+    "type=top": {
+      "model": "voiditemod:block/end_sludge_bricks_slab_top"
+    }
+  }
+}

@@ -1,3 +1,6 @@
 {
-  "values": []
+  "values": [
+    "voiditemod:end_sludge_bricks_wall",
+    "voiditemod:packed_end_sludge_wall"
+  ]
 }

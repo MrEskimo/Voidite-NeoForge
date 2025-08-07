@@ -1,6 +1,17 @@
 {
   "values": [
+    "voiditemod:end_sludge_bricks",
     "voiditemod:block_of_smile",
-    "voiditemod:voidite_ore"
+    "voiditemod:end_sludge_bricks_stairs",
+    "voiditemod:end_sludge_bricks_slab",
+    "voiditemod:packed_end_sludge_slab",
+    "voiditemod:packed_end_sludge_stairs",
+    "voiditemod:packed_end_sludge_wall",
+    "voiditemod:packed_end_sludge",
+    "voiditemod:end_stone_brick_pillar",
+    "voiditemod:voidite_ore",
+    "voiditemod:block_of_voidite",
+    "voiditemod:suncrown_turf",
+    "voiditemod:chiseled_end_stone_brick_pillar"
   ]
 }

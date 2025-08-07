@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "voiditemod:block/suncrown_oak_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "voiditemod:block/suncrown_oak_log"
+    },
+    "axis=z": {
+      "model": "voiditemod:block/suncrown_oak_log_horizontal",
+      "x": 90
+    }
+  }
+}

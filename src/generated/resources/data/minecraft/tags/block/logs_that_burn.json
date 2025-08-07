@@ -1,3 +1,8 @@
 {
-  "values": []
+  "values": [
+    "voiditemod:suncrown_oak_log",
+    "voiditemod:stripped_suncrown_oak_log",
+    "voiditemod:stripped_suncrown_oak_wood",
+    "voiditemod:suncrown_oak_wood"
+  ]
 }

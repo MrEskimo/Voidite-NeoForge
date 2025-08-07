@@ -2,7 +2,9 @@ package net.eskimo.voiditemod.datagen;
 
 import net.eskimo.voiditemod.block.ModBlocks;
 //import net.eskimo.voiditemod.block.custom.SincehePotatoCropBlock;
+import net.eskimo.voiditemod.block.custom.SincehePotatoCropBlock;
 import net.eskimo.voiditemod.item.ModItems;
+import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
@@ -12,10 +14,14 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SweetBerryBushBlock;
+import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 
 import java.util.Set;
@@ -28,7 +34,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
-    /*    dropSelf(ModBlocks.END_SLUDGE.get());
+        dropSelf(ModBlocks.END_SLUDGE.get());
         dropSelf(ModBlocks.END_SLUDGE_BRICKS.get());
         dropSelf(ModBlocks.PACKED_END_SLUDGE.get());
         dropSelf(ModBlocks.END_SLUDGE_BRICKS_WALL.get());
@@ -47,7 +53,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.SUNCROWN_SANDSTONE.get());
         dropSelf(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE.get());
         dropSelf(ModBlocks.SUNCROWN_SANDSTONE_STAIRS.get());
-        dropSelf(ModBlocks.GROUTYOU_BEAN.get());
+        //  dropSelf(ModBlocks.GROUTYOU_BEAN.get());
 
         this.add(ModBlocks.SUNCROWN_OAK_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.SUNCROWN_OAK_SLAB.get()));
@@ -72,13 +78,13 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         this.add(ModBlocks.SUNCROWN_OAK_LEAVES.get(), block ->
                createLeavesDrops(block, ModBlocks.SUNCROWN_OAK_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
-*/
+
         this.add(ModBlocks.BLOCK_OF_SMILE.get(),
               block -> createOreDrop(ModBlocks.BLOCK_OF_SMILE.get(), ModItems.SMILE.get()));
         this.add(ModBlocks.VOIDITE_ORE.get(),
               block -> createOreDrop(ModBlocks.VOIDITE_ORE.get(), ModItems.RAW_VOIDITE.get()));
 
-  /*      dropSelf(ModBlocks.END_SLUDGE_BRICKS_STAIRS.get());
+        dropSelf(ModBlocks.END_SLUDGE_BRICKS_STAIRS.get());
         this.add(ModBlocks.END_SLUDGE_BRICKS_SLAB.get(),
                  block -> createSlabItemTable(ModBlocks.END_SLUDGE_BRICKS_SLAB.get()));
 
@@ -110,7 +116,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         this.add(ModBlocks.SINCEHE_POTATO_CROP.get(), this.createCropDrops(ModBlocks.SINCEHE_POTATO_CROP.get(),
                ModItems.SINCEHE_POTATO.get(), ModItems.SINCEHE_POTATO_SEEDS.get(), lootItemConditionBuilder));
-  */   }
+     }
 
     @Override
     protected Iterable<Block> getKnownBlocks() {

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "voiditemod:block/packed_end_sludge",
+    "side": "voiditemod:block/packed_end_sludge",
+    "top": "voiditemod:block/packed_end_sludge"
+  }
+}

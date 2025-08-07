@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "voiditemod:block/suncrown_oak_slab"
+    },
+    "type=double": {
+      "model": "voiditemod:block/suncrown_oak_planks"
+    },
+    "type=top": {
+      "model": "voiditemod:block/suncrown_oak_slab_top"
+    }
+  }
+}

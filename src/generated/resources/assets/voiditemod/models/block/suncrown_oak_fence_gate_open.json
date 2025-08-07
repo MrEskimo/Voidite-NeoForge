@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_fence_gate_open",
+  "textures": {
+    "texture": "voiditemod:block/suncrown_oak_planks"
+  }
+}

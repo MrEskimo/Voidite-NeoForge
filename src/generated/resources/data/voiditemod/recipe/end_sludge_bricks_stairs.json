@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "end_sludge_bricks",
+  "key": {
+    "#": {
+      "item": "voiditemod:end_sludge_bricks"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "voiditemod:end_sludge_bricks_stairs"
+  }
+}

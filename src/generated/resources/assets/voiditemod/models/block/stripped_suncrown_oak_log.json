@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "voiditemod:block/stripped_suncrown_oak_log_top",
+    "side": "voiditemod:block/stripped_suncrown_oak_log"
+  }
+}

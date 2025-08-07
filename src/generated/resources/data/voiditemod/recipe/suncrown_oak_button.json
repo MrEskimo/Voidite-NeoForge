@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "suncrown_oak",
+  "ingredients": [
+    {
+      "item": "voiditemod:suncrown_oak_planks"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "voiditemod:suncrown_oak_button"
+  }
+}

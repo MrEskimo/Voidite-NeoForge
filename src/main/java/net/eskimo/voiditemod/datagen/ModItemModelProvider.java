@@ -1,10 +1,19 @@
 package net.eskimo.voiditemod.datagen;
 
 import net.eskimo.voiditemod.VoiditeMod;
+import net.eskimo.voiditemod.block.ModBlocks;
 import net.eskimo.voiditemod.item.ModItems;
+import net.minecraft.BlockUtil;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SaplingBlock;
+import net.minecraft.world.level.block.TallGrassBlock;
+import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import net.neoforged.neoforge.registries.DeferredBlock;
 
 public class ModItemModelProvider extends ItemModelProvider {
     public ModItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
@@ -16,7 +25,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.SMILE.get());
         basicItem(ModItems.RAW_VOIDITE.get());
         basicItem(ModItems.VOIDITE_INGOT.get());
-      /*  simpleBlockItem(ModBlocks.SUNCROWN_GRASS);
+        tallGrassItem(ModBlocks.SUNCROWN_GRASS);
         basicItem(ModItems.GLOWING_VOID_BERRIES.get());
         basicItem(ModItems.SINCEHE_POTATO.get());
         basicItem(ModItems.SINCEHE_POTATO_SEEDS.get());
@@ -34,38 +43,43 @@ public class ModItemModelProvider extends ItemModelProvider {
         fenceItem(ModBlocks.SUNCROWN_OAK_FENCE, ModBlocks.SUNCROWN_OAK_PLANKS);
 
         simpleBlockItem(ModBlocks.SUNCROWN_OAK_DOOR);
-*/
+
     }
 
 
-/*
-    private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
+    private ItemModelBuilder tallGrassItem(DeferredBlock<TallGrassBlock> item) {
+        return withExistingParent(item.getId().getPath(),
+                ResourceLocation.parse("item/generated")).texture("layer0",
+                ResourceLocation.fromNamespaceAndPath(VoiditeMod.MOD_ID, "block/" + item.getId().getPath()));
+    }
+
+    private ItemModelBuilder saplingItem(DeferredBlock<Block> item) {
         return withExistingParent(item.getId().getPath(),
                 ResourceLocation.parse("item/generated")).texture("layer0",
                 ResourceLocation.fromNamespaceAndPath(VoiditeMod.MOD_ID,"block/" + item.getId().getPath()));
     }
 
-    public void buttonItem(RegistryObject<? extends Block> block, RegistryObject<Block> baseBlock) {
-        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/button_inventory"))
+    public void buttonItem(DeferredBlock<? extends Block> block, DeferredBlock<Block> baseBlock) {
+        this.withExistingParent(BuiltInRegistries.BLOCK.getKey(block.get()).getPath(), mcLoc("block/button_inventory"))
                 .texture("texture",  ResourceLocation.fromNamespaceAndPath(VoiditeMod.MOD_ID,
-                        "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
+                        "block/" + BuiltInRegistries.BLOCK.getKey(baseBlock.get()).getPath()));
     }
 
-    public void fenceItem(RegistryObject<? extends Block> block, RegistryObject<Block> baseBlock) {
-        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/fence_inventory"))
+    public void fenceItem(DeferredBlock<? extends Block> block, DeferredBlock<Block> baseBlock) {
+        this.withExistingParent(BuiltInRegistries.BLOCK.getKey(block.get()).getPath(), mcLoc("block/fence_inventory"))
                 .texture("texture",  ResourceLocation.fromNamespaceAndPath(VoiditeMod.MOD_ID,
-                        "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
+                        "block/" + BuiltInRegistries.BLOCK.getKey(baseBlock.get()).getPath()));
     }
 
-    public void wallItem(RegistryObject<? extends Block> block, RegistryObject<Block> baseBlock) {
-        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/wall_inventory"))
+    public void wallItem(DeferredBlock<? extends Block> block, DeferredBlock<Block> baseBlock) {
+        this.withExistingParent(BuiltInRegistries.BLOCK.getKey(block.get()).getPath(), mcLoc("block/wall_inventory"))
                 .texture("wall",  ResourceLocation.fromNamespaceAndPath(VoiditeMod.MOD_ID,
-                        "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
+                        "block/" + BuiltInRegistries.BLOCK.getKey(baseBlock.get()).getPath()));
     }
 
-    private ItemModelBuilder simpleBlockItem(RegistryObject<? extends Block> item) {
+    private ItemModelBuilder simpleBlockItem(DeferredBlock<? extends Block> item) {
         return withExistingParent(item.getId().getPath(),
                 ResourceLocation.parse("item/generated")).texture("layer0",
                 ResourceLocation.fromNamespaceAndPath(VoiditeMod.MOD_ID, "item/" + item.getId().getPath()));
-    } */
+    }
 }

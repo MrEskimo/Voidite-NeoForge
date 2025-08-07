@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "voiditemod:block/chiseled_end_stone_brick_pillar_off"
+    },
+    "clicked=true": {
+      "model": "voiditemod:block/chiseled_end_stone_brick_pillar_on"
+    }
+  }
+}

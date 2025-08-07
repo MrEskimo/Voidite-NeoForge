@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_packed_end_sludge": {
+      "conditions": {
+        "items": [
+          {
+            "items": "voiditemod:packed_end_sludge"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "voiditemod:packed_end_sludge_slab"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_packed_end_sludge"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "voiditemod:packed_end_sludge_slab"
+    ]
+  }
+}

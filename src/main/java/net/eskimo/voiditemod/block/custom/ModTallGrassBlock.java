@@ -1,0 +1,23 @@
+package net.eskimo.voiditemod.block.custom;
+
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.TallGrassBlock;
+import net.minecraft.world.level.block.state.BlockState;
+
+import java.util.function.Supplier;
+
+public class ModTallGrassBlock extends TallGrassBlock {
+    private final Supplier<Block> blockToSurviveOn;
+
+    public ModTallGrassBlock(Properties properties, Supplier<Block> block) {
+        super(properties);
+        this.blockToSurviveOn = block;
+    }
+
+    @Override
+    protected boolean mayPlaceOn(BlockState state, BlockGetter level, BlockPos pos) {
+        return blockToSurviveOn.get() == state.getBlock();
+    }
+}

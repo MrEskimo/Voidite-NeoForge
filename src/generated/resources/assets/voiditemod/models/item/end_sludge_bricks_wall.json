@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "voiditemod:block/end_sludge_bricks"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "voiditemod:block/suncrown_oak_log_top",
+    "side": "voiditemod:block/suncrown_oak_log"
+  }
+}

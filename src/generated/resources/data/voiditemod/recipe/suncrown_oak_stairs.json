@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "suncrown_oak",
+  "key": {
+    "#": {
+      "item": "voiditemod:suncrown_oak_planks"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "voiditemod:suncrown_oak_stairs"
+  }
+}

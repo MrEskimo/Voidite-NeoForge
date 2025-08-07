@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "voiditemod:block/suncrown_turf_bottom",
+    "side": "voiditemod:block/suncrown_turf",
+    "top": "voiditemod:block/suncrown_turf_top"
+  }
+}

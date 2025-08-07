@@ -24,13 +24,13 @@ public class ModItemTagProvider extends ItemTagsProvider {
         //tag(ModTags.Items.SOME ITEM TAG)
         //        .add(ModItems.ITEM IN THAT TAG.get())
 
-        tag(ItemTags.LOGS_THAT_BURN);
-          //      .add(ModBlocks.SUNCROWN_OAK_LOG.get().asItem())
-          //      .add(ModBlocks.STRIPPED_SUNCROWN_OAK_LOG.get().asItem())
-          //      .add(ModBlocks.SUNCROWN_OAK_WOOD.get().asItem())
-          //      .add(ModBlocks.STRIPPED_SUNCROWN_OAK_WOOD.get().asItem());
+        tag(ItemTags.LOGS_THAT_BURN)
+                .add(ModBlocks.SUNCROWN_OAK_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_SUNCROWN_OAK_LOG.get().asItem())
+                .add(ModBlocks.SUNCROWN_OAK_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_SUNCROWN_OAK_WOOD.get().asItem());
 
-        tag(ItemTags.PLANKS);
-            //    .add(ModBlocks.SUNCROWN_OAK_PLANKS.get().asItem());
+        tag(ItemTags.PLANKS)
+                .add(ModBlocks.SUNCROWN_OAK_PLANKS.get().asItem());
     }
 }

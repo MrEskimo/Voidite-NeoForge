@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "voiditemod:suncrown_oak_wood"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "voiditemod:suncrown_oak_planks"
+  }
+}

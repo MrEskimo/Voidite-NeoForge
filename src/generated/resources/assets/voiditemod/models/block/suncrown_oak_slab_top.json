@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "voiditemod:block/suncrown_oak_planks",
+    "side": "voiditemod:block/suncrown_oak_planks",
+    "top": "voiditemod:block/suncrown_oak_planks"
+  }
+}
