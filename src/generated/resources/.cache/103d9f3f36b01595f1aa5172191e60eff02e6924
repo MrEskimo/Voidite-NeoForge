@@ -1,5 +1,4 @@
-// 1.21	2025-08-07T10:53:44.6419476	Registries
-02376f343c015cc171b96b00fa76907995f8f348 data/voiditemod/worldgen/configured_feature/chorus_turf_bonemeal.json
+// 1.21	2025-08-07T10:57:20.5214363	Registries
 c1bb90459e966c1e1cc844d9073f408c5472b912 data/voiditemod/worldgen/configured_feature/end_sludge_disk.json
 ed1295cf368060cd1d843b9ce2ce7e948b3cd21b data/voiditemod/worldgen/configured_feature/end_stone_disk.json
 8196ccca00fc691012fc2800a166868c3a94c75e data/voiditemod/worldgen/configured_feature/end_voidite_ore.json
@@ -16,5 +15,4 @@ cca84cca818d0d53e2ee72b19dd870104a0c6969 data/voiditemod/worldgen/placed_feature
 9deb2a70975bb51bf9a3b6b96d20ac5d61e0081f data/voiditemod/worldgen/placed_feature/suncrown_oak_forest_placed_key.json
 19aaed4fab869294be093a5862f0a29eaee5d5fc data/voiditemod/worldgen/placed_feature/suncrown_oak_placed_key.json
 ac70aa7ab9662b0da6e465cbe785c0944e5f5bbd data/voiditemod/worldgen/placed_feature/suncrown_sand_placed_key.json
-4f4f73c8999d8d1a20d62b22bf12f12db64f38fb data/voiditemod/worldgen/placed_feature/suncrown_turf_bonemeal.json
 da754b73ae7527998bd697cdbe61a5eec201b28e data/voiditemod/worldgen/placed_feature/void_grass_patch_placed_key.json

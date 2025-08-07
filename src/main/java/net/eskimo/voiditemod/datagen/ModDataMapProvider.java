@@ -16,8 +16,8 @@ public class ModDataMapProvider extends DataMapProvider {
 
     @Override
     protected void gather() {
-        this.builder(NeoForgeDataMaps.FURNACE_FUELS)
-                .add(ModItems.SMILE.getId(), new FurnaceFuel(1200), false);
+        this.builder(NeoForgeDataMaps.FURNACE_FUELS);
+                //.add(ModItems.SMILE.getId(), new FurnaceFuel(1200), false);
 
     // public static final RegistrySetBuilder BUILDER = new RegistrySetBuilder()
    //         .add(Registries.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap)

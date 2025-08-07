@@ -1,7 +1,6 @@
 package net.eskimo.voiditemod.datagen;
 
 import net.eskimo.voiditemod.block.ModBlocks;
-//import net.eskimo.voiditemod.block.custom.SincehePotatoCropBlock;
 import net.eskimo.voiditemod.block.custom.SincehePotatoCropBlock;
 import net.eskimo.voiditemod.item.ModItems;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
@@ -10,7 +9,6 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;

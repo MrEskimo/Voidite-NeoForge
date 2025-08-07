@@ -4,15 +4,11 @@ import net.eskimo.voiditemod.VoiditeMod;
 import net.eskimo.voiditemod.block.custom.*;
 import net.eskimo.voiditemod.item.ModItems;
 import net.eskimo.voiditemod.worldgen.tree.ModTreeGrowers;
-import net.minecraft.core.BlockPos;
 import net.minecraft.util.ColorRGBA;
-import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.neoforged.bus.api.IEventBus;
@@ -65,7 +61,7 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()));
 
     public static final DeferredBlock<TallGrassBlock> SUNCROWN_GRASS = registerBlock("suncrown_grass",
-            ()-> new ModTallGrassBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SHORT_GRASS), () -> ModBlocks.SUNCROWN_TURF.get()));
+            ()-> new ModTallGrassBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SHORT_GRASS), ModBlocks.SUNCROWN_TURF::get));
 
     public static final DeferredBlock<RotatedPillarBlock> END_STONE_BRICK_PILLAR = registerBlock("end_stone_brick_pillar",
             ()-> new RotatedPillarBlock(BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(3.0F, 9.0F).sound(SoundType.STONE)));
@@ -87,7 +83,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> GLOWING_VOID_BERRY_BUSH = BLOCKS.register("glowing_void_berry_bush",
             () -> new GlowingVoidBerryBushBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SWEET_BERRY_BUSH)
                     .emissiveRendering((pState, pLevel, pPos) -> true)
-                    .lightLevel(state -> 6), () -> ModBlocks.SUNCROWN_TURF.get()));
+                    .lightLevel(state -> 6), ModBlocks.SUNCROWN_TURF::get));
     public static final DeferredBlock<Block> SINCEHE_POTATO_CROP = BLOCKS.register("sincehe_potato_crop",
             () -> new SincehePotatoCropBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)));
 
@@ -115,7 +111,7 @@ public class ModBlocks {
 
 
     public static final DeferredBlock<Block> SUNCROWN_OAK_SAPLING = registerBlock("suncrown_oak_sapling",
-            () -> new ModSaplingBlock(ModTreeGrowers.SUNCROWN_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING), () -> ModBlocks.SUNCROWN_TURF.get()));
+            () -> new ModSaplingBlock(ModTreeGrowers.SUNCROWN_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING), ModBlocks.SUNCROWN_TURF::get));
 
     public static final DeferredBlock<SlabBlock> SUNCROWN_OAK_SLAB = registerBlock("suncrown_oak_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SLAB)));

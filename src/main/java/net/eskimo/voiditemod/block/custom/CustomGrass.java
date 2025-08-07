@@ -1,27 +1,13 @@
 package net.eskimo.voiditemod.block.custom;
 
-import net.eskimo.voiditemod.block.ModBlocks;
-
-import net.eskimo.voiditemod.worldgen.ModPlacedFeatures;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.core.Holder;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
-import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
-import net.minecraft.world.level.levelgen.feature.configurations.RandomPatchConfiguration;
-import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import net.minecraft.world.level.lighting.LightEngine;
-import net.neoforged.neoforge.common.util.TriState;
-
-import java.util.List;
-import java.util.Optional;
 
 
 public class CustomGrass extends GrassBlock {
@@ -51,11 +37,5 @@ public class CustomGrass extends GrassBlock {
         {
             p_222509_.setBlockAndUpdate(p_222510_, Blocks.END_STONE.defaultBlockState());
         }
-    }
-
-    @Override
-    public boolean isValidBonemealTarget(LevelReader p_153797_, BlockPos p_153798_, BlockState p_153799_)
-    {
-        return p_153797_.getBlockState(p_153798_.above()).isAir();
     }
 }

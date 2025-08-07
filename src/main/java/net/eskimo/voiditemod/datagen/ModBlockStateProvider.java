@@ -2,9 +2,6 @@ package net.eskimo.voiditemod.datagen;
 
 import net.eskimo.voiditemod.VoiditeMod;
 import net.eskimo.voiditemod.block.ModBlocks;
-//import net.eskimo.voiditemod.block.custom.ChiseledEndStoneBrickPillarBlock;
-//import net.eskimo.voiditemod.block.custom.GlowingVoidBerryBushBlock;
-//import net.eskimo.voiditemod.block.custom.SincehePotatoCropBlock;
 import net.eskimo.voiditemod.block.custom.ChiseledEndStoneBrickPillarBlock;
 import net.eskimo.voiditemod.block.custom.GlowingVoidBerryBushBlock;
 import net.eskimo.voiditemod.block.custom.SincehePotatoCropBlock;
@@ -20,7 +17,6 @@ import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
-import net.neoforged.neoforge.registries.NeoForgeRegistries;
 
 import java.util.function.Function;
 

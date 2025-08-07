@@ -13,7 +13,7 @@ public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(VoiditeMod.MOD_ID);
 
     public static final DeferredItem<Item> SMILE = ITEMS.register("smile",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoodProperties.SMILE)));
 
     public static final DeferredItem<Item> RAW_VOIDITE = ITEMS.register("raw_voidite",
             () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
