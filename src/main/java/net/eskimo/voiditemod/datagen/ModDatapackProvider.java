@@ -4,6 +4,7 @@ import net.eskimo.voiditemod.VoiditeMod;
 import net.eskimo.voiditemod.worldgen.ModBiomeModifiers;
 import net.eskimo.voiditemod.worldgen.ModConfiguredFeatures;
 import net.eskimo.voiditemod.worldgen.ModPlacedFeatures;
+import net.eskimo.voiditemod.worldgen.biome.ModBiomes;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;
@@ -19,8 +20,8 @@ public class ModDatapackProvider extends DatapackBuiltinEntriesProvider {
     public static final RegistrySetBuilder BUILDER = new RegistrySetBuilder()
             .add(Registries.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap)
             .add(Registries.PLACED_FEATURE, ModPlacedFeatures::bootstrap)
-            .add(NeoForgeRegistries.Keys.BIOME_MODIFIERS, ModBiomeModifiers::bootstrap);
-            //.add(Registries.BIOME, ModBiomes::boostrap);
+            .add(NeoForgeRegistries.Keys.BIOME_MODIFIERS, ModBiomeModifiers::bootstrap)
+            .add(Registries.BIOME, ModBiomes::boostrap);
 
 
 

@@ -1,6 +1,6 @@
-/*package net.eskimo.voiditemod.worldgen.biome.surface;
+package net.eskimo.voiditemod.worldgen.biome.surface;
 
-import net.eskimo.voiditemod.Block.ModBlocks;
+import net.eskimo.voiditemod.block.ModBlocks;
 import net.eskimo.voiditemod.VoiditeMod;
 import net.eskimo.voiditemod.worldgen.ModSurfaceRuleData;
 import net.eskimo.voiditemod.worldgen.biome.ModBiomes;
@@ -51,5 +51,3 @@ public class ModSurfaceRules {
         return SurfaceRules.state(block.defaultBlockState());
     }
 }
-
- */

@@ -33,7 +33,7 @@ public class ModPlacedFeatures {
         var configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
         register(context, END_VOIDITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.END_VOIDITE_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(1,
+                ModOrePlacement.commonOrePlacement(19,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
 
         register(context, GLOWING_VOID_BERRY_BUSH_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.GLOWING_VOID_BERRY_BUSH_KEY),

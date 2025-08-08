@@ -1,4 +1,4 @@
-/*package net.eskimo.voiditemod.worldgen;
+package net.eskimo.voiditemod.worldgen;
 
 import net.eskimo.voiditemod.block.ModBlocks;
 import net.eskimo.voiditemod.worldgen.biome.ModBiomes;
@@ -50,6 +50,4 @@ public class ModSurfaceRuleData {
        //;
     }
 }
-
- */
 

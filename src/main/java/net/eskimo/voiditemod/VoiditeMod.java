@@ -3,7 +3,11 @@ package net.eskimo.voiditemod;
 import net.eskimo.voiditemod.block.ModBlocks;
 import net.eskimo.voiditemod.item.ModCreativeModeTabs;
 import net.eskimo.voiditemod.item.ModItems;
+import net.eskimo.voiditemod.worldgen.biome.ModBiomes;
+import net.eskimo.voiditemod.worldgen.biome.ModTerrablender;
+import net.eskimo.voiditemod.worldgen.biome.surface.ModSurfaceRules;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.level.block.ComposterBlock;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -20,6 +24,7 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import terrablender.api.SurfaceRuleManager;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(VoiditeMod.MOD_ID)
@@ -43,6 +48,8 @@ public class VoiditeMod {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
+        ModTerrablender.registerBiomes();
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
@@ -50,7 +57,14 @@ public class VoiditeMod {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
+        event.enqueueWork(()-> {
+            VoiditeMod.setupTerraBlender();
+            ComposterBlock.COMPOSTABLES.put(ModItems.SINCEHE_POTATO.get(), 0.3f);
+            ComposterBlock.COMPOSTABLES.put(ModItems.SINCEHE_POTATO_SEEDS.get(), 0.1f);
 
+            SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, ModSurfaceRules.makeRules());
+            SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.END, MOD_ID, ModSurfaceRules.makeRules());
+        });
     }
 
     // Add the example block item to the building blocks tab
@@ -73,5 +87,9 @@ public class VoiditeMod {
         public static void onClientSetup(FMLClientSetupEvent event) {
 
         }
+    }
+    public static void setupTerraBlender()
+    {
+        ModBiomes.setupTerraBlender();
     }
 }

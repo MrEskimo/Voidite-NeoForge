@@ -1,4 +1,4 @@
-/*package net.eskimo.voiditemod.worldgen.biome;
+package net.eskimo.voiditemod.worldgen.biome;
 
 import com.mojang.datafixers.util.Pair;
 import net.minecraft.core.Registry;
@@ -28,6 +28,3 @@ public class ModOverworldRegion extends Region {
 
     }
 }
-
-
- */

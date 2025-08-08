@@ -1,0 +1,67 @@
+{
+  "carvers": {},
+  "downfall": 0.8,
+  "effects": {
+    "fog_color": 10518688,
+    "mood_sound": {
+      "block_search_extent": 8,
+      "offset": 2.0,
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000
+    },
+    "sky_color": 0,
+    "water_color": 4159204,
+    "water_fog_color": 329011
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [
+      "minecraft:chorus_plant",
+      "minecraft:end_gateway_return"
+    ],
+    [],
+    [
+      "voiditemod:end_stone_disk_placed_key",
+      "voiditemod:end_voidite_ore_placed_key",
+      "voiditemod:end_sludge_disk_placed_key"
+    ],
+    [],
+    [],
+    [
+      "voiditemod:sincehe_potato_placed_key",
+      "voiditemod:suncrown_oak_forest_placed_key",
+      "voiditemod:glowing_void_berry_bush_placed_key",
+      "voiditemod:void_grass_patch_placed_key"
+    ]
+  ],
+  "has_precipitation": false,
+  "spawn_costs": {},
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [
+      {
+        "type": "minecraft:enderman",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 5
+      }
+    ],
+    "misc": [],
+    "monster": [
+      {
+        "type": "minecraft:enderman",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 10
+      }
+    ],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "temperature": 0.7
+}

@@ -1,4 +1,3 @@
-/*
 package net.eskimo.voiditemod.worldgen.biome;
 
 import net.eskimo.voiditemod.VoiditeMod;
@@ -10,4 +9,3 @@ public class ModTerrablender {
         Regions.register(new ModOverworldRegion(ResourceLocation.fromNamespaceAndPath(VoiditeMod.MOD_ID, "overworld"), 5));
     }
 }
- */

@@ -1,4 +1,4 @@
-/*package net.eskimo.voiditemod.worldgen.biome;
+package net.eskimo.voiditemod.worldgen.biome;
 
 import net.eskimo.voiditemod.VoiditeMod;
 import net.eskimo.voiditemod.worldgen.ModPlacedFeatures;
@@ -96,7 +96,7 @@ public class ModBiomes {
                 .build();
     }
 */
-  /*  public static Biome chorusBiome(BootstrapContext<Biome> context) {
+    public static Biome chorusBiome(BootstrapContext<Biome> context) {
         MobSpawnSettings.Builder spawnBuilder = new MobSpawnSettings.Builder();
 
         spawnBuilder.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(EntityType.ENDERMAN, 5, 4, 4));
@@ -180,5 +180,3 @@ public class ModBiomes {
     }
 
 }
-
-   */
