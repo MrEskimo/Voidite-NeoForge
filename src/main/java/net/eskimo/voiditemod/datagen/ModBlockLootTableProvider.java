@@ -50,8 +50,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.SUNCROWN_SAND.get());
         dropSelf(ModBlocks.SUNCROWN_SANDSTONE.get());
         dropSelf(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE.get());
-        dropSelf(ModBlocks.SUNCROWN_SANDSTONE_STAIRS.get());
-        //  dropSelf(ModBlocks.GROUTYOU_BEAN.get());
+
+        dropSelf(ModBlocks.GROUTYOU_BEAN.get());
 
         this.add(ModBlocks.SUNCROWN_OAK_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.SUNCROWN_OAK_SLAB.get()));
@@ -68,8 +68,12 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.SUNCROWN_OAK_PRESSURE_PLATE.get());
 
 
-        this.add(ModBlocks.SUNCROWN_GRASS.get(),
+        add(ModBlocks.SUNCROWN_GRASS.get(),
                 createShearsOnlyDrop(ModBlocks.SUNCROWN_GRASS.get()));
+        add(ModBlocks.SHORT_SUNCROWN_GRASS.get(),
+                createShearsOnlyDrop(ModBlocks.SHORT_SUNCROWN_GRASS.get()));
+        add(ModBlocks.FLOWERING_SUNCROWN_GRASS.get(),
+                createShearsOnlyDrop(ModBlocks.FLOWERING_SUNCROWN_GRASS.get()));
 
         this.add(ModBlocks.SUNCROWN_TURF.get(),
                 createSilkTouchOnlyTable(ModBlocks.SUNCROWN_TURF.get()));
@@ -90,7 +94,9 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         this.add(ModBlocks.PACKED_END_SLUDGE_SLAB.get(),
                  block -> createSlabItemTable(ModBlocks.PACKED_END_SLUDGE_SLAB.get()));
 
-
+        dropSelf(ModBlocks.SUNCROWN_SANDSTONE_STAIRS.get());
+        this.add(ModBlocks.SUNCROWN_SANDSTONE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.SUNCROWN_SANDSTONE_SLAB.get()));
 
         HolderLookup.RegistryLookup<Enchantment> registrylookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
 

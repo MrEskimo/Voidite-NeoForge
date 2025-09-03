@@ -11,6 +11,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.CropBlock;
 import net.minecraft.world.level.block.SweetBerryBushBlock;
+import net.minecraft.world.level.block.TallGrassBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
@@ -39,8 +40,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.BLOCK_OF_VOIDITE);
 
         blockWithItem(ModBlocks.SUNCROWN_OAK_PLANKS);
-
-
 
         stairsBlock(ModBlocks.SUNCROWN_OAK_STAIRS.get(), blockTexture(ModBlocks.SUNCROWN_OAK_PLANKS.get()));
 
@@ -81,19 +80,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 modLoc("block/suncrown_turf_bottom"),
                 modLoc("block/suncrown_turf_top")
         ));
-       simpleBlockWithItem(ModBlocks.SUNCROWN_SANDSTONE.get(), models().cubeBottomTop(
-               "suncrown_sandstone",
-               modLoc("block/suncrown_sandstone"),
-               modLoc("block/suncrown_sandstone_bottom"),
-               modLoc("block/suncrown_sandstone_top")
-       ));
 
-        simpleBlockWithItem(ModBlocks.SUNCROWN_GRASS.get(), models().cross(
-                "suncrown_grass",
-                modLoc("block/suncrown_grass")
-                ).renderType("cutout")
-        );
+        tallGrassBlock(ModBlocks.SUNCROWN_GRASS);
+        tallGrassBlock(ModBlocks.SHORT_SUNCROWN_GRASS);
+        tallGrassBlock(ModBlocks.FLOWERING_SUNCROWN_GRASS);
 
+        blockWithItem(ModBlocks.GROUTYOU_BEAN);
 
         axisBlock(ModBlocks.END_STONE_BRICK_PILLAR.get(), modLoc("block/end_stone_brick_pillar_side"), modLoc("block/end_stone_brick_pillar_end"));
         blockItem(ModBlocks.END_STONE_BRICK_PILLAR);
@@ -120,12 +112,20 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.SUNCROWN_SAND);
         blockWithItem(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE);
 
+        blockWithItem(ModBlocks.SUNCROWN_SANDSTONE);
         stairsBlock(ModBlocks.SUNCROWN_SANDSTONE_STAIRS.get(), blockTexture(ModBlocks.SUNCROWN_SANDSTONE.get()));
         blockItem(ModBlocks.SUNCROWN_SANDSTONE_STAIRS);
+        slabBlock(ModBlocks.SUNCROWN_SANDSTONE_SLAB.get(), blockTexture(ModBlocks.SUNCROWN_SANDSTONE.get()), blockTexture(ModBlocks.SUNCROWN_SANDSTONE.get()));
+        blockItem(ModBlocks.SUNCROWN_SANDSTONE_SLAB);
 
     }
 
     private void saplingBlock(DeferredBlock<Block> blockRegistryObject) {
+        simpleBlock(blockRegistryObject.get(),
+                models().cross(BuiltInRegistries.BLOCK.getKey(blockRegistryObject.get()).getPath(), blockTexture(blockRegistryObject.get())).renderType("cutout"));
+    }
+
+    private void tallGrassBlock(DeferredBlock<TallGrassBlock> blockRegistryObject) {
         simpleBlock(blockRegistryObject.get(),
                 models().cross(BuiltInRegistries.BLOCK.getKey(blockRegistryObject.get()).getPath(), blockTexture(blockRegistryObject.get())).renderType("cutout"));
     }

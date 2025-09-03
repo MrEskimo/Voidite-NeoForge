@@ -4,11 +4,15 @@ import net.eskimo.voiditemod.VoiditeMod;
 import net.eskimo.voiditemod.block.custom.*;
 import net.eskimo.voiditemod.item.ModItems;
 import net.eskimo.voiditemod.worldgen.tree.ModTreeGrowers;
+import net.minecraft.core.BlockPos;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.util.ColorRGBA;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.neoforged.bus.api.IEventBus;
@@ -62,6 +66,10 @@ public class ModBlocks {
 
     public static final DeferredBlock<TallGrassBlock> SUNCROWN_GRASS = registerBlock("suncrown_grass",
             ()-> new ModTallGrassBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SHORT_GRASS), ModBlocks.SUNCROWN_TURF::get));
+    public static final DeferredBlock<TallGrassBlock> SHORT_SUNCROWN_GRASS = registerBlock("short_suncrown_grass",
+            ()-> new ModTallGrassBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SHORT_GRASS), ModBlocks.SUNCROWN_TURF::get));
+    public static final DeferredBlock<TallGrassBlock> FLOWERING_SUNCROWN_GRASS = registerBlock("flowering_suncrown_grass",
+            ()-> new ModTallGrassBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SHORT_GRASS).lightLevel(state -> 4), ModBlocks.SUNCROWN_TURF::get));
 
     public static final DeferredBlock<RotatedPillarBlock> END_STONE_BRICK_PILLAR = registerBlock("end_stone_brick_pillar",
             ()-> new RotatedPillarBlock(BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(3.0F, 9.0F).sound(SoundType.STONE)));
@@ -74,7 +82,6 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> VOIDITE_ORE = registerBlock("voidite_ore",
             ()-> new Block(BlockBehaviour.Properties.of().strength(5f).requiresCorrectToolForDrops()
-                    //.emissiveRendering((state, world, pos) -> true)
                     .lightLevel(state -> 6)));
 
     public static final DeferredBlock<Block> BLOCK_OF_VOIDITE = registerBlock("block_of_voidite",
@@ -101,13 +108,13 @@ public class ModBlocks {
     public static final DeferredBlock<Block> SUNCROWN_OAK_LEAVES = registerBlock("suncrown_oak_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
 
-   // public static final DeferredBlock<Block> GROUTYOU_BEAN = registerBlock("groutyou_bean",
-   //         () -> new CocoaBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COCOA)) {
-   //             @Override
-   //             protected boolean canSurvive(BlockState pState, LevelReader pLevel, BlockPos pPos) {
-   //                 BlockState blockstate = pLevel.getBlockState(pPos.relative(pState.getValue(FACING)));
-   //                 return blockstate.is(ModTags.Blocks.SUNCROWN_OAK_LOGS);
-   //             }});
+    public static final DeferredBlock<CocoaBlock> GROUTYOU_BEAN = registerBlock("groutyou_bean",
+            () -> new CocoaBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COCOA)) {
+                @Override
+                protected boolean canSurvive(BlockState pState, LevelReader pLevel, BlockPos pPos) {
+                    BlockState blockstate = pLevel.getBlockState(pPos.relative(pState.getValue(FACING)));
+                    return blockstate.is(BlockTags.LOGS_THAT_BURN);
+                }});
 
 
     public static final DeferredBlock<Block> SUNCROWN_OAK_SAPLING = registerBlock("suncrown_oak_sapling",
@@ -147,6 +154,8 @@ public class ModBlocks {
     public static final DeferredBlock<StairBlock> SUNCROWN_SANDSTONE_STAIRS = registerBlock("suncrown_sandstone_stairs",
             () -> new StairBlock(ModBlocks.SUNCROWN_SANDSTONE.get().defaultBlockState(),
                     BlockBehaviour.Properties.ofFullCopy(Blocks.SANDSTONE_STAIRS)));
+    public static final DeferredBlock<SlabBlock> SUNCROWN_SANDSTONE_SLAB = registerBlock("suncrown_sandstone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SANDSTONE_SLAB)));
 
     public static final DeferredBlock<Block> SMOOTH_SUNCROWN_SANDSTONE = registerBlock("smooth_suncrown_sandstone",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SMOOTH_SANDSTONE)));

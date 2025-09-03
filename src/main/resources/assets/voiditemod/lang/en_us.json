@@ -18,6 +18,8 @@
   "block.voiditemod.end_sludge_bricks": "End Sludge Bricks",
   "block.voiditemod.suncrown_turf": "Suncrown Turf",
   "block.voiditemod.suncrown_grass": "Suncrown Grass",
+  "block.voiditemod.short_suncrown_grass": "Short Suncrown Grass",
+  "block.voiditemod.flowering_suncrown_grass": "Flowering Suncrown Grass",
   "block.voiditemod.end_stone_brick_pillar": "End Stone Brick Pillar",
   "block.voiditemod.chiseled_end_stone_brick_pillar": "Chiseled End Stone Brick Pillar",
   "block.voiditemod.purpur_light": "Purpur Lamp",
@@ -58,6 +60,7 @@
   "block.voiditemod.suncrown_sand": "Suncrown Sand",
   "block.voiditemod.suncrown_sandstone": "Suncrown Sandstone",
   "block.voiditemod.suncrown_sandstone_stairs": "Suncrown Sandstone Stairs",
+  "block.voiditemod.suncrown_sandstone_slab": "Suncrown Sandstone Slab",
   "block.voiditemod.smooth_suncrown_sandstone": "Smooth Suncrown Sandstone",
 
   "creativetab.voiditemod.end_stuff": "End Stuff"

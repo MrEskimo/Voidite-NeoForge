@@ -9,10 +9,12 @@ import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.util.random.SimpleWeightedRandomList;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SweetBerryBushBlock;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
@@ -21,6 +23,7 @@ import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSi
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.feature.stateproviders.RuleBasedBlockStateProvider;
+import net.minecraft.world.level.levelgen.feature.stateproviders.WeightedStateProvider;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlacer;
 import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
@@ -30,6 +33,7 @@ import java.util.List;
 public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> END_VOIDITE_ORE_KEY = registerKey("end_voidite_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> VOID_GRASS_PATCH_KEY = registerKey("void_grass_patch");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SHORT_SC_GRASS_PATCH_KEY = registerKey("short_sc_grass_patch");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GLOWING_VOID_BERRY_BUSH_KEY = registerKey("glowing_void_berry_bush");
     public static final ResourceKey<ConfiguredFeature<?, ?>> END_SLUDGE_DISK_KEY = registerKey("end_sludge_disk");
     public static final ResourceKey<ConfiguredFeature<?, ?>> END_STONE_DISK_KEY = registerKey("end_stone_disk");
@@ -44,7 +48,11 @@ public class ModConfiguredFeatures {
 
         register(context, END_VOIDITE_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables, ModBlocks.VOIDITE_ORE.get().defaultBlockState(), 6));
 
-        register(context, VOID_GRASS_PATCH_KEY, Feature.RANDOM_PATCH, grassPatch(BlockStateProvider.simple(ModBlocks.SUNCROWN_GRASS.get()), 32));
+        register(context, VOID_GRASS_PATCH_KEY, Feature.RANDOM_PATCH, grassPatch(new WeightedStateProvider(
+                SimpleWeightedRandomList.<BlockState>builder().add(ModBlocks.SUNCROWN_GRASS.get().defaultBlockState(), 5)
+                        .add(ModBlocks.FLOWERING_SUNCROWN_GRASS.get().defaultBlockState(), 1)), 128));
+
+        register(context, SHORT_SC_GRASS_PATCH_KEY, Feature.RANDOM_PATCH, grassPatch(BlockStateProvider.simple(ModBlocks.SHORT_SUNCROWN_GRASS.get()), 64));
 
         register(context, GLOWING_VOID_BERRY_BUSH_KEY, Feature.RANDOM_PATCH,
                 FeatureUtils.simplePatchConfiguration(

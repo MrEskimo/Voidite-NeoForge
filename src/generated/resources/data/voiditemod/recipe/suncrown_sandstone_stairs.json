@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "suncrown_sandstone",
+  "key": {
+    "#": {
+      "item": "voiditemod:suncrown_sandstone"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "voiditemod:suncrown_sandstone_stairs"
+  }
+}

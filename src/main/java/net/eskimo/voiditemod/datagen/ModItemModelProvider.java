@@ -24,6 +24,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.RAW_VOIDITE.get());
         basicItem(ModItems.VOIDITE_INGOT.get());
         tallGrassItem(ModBlocks.SUNCROWN_GRASS);
+        tallGrassItem(ModBlocks.SHORT_SUNCROWN_GRASS);
+        tallGrassItem(ModBlocks.FLOWERING_SUNCROWN_GRASS);
         basicItem(ModItems.GLOWING_VOID_BERRIES.get());
         basicItem(ModItems.SINCEHE_POTATO.get());
         basicItem(ModItems.SINCEHE_POTATO_SEEDS.get());

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "voiditemod:block/suncrown_sandstone"
+    "all": "voiditemod:block/groutyou_bean"
   }
 }

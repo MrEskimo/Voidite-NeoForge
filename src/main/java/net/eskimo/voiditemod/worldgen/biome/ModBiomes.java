@@ -35,8 +35,8 @@ public class ModBiomes {
     }
     public static void setupTerraBlender()
     {
-        registerMidlandsBiome(ModBiomes.SUNCROWN_PLAINS, 4);
-        registerHighlandsBiome(ModBiomes.SUNCROWN_FOREST,4);
+        registerMidlandsBiome(ModBiomes.SUNCROWN_PLAINS, 2);
+        registerHighlandsBiome(ModBiomes.SUNCROWN_FOREST,2);
 
     }
 
@@ -117,6 +117,7 @@ public class ModBiomes {
         biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, ModPlacedFeatures.END_SLUDGE_DISK_PLACED_KEY);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.GLOWING_VOID_BERRY_BUSH_PLACED_KEY);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.VOID_GRASS_PATCH_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.SHORT_SC_GRASS_PATCH_PLACED_KEY);
 
         return new Biome.BiomeBuilder()
                 .hasPrecipitation(false)
@@ -152,6 +153,7 @@ public class ModBiomes {
             biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, ModPlacedFeatures.END_SLUDGE_DISK_PLACED_KEY);
             biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.GLOWING_VOID_BERRY_BUSH_PLACED_KEY);
             biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.VOID_GRASS_PATCH_PLACED_KEY);
+            biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.SHORT_SC_GRASS_PATCH_PLACED_KEY);
 
             return new Biome.BiomeBuilder()
                     .hasPrecipitation(false)

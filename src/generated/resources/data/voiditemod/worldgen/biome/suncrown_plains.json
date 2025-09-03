@@ -35,7 +35,8 @@
       "voiditemod:sincehe_potato_placed_key",
       "voiditemod:suncrown_oak_placed_key",
       "voiditemod:glowing_void_berry_bush_placed_key",
-      "voiditemod:void_grass_patch_placed_key"
+      "voiditemod:void_grass_patch_placed_key",
+      "voiditemod:short_sc_grass_patch_placed_key"
     ]
   ],
   "has_precipitation": false,

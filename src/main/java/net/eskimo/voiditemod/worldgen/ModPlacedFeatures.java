@@ -20,6 +20,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> END_VOIDITE_ORE_PLACED_KEY = registerKey("end_voidite_ore_placed_key");
     public static final ResourceKey<PlacedFeature> GLOWING_VOID_BERRY_BUSH_PLACED_KEY = registerKey("glowing_void_berry_bush_placed_key");
     public static final ResourceKey<PlacedFeature> VOID_GRASS_PATCH_PLACED_KEY = registerKey("void_grass_patch_placed_key");
+    public static final ResourceKey<PlacedFeature> SHORT_SC_GRASS_PATCH_PLACED_KEY = registerKey("short_sc_grass_patch_placed_key");
     public static final ResourceKey<PlacedFeature> END_SLUDGE_DISK_PLACED_KEY = registerKey("end_sludge_disk_placed_key");
     public static final ResourceKey<PlacedFeature> END_STONE_DISK_PLACED_KEY = registerKey("end_stone_disk_placed_key");
     public static final ResourceKey<PlacedFeature> SUNCROWN_OAK_PLAINS_PLACED_KEY = registerKey("suncrown_oak_placed_key");
@@ -40,6 +41,8 @@ public class ModPlacedFeatures {
                 List.of(RarityFilter.onAverageOnceEvery(6), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
         register(context, VOID_GRASS_PATCH_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.VOID_GRASS_PATCH_KEY),
+                ImmutableList.of(InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+        register(context, SHORT_SC_GRASS_PATCH_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.SHORT_SC_GRASS_PATCH_KEY),
                 ImmutableList.of(InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
         register(context, END_SLUDGE_DISK_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.END_SLUDGE_DISK_KEY),

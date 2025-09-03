@@ -1,4 +1,4 @@
-// 1.21.1	2025-08-07T12:07:25.1098163	Recipes
+// 1.21.1	2025-08-31T12:30:31.8383655	Recipes
 625fdac6442a716b580d65f06b502425481cbdb5 data/minecraft/advancement/recipes/building_blocks/voidite_ingot.json
 aced8ba1f8a8414dfcfe0e42200027ed54372462 data/minecraft/advancement/recipes/misc/block_of_voidite.json
 935de5a212e885891a38c3ac58e14185dde49ff3 data/minecraft/advancement/recipes/misc/voidite_ingot_from_blasting_raw_voidite.json
@@ -32,6 +32,8 @@ aee95152fbd0b7c48dd5b4e84cbda81c609864e0 data/voiditemod/advancement/recipes/bui
 9fbde981f890dbd9ec3bce1d5a6f01a8dc622876 data/voiditemod/advancement/recipes/building_blocks/suncrown_oak_stairs.json
 7c8e971b8db2aa23394546c79c1fbbb08cd1cb40 data/voiditemod/advancement/recipes/building_blocks/suncrown_oak_wood.json
 ae400176e2c6febc022533d2d38ae89d9018117d data/voiditemod/advancement/recipes/building_blocks/suncrown_sandstone.json
+b601e6543f512688d6541683f8857ba45790c136 data/voiditemod/advancement/recipes/building_blocks/suncrown_sandstone_slab.json
+9103f1cf4e608d55bd852b7019305c8c8a3d691c data/voiditemod/advancement/recipes/building_blocks/suncrown_sandstone_stairs.json
 0f180b5b7fb6ea12e5a89669cc62c023daf8686d data/voiditemod/advancement/recipes/decorations/suncrown_oak_fence.json
 df870c75feffcf9781ce5f2daf7a33f1d1f3ac91 data/voiditemod/advancement/recipes/misc/smile.json
 da856a25e32f438712b0328109fd7e743eb7ce66 data/voiditemod/advancement/recipes/redstone/suncrown_oak_button.json
@@ -67,3 +69,5 @@ d570103e9967a3b731b8afdb137fda2025c1797a data/voiditemod/recipe/suncrown_oak_sla
 13628b87b9cb6bb507b523c88e4aed68996a74fa data/voiditemod/recipe/suncrown_oak_trapdoor.json
 640eef25687fcd1d6ac265e8dc45f25061139023 data/voiditemod/recipe/suncrown_oak_wood.json
 39bfeda9b506733535bcd2e4c4cac194db969cdc data/voiditemod/recipe/suncrown_sandstone.json
+b441ea900b0104ad357996512ce71c71580fda1a data/voiditemod/recipe/suncrown_sandstone_slab.json
+f05c8524349937fd686bbc7badd95ba6b45ed88a data/voiditemod/recipe/suncrown_sandstone_stairs.json

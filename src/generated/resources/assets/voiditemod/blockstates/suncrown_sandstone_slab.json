@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "voiditemod:block/suncrown_sandstone_slab"
+    },
+    "type=double": {
+      "model": "voiditemod:block/suncrown_sandstone"
+    },
+    "type=top": {
+      "model": "voiditemod:block/suncrown_sandstone_slab_top"
+    }
+  }
+}
