@@ -85,8 +85,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
         tallGrassBlock(ModBlocks.SHORT_SUNCROWN_GRASS);
         tallGrassBlock(ModBlocks.FLOWERING_SUNCROWN_GRASS);
 
-        blockWithItem(ModBlocks.GROUTYOU_BEAN);
-
         axisBlock(ModBlocks.END_STONE_BRICK_PILLAR.get(), modLoc("block/end_stone_brick_pillar_side"), modLoc("block/end_stone_brick_pillar_end"));
         blockItem(ModBlocks.END_STONE_BRICK_PILLAR);
 
@@ -117,6 +115,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.SUNCROWN_SANDSTONE_STAIRS);
         slabBlock(ModBlocks.SUNCROWN_SANDSTONE_SLAB.get(), blockTexture(ModBlocks.SUNCROWN_SANDSTONE.get()), blockTexture(ModBlocks.SUNCROWN_SANDSTONE.get()));
         blockItem(ModBlocks.SUNCROWN_SANDSTONE_SLAB);
+
+        //Celesta lee
+        blockWithItem(ModBlocks.CELESTALEE);
+        //
 
     }
 

@@ -12,6 +12,11 @@
     "voiditemod:voidite_ore",
     "voiditemod:block_of_voidite",
     "voiditemod:suncrown_turf",
-    "voiditemod:chiseled_end_stone_brick_pillar"
+    "voiditemod:chiseled_end_stone_brick_pillar",
+    "voiditemod:suncrown_sandstone",
+    "voiditemod:suncrown_sandstone_slab",
+    "voiditemod:suncrown_sandstone_stairs",
+    "voiditemod:smooth_suncrown_sandstone",
+    "voiditemod:celestalee_furnace"
   ]
 }

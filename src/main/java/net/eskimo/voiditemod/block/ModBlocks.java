@@ -108,14 +108,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> SUNCROWN_OAK_LEAVES = registerBlock("suncrown_oak_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
 
-    public static final DeferredBlock<CocoaBlock> GROUTYOU_BEAN = registerBlock("groutyou_bean",
-            () -> new CocoaBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COCOA)) {
-                @Override
-                protected boolean canSurvive(BlockState pState, LevelReader pLevel, BlockPos pPos) {
-                    BlockState blockstate = pLevel.getBlockState(pPos.relative(pState.getValue(FACING)));
-                    return blockstate.is(BlockTags.LOGS_THAT_BURN);
-                }});
-
+    public static final DeferredBlock<ModCocoaBlock> GROUTYOU_BEAN = registerBlock("groutyou_bean",
+            () -> new ModCocoaBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COCOA)));
 
     public static final DeferredBlock<Block> SUNCROWN_OAK_SAPLING = registerBlock("suncrown_oak_sapling",
             () -> new ModSaplingBlock(ModTreeGrowers.SUNCROWN_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING), ModBlocks.SUNCROWN_TURF::get));
@@ -160,7 +154,10 @@ public class ModBlocks {
     public static final DeferredBlock<Block> SMOOTH_SUNCROWN_SANDSTONE = registerBlock("smooth_suncrown_sandstone",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SMOOTH_SANDSTONE)));
 
-
+    //IMPORTANT Celesta lee
+    public static final DeferredBlock<CelestaleeFurnaceBlock> CELESTALEE = registerBlock("celestalee_furnace",
+            () -> new CelestaleeFurnaceBlock(BlockBehaviour.Properties.of()));
+    //
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

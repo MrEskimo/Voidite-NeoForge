@@ -1,13 +1,17 @@
 package net.eskimo.voiditemod;
 
 import net.eskimo.voiditemod.block.ModBlocks;
+import net.eskimo.voiditemod.block.entity.ModBlockEntities;
 import net.eskimo.voiditemod.item.ModCreativeModeTabs;
 import net.eskimo.voiditemod.item.ModItems;
+import net.eskimo.voiditemod.screen.ModMenuTypes;
+import net.eskimo.voiditemod.screen.custom.CelestaleeFurnaceScreen;
 import net.eskimo.voiditemod.worldgen.biome.ModBiomes;
 import net.eskimo.voiditemod.worldgen.biome.ModTerrablender;
 import net.eskimo.voiditemod.worldgen.biome.surface.ModSurfaceRules;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.ComposterBlock;
+import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -48,6 +52,10 @@ public class VoiditeMod {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
+        ModBlockEntities.register(modEventBus);
+
+        ModMenuTypes.register(modEventBus);
+
         ModTerrablender.registerBiomes();
 
         // Register the item to a creative tab
@@ -57,7 +65,7 @@ public class VoiditeMod {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-        event.enqueueWork(()-> {
+        event.enqueueWork(() -> {
             VoiditeMod.setupTerraBlender();
             ComposterBlock.COMPOSTABLES.put(ModItems.SINCEHE_POTATO.get(), 0.3f);
             ComposterBlock.COMPOSTABLES.put(ModItems.SINCEHE_POTATO_SEEDS.get(), 0.1f);
@@ -69,7 +77,7 @@ public class VoiditeMod {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+        if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
             event.accept(ModItems.SMILE);
         }
     }
@@ -85,11 +93,14 @@ public class VoiditeMod {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+        }
 
+        @SubscribeEvent
+        public static void registerScreens(RegisterMenuScreensEvent event) {
+            event.register(ModMenuTypes.CELESTALEE_FURNACE_MENU.get(), CelestaleeFurnaceScreen::new);
         }
     }
-    public static void setupTerraBlender()
-    {
+    public static void setupTerraBlender() {
         ModBiomes.setupTerraBlender();
     }
 }
