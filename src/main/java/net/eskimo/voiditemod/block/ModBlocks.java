@@ -153,8 +153,8 @@ public class ModBlocks {
     //IMPORTANT Celesta lee DHADE
     public static final DeferredBlock<CelestaleeFurnaceBlock> CELESTALEE = registerBlock("celestalee_furnace",
             () -> new CelestaleeFurnaceBlock(BlockBehaviour.Properties.of()));
-    public static final DeferredBlock<CelestaleeFurnaceBlock> DHADE = registerBlock("hammer_of_end",
-            () -> new CelestaleeFurnaceBlock(BlockBehaviour.Properties.of()));
+    public static final DeferredBlock<HammerOfEndBlock> DHADE = registerBlock("hammer_of_end",
+            () -> new HammerOfEndBlock(BlockBehaviour.Properties.of()));
     //
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

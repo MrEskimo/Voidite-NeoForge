@@ -2,6 +2,7 @@ package net.eskimo.voiditemod.block.entity;
 
 import net.eskimo.voiditemod.VoiditeMod;
 import net.eskimo.voiditemod.block.ModBlocks;
+import net.eskimo.voiditemod.block.custom.HammerOfEndBlock;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.neoforged.bus.api.IEventBus;
@@ -16,6 +17,9 @@ public class ModBlockEntities {
     public static final Supplier<BlockEntityType<CelestaleeFurnaceBlockEntity>> CELESTALEE_FURNACE_BE =
             BLOCK_ENTITIES.register("celestalee_furnace_be", () -> BlockEntityType.Builder.of(
                     CelestaleeFurnaceBlockEntity::new, ModBlocks.CELESTALEE.get()).build(null));
+    public static final Supplier<BlockEntityType<HammerOfEndBlockEntity>> HAMMER_OF_END_BE =
+            BLOCK_ENTITIES.register("hammer_of_end_be", () -> BlockEntityType.Builder.of(
+                    HammerOfEndBlockEntity::new, ModBlocks.DHADE.get()).build(null));
 
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);

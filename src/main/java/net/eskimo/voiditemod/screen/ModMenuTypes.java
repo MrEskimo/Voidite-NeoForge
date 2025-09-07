@@ -3,6 +3,7 @@ package net.eskimo.voiditemod.screen;
 
 import net.eskimo.voiditemod.VoiditeMod;
 import net.eskimo.voiditemod.screen.custom.CelestaleeFurnaceMenu;
+import net.eskimo.voiditemod.screen.custom.HammerOfEndMenu;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.MenuType;
@@ -18,6 +19,8 @@ public class ModMenuTypes {
 
     public static final DeferredHolder<MenuType<?>, MenuType<CelestaleeFurnaceMenu>> CELESTALEE_FURNACE_MENU =
             registerMenuType("celestalee_furnace_menu", CelestaleeFurnaceMenu::new);
+    public static final DeferredHolder<MenuType<?>, MenuType<HammerOfEndMenu>> HAMMER_OF_END_MENU =
+            registerMenuType("hammer_of_end_menu", HammerOfEndMenu::new);
 
     private static <T extends AbstractContainerMenu> DeferredHolder<MenuType<?>, MenuType<T>> registerMenuType(String name,
                                                                                                                IContainerFactory<T> factory) {

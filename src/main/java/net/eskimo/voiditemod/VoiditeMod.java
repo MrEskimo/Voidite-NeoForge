@@ -6,6 +6,8 @@ import net.eskimo.voiditemod.item.ModCreativeModeTabs;
 import net.eskimo.voiditemod.item.ModItems;
 import net.eskimo.voiditemod.screen.ModMenuTypes;
 import net.eskimo.voiditemod.screen.custom.CelestaleeFurnaceScreen;
+import net.eskimo.voiditemod.screen.custom.HammerOfEndMenu;
+import net.eskimo.voiditemod.screen.custom.HammerOfEndScreen;
 import net.eskimo.voiditemod.worldgen.biome.ModBiomes;
 import net.eskimo.voiditemod.worldgen.biome.ModTerrablender;
 import net.eskimo.voiditemod.worldgen.biome.surface.ModSurfaceRules;
@@ -98,6 +100,7 @@ public class VoiditeMod {
         @SubscribeEvent
         public static void registerScreens(RegisterMenuScreensEvent event) {
             event.register(ModMenuTypes.CELESTALEE_FURNACE_MENU.get(), CelestaleeFurnaceScreen::new);
+            event.register(ModMenuTypes.HAMMER_OF_END_MENU.get(), HammerOfEndScreen::new);
         }
     }
     public static void setupTerraBlender() {

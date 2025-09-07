@@ -2,6 +2,7 @@ package net.eskimo.voiditemod.block.entity;
 
 import net.eskimo.voiditemod.item.ModItems;
 import net.eskimo.voiditemod.screen.custom.CelestaleeFurnaceMenu;
+import net.eskimo.voiditemod.screen.custom.HammerOfEndMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.nbt.CompoundTag;
@@ -23,7 +24,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.items.ItemStackHandler;
 import org.jetbrains.annotations.Nullable;
 
-public class CelestaleeFurnaceBlockEntity extends BlockEntity implements MenuProvider {
+public class HammerOfEndBlockEntity extends BlockEntity implements MenuProvider {
     public final ItemStackHandler itemHandler = new ItemStackHandler(2) {
         @Override
         protected void onContentsChanged(int slot) {
@@ -41,14 +42,14 @@ public class CelestaleeFurnaceBlockEntity extends BlockEntity implements MenuPro
     private int progress = 0;
     private int maxProgress = 144;
 
-    public CelestaleeFurnaceBlockEntity(BlockPos pos, BlockState blockState) {
-        super(ModBlockEntities.CELESTALEE_FURNACE_BE.get(), pos, blockState);
+    public HammerOfEndBlockEntity(BlockPos pos, BlockState blockState) {
+        super(ModBlockEntities.HAMMER_OF_END_BE.get(), pos, blockState);
         data = new ContainerData() {
             @Override
             public int get(int i) {
                 return switch (i) {
-                    case 0 -> CelestaleeFurnaceBlockEntity.this.progress;
-                    case 1 -> CelestaleeFurnaceBlockEntity.this.maxProgress;
+                    case 0 -> HammerOfEndBlockEntity.this.progress;
+                    case 1 -> HammerOfEndBlockEntity.this.maxProgress;
                     default -> 0;
                 };
             }
@@ -56,8 +57,8 @@ public class CelestaleeFurnaceBlockEntity extends BlockEntity implements MenuPro
             @Override
             public void set(int i, int value) {
                 switch (i) {
-                    case 0: CelestaleeFurnaceBlockEntity.this.progress = value;
-                    case 1: CelestaleeFurnaceBlockEntity.this.maxProgress = value;
+                    case 0: HammerOfEndBlockEntity.this.progress = value;
+                    case 1: HammerOfEndBlockEntity.this.maxProgress = value;
 
                 }
             }
@@ -71,12 +72,12 @@ public class CelestaleeFurnaceBlockEntity extends BlockEntity implements MenuPro
 
     @Override
     public Component getDisplayName() {
-        return Component.translatable("block.voiditemod.celestalee_furnace");
+        return Component.translatable("block.voiditemod.hammer_of_end");
     }
 
     @Override
     public @Nullable AbstractContainerMenu createMenu(int i, Inventory inventory, Player player) {
-        return new CelestaleeFurnaceMenu(i, inventory, this, this.data);
+        return new HammerOfEndMenu(i, inventory, this, this.data);
     }
 
     public void drops() {
@@ -91,8 +92,8 @@ public class CelestaleeFurnaceBlockEntity extends BlockEntity implements MenuPro
     @Override
     protected void saveAdditional(CompoundTag pTag, HolderLookup.Provider pRegistries) {
         pTag.put("inventory", itemHandler.serializeNBT(pRegistries));
-        pTag.putInt("celestalee_furnace.progress", progress);
-        pTag.putInt("celestalee_furnace.max_progress", maxProgress);
+        pTag.putInt("hammer_of_end.progress", progress);
+        pTag.putInt("hammer_of_end.max_progress", maxProgress);
 
         super.saveAdditional(pTag, pRegistries);
     }
@@ -102,8 +103,8 @@ public class CelestaleeFurnaceBlockEntity extends BlockEntity implements MenuPro
         super.loadAdditional(pTag, pRegistries);
 
         itemHandler.deserializeNBT(pRegistries, pTag.getCompound("inventory"));
-        progress = pTag.getInt("celestalee_furnace.progress");
-        maxProgress = pTag.getInt("celestalee_furnace.max_progress");
+        progress = pTag.getInt("hammer_of_end.progress");
+        maxProgress = pTag.getInt("hammer_of_end.max_progress");
     }
     public void tick(Level level, BlockPos blockPos, BlockState blockState) {
         if(hasRecipe()) {
@@ -120,7 +121,7 @@ public class CelestaleeFurnaceBlockEntity extends BlockEntity implements MenuPro
     }
 
     private void craftItem() {
-        ItemStack output = new ItemStack(ModItems.ANNEALED_VOIDITE_INGOT.get());
+        ItemStack output = new ItemStack(ModItems.VOIDITE_PLATE.get());
 
         itemHandler.extractItem(INPUT_SLOT, 1, false);
         itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(output.getItem(),
@@ -141,9 +142,9 @@ public class CelestaleeFurnaceBlockEntity extends BlockEntity implements MenuPro
     }
 
     private boolean hasRecipe() {
-        ItemStack output = new ItemStack(ModItems.ANNEALED_VOIDITE_INGOT.get());
+        ItemStack output = new ItemStack(ModItems.VOIDITE_PLATE.get());
 
-        return itemHandler.getStackInSlot(INPUT_SLOT).is(ModItems.VOIDITE_INGOT) &&
+        return itemHandler.getStackInSlot(INPUT_SLOT).is(ModItems.ANNEALED_VOIDITE_INGOT) &&
                 canInsertAmountIntoOutputSlot(output.getCount()) && canInsertItemIntoOutputSlot(output);
     }
 

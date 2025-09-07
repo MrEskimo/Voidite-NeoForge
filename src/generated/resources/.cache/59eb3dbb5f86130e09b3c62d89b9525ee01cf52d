@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-04T17:58:37.9538171	Loot Tables
+// 1.21.1	2025-09-07T17:21:21.0958481	Loot Tables
 ca875cb82aac2d11f79bca096e43c653d0a489b9 data/voiditemod/loot_table/blocks/block_of_smile.json
 393ea87df00721c44d2e50e3c76052daf604abc9 data/voiditemod/loot_table/blocks/block_of_voidite.json
 ded6aec5b05cb171f9b9c850f6f03cefe77091d0 data/voiditemod/loot_table/blocks/celestalee_furnace.json
@@ -12,6 +12,7 @@ ded6aec5b05cb171f9b9c850f6f03cefe77091d0 data/voiditemod/loot_table/blocks/celes
 923a70a61d64475f74559dbabdfb931302c73cb6 data/voiditemod/loot_table/blocks/flowering_suncrown_grass.json
 55aaf5feb2536e860f4aad0d85174d0ef85d8fc2 data/voiditemod/loot_table/blocks/glowing_void_berry_bush.json
 d53f09aa29cbbdfc3f2a46d5dacd55cdc3643a1a data/voiditemod/loot_table/blocks/groutyou_bean.json
+d9ccca3e2a0c77bcad562fdd6f95a56f43a6fa39 data/voiditemod/loot_table/blocks/hammer_of_end.json
 c193011045c4708cf51304b7088fd234ae383f47 data/voiditemod/loot_table/blocks/packed_end_sludge.json
 8371fd3f64fcfabf3f5f45f9d31ca5112293abf5 data/voiditemod/loot_table/blocks/packed_end_sludge_slab.json
 149e44cf2a086c4951aa101846333a20afce9538 data/voiditemod/loot_table/blocks/packed_end_sludge_stairs.json
