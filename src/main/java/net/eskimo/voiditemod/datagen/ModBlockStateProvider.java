@@ -118,6 +118,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         //Celesta lee
         blockWithItem(ModBlocks.CELESTALEE);
+        blockWithItem(ModBlocks.DHADE);
         //
 
     }

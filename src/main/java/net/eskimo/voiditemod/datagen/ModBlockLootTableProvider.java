@@ -122,6 +122,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         this.add(ModBlocks.SINCEHE_POTATO_CROP.get(), this.createCropDrops(ModBlocks.SINCEHE_POTATO_CROP.get(),
                ModItems.SINCEHE_POTATO.get(), ModItems.SINCEHE_POTATO_SEEDS.get(), lootItemConditionBuilder));
         dropOther(ModBlocks.CELESTALEE.get(), Items.IRON_BLOCK);
+        dropOther(ModBlocks.DHADE.get(), Items.IRON_BLOCK);
      }
 
     @Override

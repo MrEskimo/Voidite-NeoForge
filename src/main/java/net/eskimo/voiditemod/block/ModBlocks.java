@@ -4,15 +4,11 @@ import net.eskimo.voiditemod.VoiditeMod;
 import net.eskimo.voiditemod.block.custom.*;
 import net.eskimo.voiditemod.item.ModItems;
 import net.eskimo.voiditemod.worldgen.tree.ModTreeGrowers;
-import net.minecraft.core.BlockPos;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.util.ColorRGBA;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.neoforged.bus.api.IEventBus;
@@ -154,8 +150,10 @@ public class ModBlocks {
     public static final DeferredBlock<Block> SMOOTH_SUNCROWN_SANDSTONE = registerBlock("smooth_suncrown_sandstone",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SMOOTH_SANDSTONE)));
 
-    //IMPORTANT Celesta lee
+    //IMPORTANT Celesta lee DHADE
     public static final DeferredBlock<CelestaleeFurnaceBlock> CELESTALEE = registerBlock("celestalee_furnace",
+            () -> new CelestaleeFurnaceBlock(BlockBehaviour.Properties.of()));
+    public static final DeferredBlock<CelestaleeFurnaceBlock> DHADE = registerBlock("hammer_of_end",
             () -> new CelestaleeFurnaceBlock(BlockBehaviour.Properties.of()));
     //
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

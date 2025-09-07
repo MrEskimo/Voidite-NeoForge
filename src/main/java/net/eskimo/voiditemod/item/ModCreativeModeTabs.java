@@ -54,6 +54,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.SINCEHE_POTATO_SEEDS.get());
 
                         output.accept(ModBlocks.CELESTALEE.get());
+                        output.accept(ModBlocks.DHADE.get());
                         output.accept(ModItems.FORGE_SCALES.get());
 
                         output.accept(ModItems.ANNEALED_VOIDITE_INGOT.get());
