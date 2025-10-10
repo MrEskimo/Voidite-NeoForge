@@ -1,6 +1,8 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "all": "voiditemod:block/celestalee_furnace"
+    "bottom": "voiditemod:block/celestalee_furnace_bottom",
+    "side": "voiditemod:block/celestalee_furnace",
+    "top": "voiditemod:block/celestalee_furnace_top"
   }
 }

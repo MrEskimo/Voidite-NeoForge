@@ -116,11 +116,24 @@ public class ModBlockStateProvider extends BlockStateProvider {
         slabBlock(ModBlocks.SUNCROWN_SANDSTONE_SLAB.get(), blockTexture(ModBlocks.SUNCROWN_SANDSTONE.get()), blockTexture(ModBlocks.SUNCROWN_SANDSTONE.get()));
         blockItem(ModBlocks.SUNCROWN_SANDSTONE_SLAB);
 
-        //Celesta lee
-        blockWithItem(ModBlocks.CELESTALEE);
-        blockWithItem(ModBlocks.DHADE);
-        //
+        //Celestalee
+        //blockWithItem(ModBlocks.CELESTALEE);
 
+        simpleBlockWithItem(ModBlocks.CELESTALEE.get(), models().cubeBottomTop(
+                "celestalee_furnace",
+                modLoc("block/celestalee_furnace"),
+                modLoc("block/celestalee_furnace_bottom"),
+                modLoc("block/celestalee_furnace_top")
+        ));
+        //blockWithItem(ModBlocks.DHADE);
+
+        simpleBlockWithItem(ModBlocks.DHADE.get(), models().cubeBottomTop(
+                "hammer_of_end",
+                modLoc("block/hammer_of_end"),
+                modLoc("block/hammer_of_end_bottom"),
+                modLoc("block/hammer_of_end_top")
+        ));
+        //
     }
 
     private void saplingBlock(DeferredBlock<Block> blockRegistryObject) {

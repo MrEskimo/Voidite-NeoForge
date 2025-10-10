@@ -25,18 +25,19 @@ import net.neoforged.neoforge.items.ItemStackHandler;
 import org.jetbrains.annotations.Nullable;
 
 public class HammerOfEndBlockEntity extends BlockEntity implements MenuProvider {
-    public final ItemStackHandler itemHandler = new ItemStackHandler(2) {
+    public final ItemStackHandler itemHandler = new ItemStackHandler(3) {
         @Override
         protected void onContentsChanged(int slot) {
             setChanged();
             if(!level.isClientSide()) {
-                level.sendBlockUpdated(getBlockPos(), getBlockState(), getBlockState(), 3);
+                level.sendBlockUpdated(getBlockPos(), getBlockState(), getBlockState(), 4);
             }
         }
     };
 
     private static final int INPUT_SLOT = 0;
     private static final int OUTPUT_SLOT = 1;
+    private static final int OUTPUT_SLOT_2 = 2;
 
     protected final ContainerData data;
     private int progress = 0;
@@ -65,7 +66,7 @@ public class HammerOfEndBlockEntity extends BlockEntity implements MenuProvider 
 
             @Override
             public int getCount() {
-                return 2;
+                return 3;
             }
         };
     }
@@ -126,6 +127,10 @@ public class HammerOfEndBlockEntity extends BlockEntity implements MenuProvider 
         itemHandler.extractItem(INPUT_SLOT, 1, false);
         itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(output.getItem(),
                 itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + output.getCount()));
+        output = new ItemStack(ModItems.FORGE_SCALES.get());
+
+        itemHandler.setStackInSlot(OUTPUT_SLOT_2, new ItemStack(output.getItem(),
+                itemHandler.getStackInSlot(OUTPUT_SLOT_2).getCount() + output.getCount()));
     }
 
     private void resetProgress() {
