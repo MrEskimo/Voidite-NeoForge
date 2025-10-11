@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "voiditemod:block/smooth_suncrown_sandstone",
+    "side": "voiditemod:block/smooth_suncrown_sandstone",
+    "top": "voiditemod:block/smooth_suncrown_sandstone"
+  }
+}

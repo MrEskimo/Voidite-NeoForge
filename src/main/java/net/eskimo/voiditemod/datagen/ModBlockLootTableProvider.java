@@ -51,8 +51,12 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.SUNCROWN_SAND.get());
         dropSelf(ModBlocks.SUNCROWN_SANDSTONE.get());
         dropSelf(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE.get());
+        dropSelf(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE_STAIRS.get());
 
         dropSelf(ModBlocks.GROUTYOU_BEAN.get());
+
+        this.add(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE_SLAB.get()));
 
         this.add(ModBlocks.SUNCROWN_OAK_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.SUNCROWN_OAK_SLAB.get()));

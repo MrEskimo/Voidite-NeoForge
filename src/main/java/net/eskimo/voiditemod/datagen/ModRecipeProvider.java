@@ -124,6 +124,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         slab(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SUNCROWN_SANDSTONE_SLAB.get(), ModBlocks.SUNCROWN_SANDSTONE.get());
         stairBuilder(ModBlocks.SUNCROWN_SANDSTONE_STAIRS.get(), Ingredient.of(ModBlocks.SUNCROWN_SANDSTONE.get())).group("suncrown_sandstone")
-                .unlockedBy(getHasName(ModBlocks.SUNCROWN_SANDSTONE.get()), has(ModBlocks.SUNCROWN_SANDSTONE.get())).save(pRecipeOutput);
+                .unlockedBy(getHasName(ModBlocks.SUNCROWN_SANDSTONE.get()), has(ModBlocks.SUNCROWN_SANDSTONE.get())).save(pRecipeOutput)
+        ;
+        slab(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_SUNCROWN_SANDSTONE_SLAB.get(), ModBlocks.SMOOTH_SUNCROWN_SANDSTONE.get());
+        stairBuilder(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE_STAIRS.get(), Ingredient.of(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE.get())).group("smooth_suncrown_sandstone")
+                .unlockedBy(getHasName(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE.get()), has(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE.get())).save(pRecipeOutput);
+
+
     }
 }

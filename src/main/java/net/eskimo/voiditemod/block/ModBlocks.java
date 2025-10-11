@@ -149,6 +149,11 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> SMOOTH_SUNCROWN_SANDSTONE = registerBlock("smooth_suncrown_sandstone",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SMOOTH_SANDSTONE)));
+    public static final DeferredBlock<StairBlock> SMOOTH_SUNCROWN_SANDSTONE_STAIRS = registerBlock("smooth_suncrown_sandstone_stairs",
+            () -> new StairBlock(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.SANDSTONE_STAIRS)));
+    public static final DeferredBlock<SlabBlock> SMOOTH_SUNCROWN_SANDSTONE_SLAB = registerBlock("smooth_suncrown_sandstone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SMOOTH_SANDSTONE_SLAB)));
 
     //IMPORTANT Celesta lee DHADE
     public static final DeferredBlock<CelestaleeFurnaceBlock> CELESTALEE = registerBlock("celestalee_furnace",

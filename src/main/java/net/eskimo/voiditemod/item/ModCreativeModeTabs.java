@@ -84,6 +84,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.SUNCROWN_SANDSTONE_SLAB.get());
 
                         output.accept(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE.get());
+                        output.accept(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE_STAIRS.get());
+                        output.accept(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE_SLAB.get());
 
 
                     }).build());

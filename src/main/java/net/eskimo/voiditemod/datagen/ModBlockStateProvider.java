@@ -8,10 +8,7 @@ import net.eskimo.voiditemod.block.custom.SincehePotatoCropBlock;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.CropBlock;
-import net.minecraft.world.level.block.SweetBerryBushBlock;
-import net.minecraft.world.level.block.TallGrassBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
@@ -108,7 +105,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
         leavesBlock(ModBlocks.SUNCROWN_OAK_LEAVES);
 
         blockWithItem(ModBlocks.SUNCROWN_SAND);
+
         blockWithItem(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE);
+        stairsBlock(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE_STAIRS.get(), blockTexture(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE.get()));
+        blockItem(ModBlocks.SUNCROWN_SANDSTONE_STAIRS);
+        slabBlock(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE_SLAB.get(), blockTexture(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE.get()), blockTexture(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE.get()));
+        blockItem(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE_SLAB);
 
         blockWithItem(ModBlocks.SUNCROWN_SANDSTONE);
         stairsBlock(ModBlocks.SUNCROWN_SANDSTONE_STAIRS.get(), blockTexture(ModBlocks.SUNCROWN_SANDSTONE.get()));

@@ -2,8 +2,11 @@ package net.eskimo.voiditemod.block.entity;
 
 import net.eskimo.voiditemod.item.ModItems;
 import net.eskimo.voiditemod.screen.custom.CelestaleeFurnaceMenu;
+import net.minecraft.client.particle.Particle;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.particles.ParticleType;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.protocol.Packet;
