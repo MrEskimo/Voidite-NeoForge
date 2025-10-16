@@ -1,5 +1,6 @@
 package net.eskimo.voiditemod.block.entity;
 
+import net.eskimo.voiditemod.block.custom.CelestaleeFurnaceBlock;
 import net.eskimo.voiditemod.item.ModItems;
 import net.eskimo.voiditemod.screen.custom.CelestaleeFurnaceMenu;
 import net.minecraft.client.particle.Particle;
@@ -12,6 +13,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.Containers;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.SimpleContainer;
@@ -21,7 +23,9 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.CampfireBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.entity.CampfireBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.items.ItemStackHandler;
 import org.jetbrains.annotations.Nullable;
@@ -89,6 +93,15 @@ public class CelestaleeFurnaceBlockEntity extends BlockEntity implements MenuPro
         }
 
         Containers.dropContents(this.level, this.worldPosition, inventory);
+    }
+
+    public static void particleTick(Level level, BlockPos pos, BlockState state, CelestaleeFurnaceBlockEntity blockEntity) {
+        RandomSource randomsource = level.random;
+        if (randomsource.nextFloat() < 0.11F) {
+            for (int i = 0; i < randomsource.nextInt(2) + 2; i++) {
+                CelestaleeFurnaceBlock.makeParticles(level, pos, state.getValue(CelestaleeFurnaceBlock.SIGNAL_FIRE), false);
+            }
+        }
     }
 
     @Override
