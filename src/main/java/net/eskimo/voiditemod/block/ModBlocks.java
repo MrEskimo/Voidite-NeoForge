@@ -7,7 +7,6 @@ import net.eskimo.voiditemod.worldgen.tree.ModTreeGrowers;
 import net.minecraft.util.ColorRGBA;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.enchantment.effects.SpawnParticlesEffect;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
@@ -162,6 +161,7 @@ public class ModBlocks {
     public static final DeferredBlock<HammerOfEndBlock> DHADE = registerBlock("hammer_of_end",
             () -> new HammerOfEndBlock(BlockBehaviour.Properties.of()));
     //
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

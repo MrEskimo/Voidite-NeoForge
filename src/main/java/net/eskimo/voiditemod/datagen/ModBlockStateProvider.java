@@ -108,7 +108,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         blockWithItem(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE);
         stairsBlock(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE_STAIRS.get(), blockTexture(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE.get()));
-        blockItem(ModBlocks.SUNCROWN_SANDSTONE_STAIRS);
+        blockItem(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE_STAIRS);
         slabBlock(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE_SLAB.get(), blockTexture(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE.get()), blockTexture(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE.get()));
         blockItem(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE_SLAB);
 
