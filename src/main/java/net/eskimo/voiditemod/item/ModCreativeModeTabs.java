@@ -87,6 +87,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE_STAIRS.get());
                         output.accept(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE_SLAB.get());
 
+                        output.accept(ModBlocks.SAGE_FUNGUS.get());
+                        output.accept(ModBlocks.SAGE_WART_BLOCK.get());
+                        output.accept(ModBlocks.SAGE_STEM.get());
+
 
                     }).build());
 

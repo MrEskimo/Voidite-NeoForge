@@ -1,4 +1,4 @@
-// 1.21.1	2025-09-03T18:13:37.2852053	Registries
+// 1.21.1	2026-01-18T18:00:08.4725529	Registries
 c9642dc97e98fd60871ae0fc83657c67367e8f9a data/voiditemod/neoforge/biome_modifier/add_end_voidite_ore.json
 5f7a3a71878b2fb5ce0e6599f5ee4e3232e68e41 data/voiditemod/worldgen/biome/suncrown_forest.json
 fb4c7a575fb704bec4bdc2139f5382c9319fb644 data/voiditemod/worldgen/biome/suncrown_plains.json
@@ -6,6 +6,7 @@ c1bb90459e966c1e1cc844d9073f408c5472b912 data/voiditemod/worldgen/configured_fea
 ed1295cf368060cd1d843b9ce2ce7e948b3cd21b data/voiditemod/worldgen/configured_feature/end_stone_disk.json
 8196ccca00fc691012fc2800a166868c3a94c75e data/voiditemod/worldgen/configured_feature/end_voidite_ore.json
 2dbe6d63991da3b530708d91a7a4956373f5866a data/voiditemod/worldgen/configured_feature/glowing_void_berry_bush.json
+09d2e12701ee9c4a28bb18acef70893d0ad75124 data/voiditemod/worldgen/configured_feature/green.json
 e2b6e0fe8b639337daa006527c677168e9f8f44d data/voiditemod/worldgen/configured_feature/sand_blob.json
 01ac1c118ff477001ac7b87f0a045679bdda8ea0 data/voiditemod/worldgen/configured_feature/short_sc_grass_patch.json
 707efc93ad3263eeb6f3f807b07e71aa551c3fff data/voiditemod/worldgen/configured_feature/sincehe_potato.json

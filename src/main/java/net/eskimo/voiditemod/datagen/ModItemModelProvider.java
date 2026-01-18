@@ -38,6 +38,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         wallItem(ModBlocks.PACKED_END_SLUDGE_WALL, ModBlocks.PACKED_END_SLUDGE);
 
         saplingItem(ModBlocks.SUNCROWN_OAK_SAPLING);
+        saplingItem(ModBlocks.SAGE_FUNGUS);
 
         buttonItem(ModBlocks.SUNCROWN_OAK_BUTTON, ModBlocks.SUNCROWN_OAK_PLANKS);
         fenceItem(ModBlocks.SUNCROWN_OAK_FENCE, ModBlocks.SUNCROWN_OAK_PLANKS);

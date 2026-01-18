@@ -1,4 +1,4 @@
-// 1.21.1	2025-10-11T12:06:33.6532939	Loot Tables
+// 1.21.1	2026-01-18T17:58:31.5139757	Loot Tables
 ca875cb82aac2d11f79bca096e43c653d0a489b9 data/voiditemod/loot_table/blocks/block_of_smile.json
 393ea87df00721c44d2e50e3c76052daf604abc9 data/voiditemod/loot_table/blocks/block_of_voidite.json
 ded6aec5b05cb171f9b9c850f6f03cefe77091d0 data/voiditemod/loot_table/blocks/celestalee_furnace.json
@@ -18,6 +18,9 @@ c193011045c4708cf51304b7088fd234ae383f47 data/voiditemod/loot_table/blocks/packe
 149e44cf2a086c4951aa101846333a20afce9538 data/voiditemod/loot_table/blocks/packed_end_sludge_stairs.json
 9f062516932e2e8cff1cb854969740acc74472fd data/voiditemod/loot_table/blocks/packed_end_sludge_wall.json
 14fd28ed6d4852a01b674b9741428d619aca8cf0 data/voiditemod/loot_table/blocks/purpur_light.json
+ef9e7cd76c33a9cdbca1aa20700572bdf4f54ba8 data/voiditemod/loot_table/blocks/sage_fungus.json
+e4e79ef353c5c2fbe9387772547a1de539f92b09 data/voiditemod/loot_table/blocks/sage_stem.json
+0aa4a41e2f73029489d48ded100c1026ddfa2938 data/voiditemod/loot_table/blocks/sage_wart_block.json
 832d9bedd128857ae1e0784ca027036553b768c5 data/voiditemod/loot_table/blocks/short_suncrown_grass.json
 7fc4f16b3863f33377704f4f17919a9682bd52a9 data/voiditemod/loot_table/blocks/sincehe_potato_crop.json
 6a4d11c92640dcc3b048a968c709afc12127b6f2 data/voiditemod/loot_table/blocks/smooth_suncrown_sandstone.json

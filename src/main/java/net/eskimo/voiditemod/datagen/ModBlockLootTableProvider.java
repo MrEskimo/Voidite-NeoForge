@@ -48,6 +48,9 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.STRIPPED_SUNCROWN_OAK_WOOD.get());
         dropSelf(ModBlocks.SUNCROWN_OAK_WOOD.get());
         dropSelf(ModBlocks.SUNCROWN_OAK_SAPLING.get());
+        dropSelf(ModBlocks.SAGE_FUNGUS.get());
+        dropSelf(ModBlocks.SAGE_WART_BLOCK.get());
+        dropSelf(ModBlocks.SAGE_STEM.get());
         dropSelf(ModBlocks.SUNCROWN_SAND.get());
         dropSelf(ModBlocks.SUNCROWN_SANDSTONE.get());
         dropSelf(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE.get());

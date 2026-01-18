@@ -110,6 +110,13 @@ public class ModBlocks {
     public static final DeferredBlock<Block> SUNCROWN_OAK_SAPLING = registerBlock("suncrown_oak_sapling",
             () -> new ModSaplingBlock(ModTreeGrowers.SUNCROWN_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING), ModBlocks.SUNCROWN_TURF::get));
 
+    public static final DeferredBlock<Block> SAGE_FUNGUS = registerBlock("sage_fungus",
+            () -> new ModSaplingBlock(ModTreeGrowers.GREEN_FUNGUS, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING), ModBlocks.SUNCROWN_TURF::get));
+    public static final DeferredBlock<Block> SAGE_WART_BLOCK = registerBlock("sage_wart_block",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_WART_BLOCK)));
+    public static final DeferredBlock<Block> SAGE_STEM = registerBlock("sage_stem",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.MUSHROOM_STEM)));
+
     public static final DeferredBlock<SlabBlock> SUNCROWN_OAK_SLAB = registerBlock("suncrown_oak_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SLAB)));
     public static final DeferredBlock<StairBlock> SUNCROWN_OAK_STAIRS = registerBlock("suncrown_oak_stairs",

@@ -18,6 +18,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
+import net.minecraft.world.level.levelgen.feature.HugeFungusConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.*;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
@@ -41,10 +42,16 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> SUNCROWN_SAND_BLOB = registerKey("sand_blob");
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> SUNCROWN_OAK_KEY = registerKey("suncrown_oak");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> GREEN_WART_KEY = registerKey("green");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest endReplaceables = new BlockMatchTest(Blocks.END_STONE);
         var configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
+        BlockPredicate blockpredicate = BlockPredicate.matchesBlocks(
+                Blocks.END_STONE,
+                ModBlocks.SUNCROWN_TURF.get()
+        );
+
 
         register(context, END_VOIDITE_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables, ModBlocks.VOIDITE_ORE.get().defaultBlockState(), 6));
 
@@ -70,13 +77,13 @@ public class ModConfiguredFeatures {
         register(context, END_SLUDGE_DISK_KEY, Feature.DISK,
                 new DiskConfiguration(
                         RuleBasedBlockStateProvider.simple(ModBlocks.END_SLUDGE.get()),
-                        BlockPredicate.matchesBlocks(List.of(Blocks.END_STONE ,ModBlocks.SUNCROWN_TURF.get())),
+                        blockpredicate,
                         UniformInt.of(2, 6),2));
 
         register(context, END_STONE_DISK_KEY, Feature.DISK,
                 new DiskConfiguration(
                         RuleBasedBlockStateProvider.simple(Blocks.END_STONE),
-                        BlockPredicate.matchesBlocks(List.of(Blocks.END_STONE ,ModBlocks.SUNCROWN_TURF.get())),
+                        blockpredicate,
                         UniformInt.of(2,3),1));
 
 
@@ -89,6 +96,17 @@ public class ModConfiguredFeatures {
                 new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(2), 2),
 
                 new TwoLayersFeatureSize(1, 0, 2)).dirt(BlockStateProvider.simple(Blocks.END_STONE)).build());
+
+        register(context, GREEN_WART_KEY, Feature.HUGE_FUNGUS, new HugeFungusConfiguration( //Make a custom configurator
+                ModBlocks.SUNCROWN_TURF.get().defaultBlockState(), //Plant on
+                ModBlocks.SAGE_STEM.get().defaultBlockState(), //Stem
+                ModBlocks.SAGE_WART_BLOCK.get().defaultBlockState(), //Cap
+                ModBlocks.BLOCK_OF_VOIDITE.get().defaultBlockState(), //Fruit
+                blockpredicate, //Can replace
+                false
+
+        ));
+
 
         register(context, SUNCROWN_SAND_BLOB, Feature.REPLACE_BLOBS,
                 new ReplaceSphereConfiguration(Blocks.END_STONE.defaultBlockState(),

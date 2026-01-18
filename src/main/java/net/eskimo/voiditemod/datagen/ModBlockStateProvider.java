@@ -136,6 +136,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 modLoc("block/hammer_of_end_top")
         ));
         //
+
+        saplingBlock(ModBlocks.SAGE_FUNGUS);
+        blockWithItem(ModBlocks.SAGE_WART_BLOCK);
+        blockWithItem(ModBlocks.SAGE_STEM);
     }
 
     private void saplingBlock(DeferredBlock<Block> blockRegistryObject) {
