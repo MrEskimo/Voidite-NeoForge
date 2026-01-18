@@ -1,4 +1,4 @@
-// 1.21.1	2025-10-11T12:13:12.8554628	Block States: voiditemod
+// 1.21.1	2026-01-07T09:49:58.5542471	Block States: voiditemod
 029193c9894800e4d6566456a7430eefaeaaf020 assets/voiditemod/blockstates/amogus.json
 356cdaf115aa68223c6ed335066dd7e83cd98569 assets/voiditemod/blockstates/block_of_smile.json
 29b9839f7799d821b7a6259dd3f76938a48da45b assets/voiditemod/blockstates/block_of_voidite.json
@@ -155,6 +155,7 @@ ca73b3710afeef11e49838734de50ccba8d78bcb assets/voiditemod/models/item/packed_en
 1c4a31ccebf9fd52d02ef38dac9083ce28f95f48 assets/voiditemod/models/item/purpur_light.json
 108c73bcf6f68fdf13bd7f38a403e6f155e41904 assets/voiditemod/models/item/smooth_suncrown_sandstone.json
 50418c22a7d4b77a6fef49ac6bfb18ee519fd26f assets/voiditemod/models/item/smooth_suncrown_sandstone_slab.json
+15806ba1d7fabebdcc9b5e058ad30e08e9baf436 assets/voiditemod/models/item/smooth_suncrown_sandstone_stairs.json
 ca77dccdb7cf1fd8b0eac74b036bff1f6d9b6ec2 assets/voiditemod/models/item/stripped_suncrown_oak_log.json
 a9ec67003b613e21ff0fe0ddd7b896294ea3ecfc assets/voiditemod/models/item/stripped_suncrown_oak_wood.json
 4578b7a448a3cb613eddfb7cb0dbefb737cbf614 assets/voiditemod/models/item/suncrown_oak_fence_gate.json

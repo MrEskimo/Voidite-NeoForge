@@ -1,0 +1,9 @@
+{
+  "type": "voiditemod:celestalee_furnace",
+  "ingredient": {
+    "item": "voiditemod:voidite_ingot"
+  },
+  "result": {
+    "id": "voiditemod:annealed_voidite_ingot"
+  }
+}

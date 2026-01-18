@@ -4,6 +4,7 @@ import net.eskimo.voiditemod.block.ModBlocks;
 import net.eskimo.voiditemod.block.entity.ModBlockEntities;
 import net.eskimo.voiditemod.item.ModCreativeModeTabs;
 import net.eskimo.voiditemod.item.ModItems;
+import net.eskimo.voiditemod.recipe.ModRecipes;
 import net.eskimo.voiditemod.screen.ModMenuTypes;
 import net.eskimo.voiditemod.screen.custom.CelestaleeFurnaceScreen;
 import net.eskimo.voiditemod.screen.custom.HammerOfEndMenu;
@@ -57,6 +58,7 @@ public class VoiditeMod {
         ModBlockEntities.register(modEventBus);
 
         ModMenuTypes.register(modEventBus);
+        ModRecipes.register(modEventBus);
 
         ModTerrablender.registerBiomes();
 
