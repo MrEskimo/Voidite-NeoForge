@@ -91,6 +91,25 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.SAGE_WART_BLOCK.get());
                         output.accept(ModBlocks.SAGE_STEM.get());
 
+                        output.accept(ModBlocks.SAGE_PLANKS.get());
+                        output.accept(ModBlocks.SAGE_SLAB.get());
+                        output.accept(ModBlocks.SAGE_STAIRS.get());
+
+                        output.accept(ModBlocks.SAGE_BUTTON.get());
+                        output.accept(ModBlocks.SAGE_PRESSURE_PLATE.get());
+                        output.accept(ModBlocks.SAGE_FENCE.get());
+                        output.accept(ModBlocks.SAGE_FENCE_GATE.get());
+
+                        output.accept(ModBlocks.SAGE_DOOR.get());
+                        output.accept(ModBlocks.SAGE_TRAPDOOR.get());
+
+                        output.accept(ModBlocks.HARD_SAGE_FRUIT.get());
+                        output.accept(ModBlocks.TREATED_SAGE_FRUIT.get());
+
+                        output.accept(ModBlocks.SAGE_MOSS.get());
+                        output.accept(ModBlocks.SAGE_GRASS.get());
+                        output.accept(ModBlocks.SAGE_BLOOM.get());
+
 
                     }).build());
 

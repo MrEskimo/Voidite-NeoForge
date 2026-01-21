@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-18T17:44:17.7097557	Item Models: voiditemod
+// 1.21.1	2026-01-21T17:22:10.4350728	Item Models: voiditemod
 0ee4270fb86078bb12d6add1ce59066486102eee assets/voiditemod/models/item/annealed_voidite_ingot.json
 3ac11ab1f6f6b07a54611640dcafa4ded9523c20 assets/voiditemod/models/item/annealed_voidite_plate.json
 e5b7839248e54b644201d25537e2655a5b80d675 assets/voiditemod/models/item/end_sludge_bricks_wall.json
@@ -7,7 +7,12 @@ f285fdbb1982fe0ce3e4c227c861a8098e750436 assets/voiditemod/models/item/forge_sca
 57d3d1c6a53506f6731b348154ea35a3b9e80ea3 assets/voiditemod/models/item/glowing_void_berries.json
 6742f5ef44cc161ef5c50f5a525842635af6dfbc assets/voiditemod/models/item/packed_end_sludge_wall.json
 3b0ea87308bd7f888ac67376b1a129b7d61d3063 assets/voiditemod/models/item/raw_voidite.json
+15a7a5479189e1033f417bc00f2fbd5fa06618f8 assets/voiditemod/models/item/sage_bloom.json
+709d929eedfb1f84ed87f51e6c47ece12fb22674 assets/voiditemod/models/item/sage_button.json
+ad75335c6efcb0b85619629c47bae390d372e024 assets/voiditemod/models/item/sage_door.json
+0e1e1dcafc058cee508212112187bad0c4cec18f assets/voiditemod/models/item/sage_fence.json
 3a074149ebe12f2487fdf8576f3fe2ec2d90cf03 assets/voiditemod/models/item/sage_fungus.json
+51cd1444a67cad52545bbfe9c328ab172143ef73 assets/voiditemod/models/item/sage_grass.json
 7b4bf47c18fc871a7117653c4898eb9fdb9dc18c assets/voiditemod/models/item/short_suncrown_grass.json
 1526a7e093e94fc492b9d5afc7cda2eb3134f78b assets/voiditemod/models/item/sincehe_potato.json
 507280d5a18354bacc58f73d016f1be1a524fcfc assets/voiditemod/models/item/sincehe_potato_seeds.json

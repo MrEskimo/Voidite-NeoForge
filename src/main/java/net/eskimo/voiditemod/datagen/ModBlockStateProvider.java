@@ -10,6 +10,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
+import net.neoforged.neoforge.client.model.generators.BlockModelBuilder;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
@@ -82,6 +83,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         tallGrassBlock(ModBlocks.SHORT_SUNCROWN_GRASS);
         tallGrassBlock(ModBlocks.FLOWERING_SUNCROWN_GRASS);
 
+        tallGrassBlock(ModBlocks.SAGE_GRASS);
+        tallGrassBlock(ModBlocks.SAGE_BLOOM);
+
         axisBlock(ModBlocks.END_STONE_BRICK_PILLAR.get(), modLoc("block/end_stone_brick_pillar_side"), modLoc("block/end_stone_brick_pillar_end"));
         blockItem(ModBlocks.END_STONE_BRICK_PILLAR);
 
@@ -140,6 +144,34 @@ public class ModBlockStateProvider extends BlockStateProvider {
         saplingBlock(ModBlocks.SAGE_FUNGUS);
         blockWithItem(ModBlocks.SAGE_WART_BLOCK);
         blockWithItem(ModBlocks.SAGE_STEM);
+
+        blockWithItem(ModBlocks.SAGE_PLANKS);
+
+        stairsBlock(ModBlocks.SAGE_STAIRS.get(), blockTexture(ModBlocks.SAGE_PLANKS.get()));
+        blockItem(ModBlocks.SAGE_STAIRS);
+
+        slabBlock(ModBlocks.SAGE_SLAB.get(), blockTexture(ModBlocks.SAGE_PLANKS.get()), blockTexture(ModBlocks.SAGE_PLANKS.get()));
+        blockItem(ModBlocks.SAGE_SLAB);
+
+        blockItem(ModBlocks.SAGE_PRESSURE_PLATE);
+        blockItem(ModBlocks.SAGE_FENCE);
+        blockItem(ModBlocks.SAGE_FENCE_GATE);
+
+        buttonBlock(ModBlocks.SAGE_BUTTON.get(), blockTexture(ModBlocks.SAGE_PLANKS.get()));
+        pressurePlateBlock(ModBlocks.SAGE_PRESSURE_PLATE.get(), blockTexture(ModBlocks.SAGE_PLANKS.get()));
+
+        fenceBlock(ModBlocks.SAGE_FENCE.get(), blockTexture(ModBlocks.SAGE_PLANKS.get()));
+        fenceGateBlock(ModBlocks.SAGE_FENCE_GATE.get(), blockTexture(ModBlocks.SAGE_PLANKS.get()));
+
+        doorBlockWithRenderType(ModBlocks.SAGE_DOOR.get(), modLoc("block/sage_door_bottom"), modLoc("block/sage_door_top"), "cutout");
+        trapdoorBlockWithRenderType(ModBlocks.SAGE_TRAPDOOR.get(), modLoc("block/sage_trapdoor"), true, "cutout");
+        blockItem(ModBlocks.SAGE_TRAPDOOR, "_bottom");
+
+        blockWithItem(ModBlocks.HARD_SAGE_FRUIT);
+        blockWithItem(ModBlocks.TREATED_SAGE_FRUIT);
+
+        blockWithItem(ModBlocks.SAGE_MOSS);
+
     }
 
     private void saplingBlock(DeferredBlock<Block> blockRegistryObject) {

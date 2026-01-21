@@ -1,0 +1,27 @@
+{
+  "values": [
+    "voiditemod:suncrown_oak_log",
+    "voiditemod:stripped_suncrown_oak_log",
+    "voiditemod:suncrown_oak_wood",
+    "voiditemod:stripped_suncrown_oak_wood",
+    "voiditemod:suncrown_oak_planks",
+    "voiditemod:suncrown_oak_slab",
+    "voiditemod:suncrown_oak_stairs",
+    "voiditemod:suncrown_oak_button",
+    "voiditemod:suncrown_oak_pressure_plate",
+    "voiditemod:suncrown_oak_fence",
+    "voiditemod:suncrown_oak_fence_gate",
+    "voiditemod:suncrown_oak_trapdoor",
+    "voiditemod:suncrown_oak_door",
+    "voiditemod:sage_wart_block",
+    "voiditemod:sage_planks",
+    "voiditemod:sage_slab",
+    "voiditemod:sage_stairs",
+    "voiditemod:sage_button",
+    "voiditemod:sage_pressure_plate",
+    "voiditemod:sage_fence",
+    "voiditemod:sage_fence_gate",
+    "voiditemod:sage_trapdoor",
+    "voiditemod:sage_door"
+  ]
+}

@@ -130,6 +130,34 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         stairBuilder(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE_STAIRS.get(), Ingredient.of(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE.get())).group("smooth_suncrown_sandstone")
                 .unlockedBy(getHasName(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE.get()), has(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE.get())).save(pRecipeOutput);
 
+        slab(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SAGE_SLAB.get(), ModBlocks.SAGE_PLANKS.get());
+        stairBuilder(ModBlocks.SAGE_STAIRS.get(), Ingredient.of(ModBlocks.SAGE_PLANKS.get())).group("sage")
+                .unlockedBy(getHasName(ModBlocks.SAGE_PLANKS.get()), has(ModBlocks.SAGE_PLANKS.get())).save(pRecipeOutput);
 
+        buttonBuilder(ModBlocks.SAGE_BUTTON.get(), Ingredient.of(ModBlocks.SAGE_PLANKS.get())).group("sage")
+                .unlockedBy(getHasName(ModBlocks.SAGE_PLANKS.get()), has(ModBlocks.SAGE_PLANKS.get())).save(pRecipeOutput);
+        pressurePlate(pRecipeOutput, ModBlocks.SAGE_PRESSURE_PLATE.get(), ModBlocks.SAGE_PLANKS.get());
+
+        fenceBuilder(ModBlocks.SAGE_FENCE.get(), Ingredient.of(ModBlocks.SAGE_PLANKS.get())).group("sage")
+                .unlockedBy(getHasName(ModBlocks.SAGE_PLANKS.get()), has(ModBlocks.SAGE_PLANKS.get())).save(pRecipeOutput);
+        fenceGateBuilder(ModBlocks.SAGE_FENCE_GATE.get(), Ingredient.of(ModBlocks.SAGE_PLANKS.get())).group("sage")
+                .unlockedBy(getHasName(ModBlocks.SAGE_PLANKS.get()),has(ModBlocks.SAGE_PLANKS.get())).save(pRecipeOutput);
+
+        doorBuilder(ModBlocks.SAGE_DOOR.get(), Ingredient.of(ModBlocks.SAGE_PLANKS.get())).group("sage")
+                .unlockedBy(getHasName(ModBlocks.SAGE_PLANKS.get()), has(ModBlocks.SAGE_PLANKS.get())).save(pRecipeOutput);
+        trapdoorBuilder(ModBlocks.SAGE_TRAPDOOR.get(), Ingredient.of(ModBlocks.SAGE_PLANKS.get())).group("sage")
+                .unlockedBy(getHasName(ModBlocks.SAGE_PLANKS.get()), has(ModBlocks.SAGE_PLANKS.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.REDSTONE, ModBlocks.DHADE.get())
+                .pattern("BCB")
+                .pattern("D D")
+                .pattern("BAB")
+                .define('A', Blocks.IRON_BLOCK)
+                .define('B', ModBlocks.TREATED_SAGE_FRUIT.get())
+                .define('C', Blocks.ANVIL)
+                .define('D', Items.STICK)
+                .unlockedBy(getHasName(ModBlocks.TREATED_SAGE_FRUIT.get()), has(ModBlocks.TREATED_SAGE_FRUIT.get())).save(pRecipeOutput);
+
+        twoByTwoPacker(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SAGE_PLANKS.get(), ModBlocks.SAGE_WART_BLOCK.get());
     }
 }

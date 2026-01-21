@@ -1,0 +1,9 @@
+{
+  "type": "voiditemod:celestalee_furnace",
+  "ingredient": {
+    "item": "voiditemod:hard_sage_fruit"
+  },
+  "result": {
+    "id": "voiditemod:treated_sage_fruit"
+  }
+}

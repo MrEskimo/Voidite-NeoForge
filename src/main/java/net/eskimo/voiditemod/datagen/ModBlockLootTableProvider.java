@@ -48,15 +48,36 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.STRIPPED_SUNCROWN_OAK_WOOD.get());
         dropSelf(ModBlocks.SUNCROWN_OAK_WOOD.get());
         dropSelf(ModBlocks.SUNCROWN_OAK_SAPLING.get());
-        dropSelf(ModBlocks.SAGE_FUNGUS.get());
-        dropSelf(ModBlocks.SAGE_WART_BLOCK.get());
-        dropSelf(ModBlocks.SAGE_STEM.get());
+
         dropSelf(ModBlocks.SUNCROWN_SAND.get());
         dropSelf(ModBlocks.SUNCROWN_SANDSTONE.get());
         dropSelf(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE.get());
         dropSelf(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE_STAIRS.get());
 
         dropSelf(ModBlocks.GROUTYOU_BEAN.get());
+
+        dropSelf(ModBlocks.HARD_SAGE_FRUIT.get());
+        dropSelf(ModBlocks.TREATED_SAGE_FRUIT.get());
+
+        dropSelf(ModBlocks.SAGE_MOSS.get());
+
+        add(ModBlocks.SAGE_BLOOM.get(),
+                createShearsOnlyDrop(ModBlocks.SAGE_BLOOM.get()));
+        add(ModBlocks.SAGE_GRASS.get(),
+                createShearsOnlyDrop(ModBlocks.SAGE_GRASS.get()));
+
+        dropSelf(ModBlocks.SAGE_FUNGUS.get());
+        dropSelf(ModBlocks.SAGE_WART_BLOCK.get());
+        dropSelf(ModBlocks.SAGE_STEM.get());
+        dropSelf(ModBlocks.SAGE_PLANKS.get());
+        dropSelf(ModBlocks.SAGE_BUTTON.get());
+        dropSelf(ModBlocks.SAGE_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.SAGE_FENCE.get());
+        dropSelf(ModBlocks.SAGE_FENCE_GATE.get());
+
+        dropSelf(ModBlocks.SAGE_TRAPDOOR.get());
+        this.add(ModBlocks.SAGE_DOOR.get(),
+                block -> createDoorTable(ModBlocks.SAGE_DOOR.get()));
 
         this.add(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE_SLAB.get()));
@@ -105,6 +126,10 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.SUNCROWN_SANDSTONE_STAIRS.get());
         this.add(ModBlocks.SUNCROWN_SANDSTONE_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.SUNCROWN_SANDSTONE_SLAB.get()));
+
+        dropSelf(ModBlocks.SAGE_STAIRS.get());
+        this.add(ModBlocks.SAGE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.SAGE_SLAB.get()));
 
         HolderLookup.RegistryLookup<Enchantment> registrylookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
 

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "voiditemod:block/sage_planks",
+    "side": "voiditemod:block/sage_planks",
+    "top": "voiditemod:block/sage_planks"
+  }
+}

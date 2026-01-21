@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "voiditemod:block/sage_slab"
+    },
+    "type=double": {
+      "model": "voiditemod:block/sage_planks"
+    },
+    "type=top": {
+      "model": "voiditemod:block/sage_slab_top"
+    }
+  }
+}

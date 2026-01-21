@@ -70,6 +70,25 @@
   "block.voiditemod.sage_fungus": "Sage Fungus",
   "block.voiditemod.sage_wart_block": "Sage Wart Block",
   "block.voiditemod.sage_stem": "Sage Stem",
+  "block.voiditemod.sage_planks": "Sage Planks",
+  "block.voiditemod.sage_slab": "Sage Slab",
+  "block.voiditemod.sage_stairs": "Sage Stairs",
+
+  "block.voiditemod.sage_button": "Sage Button",
+  "block.voiditemod.sage_pressure_plate": "Sage Pressure Plate",
+  "block.voiditemod.sage_fence": "Sage Fence",
+  "block.voiditemod.sage_fence_gate": "Sage Fence Gate",
+
+  "block.voiditemod.sage_door": "Sage Door",
+  "block.voiditemod.sage_trapdoor": "Sage Trapdoor",
+
+  "block.voiditemod.hard_sage_fruit": "Hard Sage Fruit",
+  "tooltip.voiditemod.hard_sage_fruit": "Might be useful if heated properly",
+  "block.voiditemod.treated_sage_fruit": "Treated Sage Fruit",
+
+  "block.voiditemod.sage_moss": "Sage Moss",
+  "block.voiditemod.sage_grass": "Sage Grass",
+  "block.voiditemod.sage_bloom": "Sage Bloom",
 
   "creativetab.voiditemod.end_stuff": "End Stuff"
 }

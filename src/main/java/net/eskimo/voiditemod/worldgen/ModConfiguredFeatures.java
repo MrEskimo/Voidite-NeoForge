@@ -35,6 +35,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> END_VOIDITE_ORE_KEY = registerKey("end_voidite_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> VOID_GRASS_PATCH_KEY = registerKey("void_grass_patch");
     public static final ResourceKey<ConfiguredFeature<?, ?>> SHORT_SC_GRASS_PATCH_KEY = registerKey("short_sc_grass_patch");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SAGE_GRASS_PATCH_KEY = registerKey("sage_grass_patch");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GLOWING_VOID_BERRY_BUSH_KEY = registerKey("glowing_void_berry_bush");
     public static final ResourceKey<ConfiguredFeature<?, ?>> END_SLUDGE_DISK_KEY = registerKey("end_sludge_disk");
     public static final ResourceKey<ConfiguredFeature<?, ?>> END_STONE_DISK_KEY = registerKey("end_stone_disk");
@@ -58,6 +59,11 @@ public class ModConfiguredFeatures {
         register(context, VOID_GRASS_PATCH_KEY, Feature.RANDOM_PATCH, grassPatch(new WeightedStateProvider(
                 SimpleWeightedRandomList.<BlockState>builder().add(ModBlocks.SUNCROWN_GRASS.get().defaultBlockState(), 5)
                         .add(ModBlocks.FLOWERING_SUNCROWN_GRASS.get().defaultBlockState(), 1)), 128));
+
+        register(context, SAGE_GRASS_PATCH_KEY, Feature.RANDOM_PATCH, grassPatch(new WeightedStateProvider(
+                SimpleWeightedRandomList.<BlockState>builder().add(ModBlocks.SAGE_GRASS.get().defaultBlockState(), 5)
+                        .add(ModBlocks.SAGE_FUNGUS.get().defaultBlockState(), 1)
+                        .add(ModBlocks.SAGE_BLOOM.get().defaultBlockState(), 2)), 256));
 
         register(context, SHORT_SC_GRASS_PATCH_KEY, Feature.RANDOM_PATCH, grassPatch(BlockStateProvider.simple(ModBlocks.SHORT_SUNCROWN_GRASS.get()), 64));
 
@@ -98,10 +104,10 @@ public class ModConfiguredFeatures {
                 new TwoLayersFeatureSize(1, 0, 2)).dirt(BlockStateProvider.simple(Blocks.END_STONE)).build());
 
         register(context, GREEN_WART_KEY, Feature.HUGE_FUNGUS, new HugeFungusConfiguration( //Make a custom configurator
-                ModBlocks.SUNCROWN_TURF.get().defaultBlockState(), //Plant on
+                ModBlocks.SAGE_MOSS.get().defaultBlockState(), //Plant on
                 ModBlocks.SAGE_STEM.get().defaultBlockState(), //Stem
                 ModBlocks.SAGE_WART_BLOCK.get().defaultBlockState(), //Cap
-                ModBlocks.BLOCK_OF_VOIDITE.get().defaultBlockState(), //Fruit
+                ModBlocks.HARD_SAGE_FRUIT.get().defaultBlockState(), //Fruit
                 blockpredicate, //Can replace
                 false
 

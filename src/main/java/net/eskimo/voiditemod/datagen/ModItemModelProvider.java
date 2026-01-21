@@ -26,6 +26,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         tallGrassItem(ModBlocks.SUNCROWN_GRASS);
         tallGrassItem(ModBlocks.SHORT_SUNCROWN_GRASS);
         tallGrassItem(ModBlocks.FLOWERING_SUNCROWN_GRASS);
+        tallGrassItem(ModBlocks.SAGE_GRASS);
+        tallGrassItem(ModBlocks.SAGE_BLOOM);
         basicItem(ModItems.GLOWING_VOID_BERRIES.get());
         basicItem(ModItems.SINCEHE_POTATO.get());
         basicItem(ModItems.SINCEHE_POTATO_SEEDS.get());
@@ -41,9 +43,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         saplingItem(ModBlocks.SAGE_FUNGUS);
 
         buttonItem(ModBlocks.SUNCROWN_OAK_BUTTON, ModBlocks.SUNCROWN_OAK_PLANKS);
+        buttonItem(ModBlocks.SAGE_BUTTON, ModBlocks.SAGE_PLANKS);
         fenceItem(ModBlocks.SUNCROWN_OAK_FENCE, ModBlocks.SUNCROWN_OAK_PLANKS);
+        fenceItem(ModBlocks.SAGE_FENCE, ModBlocks.SAGE_PLANKS);
 
         simpleBlockItem(ModBlocks.SUNCROWN_OAK_DOOR);
+        simpleBlockItem(ModBlocks.SAGE_DOOR);
 
     }
 

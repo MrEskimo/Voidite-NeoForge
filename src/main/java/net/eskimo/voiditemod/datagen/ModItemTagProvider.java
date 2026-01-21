@@ -31,6 +31,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModBlocks.STRIPPED_SUNCROWN_OAK_WOOD.get().asItem());
 
         tag(ItemTags.PLANKS)
-                .add(ModBlocks.SUNCROWN_OAK_PLANKS.get().asItem());
+                .add(ModBlocks.SUNCROWN_OAK_PLANKS.get().asItem())
+                .add(ModBlocks.SAGE_PLANKS.get().asItem());
     }
 }

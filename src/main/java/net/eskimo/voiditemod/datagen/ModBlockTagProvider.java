@@ -34,8 +34,12 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.SUNCROWN_SANDSTONE_SLAB.get())
                 .add(ModBlocks.SUNCROWN_SANDSTONE_STAIRS.get())
                 .add(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE.get())
+                .add(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE_SLAB.get())
+                .add(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE_STAIRS.get())
                 .add(ModBlocks.CELESTALEE.get())
-                .add(ModBlocks.DHADE.get());
+                .add(ModBlocks.DHADE.get())
+                .add(ModBlocks.TREATED_SAGE_FRUIT.get())
+                .add(ModBlocks.HARD_SAGE_FRUIT.get());
 
         tag(BlockTags.MINEABLE_WITH_SHOVEL)
                 .add(ModBlocks.SUNCROWN_SAND.get())
@@ -57,11 +61,40 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.SUNCROWN_SAND.get())
                 .add(ModBlocks.PACKED_END_SLUDGE_STAIRS.get());
 
+        tag(BlockTags.MINEABLE_WITH_AXE)
+                .add(ModBlocks.SUNCROWN_OAK_LOG.get())
+                .add(ModBlocks.STRIPPED_SUNCROWN_OAK_LOG.get())
+                .add(ModBlocks.SUNCROWN_OAK_WOOD.get())
+                .add(ModBlocks.STRIPPED_SUNCROWN_OAK_WOOD.get())
+                .add(ModBlocks.SUNCROWN_OAK_PLANKS.get())
+                .add(ModBlocks.SUNCROWN_OAK_SLAB.get())
+                .add(ModBlocks.SUNCROWN_OAK_STAIRS.get())
+                .add(ModBlocks.SUNCROWN_OAK_BUTTON.get())
+                .add(ModBlocks.SUNCROWN_OAK_PRESSURE_PLATE.get())
+                .add(ModBlocks.SUNCROWN_OAK_FENCE.get())
+                .add(ModBlocks.SUNCROWN_OAK_FENCE_GATE.get())
+                .add(ModBlocks.SUNCROWN_OAK_TRAPDOOR.get())
+                .add(ModBlocks.SUNCROWN_OAK_DOOR.get())
+
+                .add(ModBlocks.SAGE_WART_BLOCK.get())
+
+                .add(ModBlocks.SAGE_PLANKS.get())
+                .add(ModBlocks.SAGE_SLAB.get())
+                .add(ModBlocks.SAGE_STAIRS.get())
+                .add(ModBlocks.SAGE_BUTTON.get())
+                .add(ModBlocks.SAGE_PRESSURE_PLATE.get())
+                .add(ModBlocks.SAGE_FENCE.get())
+                .add(ModBlocks.SAGE_FENCE_GATE.get())
+                .add(ModBlocks.SAGE_TRAPDOOR.get())
+                .add(ModBlocks.SAGE_DOOR.get());
+
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.VOIDITE_ORE.get())
                 .add(ModBlocks.BLOCK_OF_VOIDITE.get())
                 .add(ModBlocks.CELESTALEE.get())
-                .add(ModBlocks.DHADE.get());
+                .add(ModBlocks.DHADE.get())
+                .add(ModBlocks.HARD_SAGE_FRUIT.get())
+                .add(ModBlocks.TREATED_SAGE_FRUIT.get());
 
         tag(BlockTags.WALLS)
                 .add(ModBlocks.END_SLUDGE_BRICKS_WALL.get())
@@ -73,8 +106,12 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.STRIPPED_SUNCROWN_OAK_WOOD.get())
                 .add(ModBlocks.SUNCROWN_OAK_WOOD.get());
 
-        tag(BlockTags.WOODEN_FENCES).add(ModBlocks.SUNCROWN_OAK_FENCE.get());
-        tag(BlockTags.FENCE_GATES).add(ModBlocks.SUNCROWN_OAK_FENCE_GATE.get());
+        tag(BlockTags.WOODEN_FENCES)
+                .add(ModBlocks.SUNCROWN_OAK_FENCE.get())
+                .add(ModBlocks.SAGE_FENCE.get());
+        tag(BlockTags.FENCE_GATES)
+                .add(ModBlocks.SUNCROWN_OAK_FENCE_GATE.get())
+                .add(ModBlocks.SAGE_FENCE_GATE.get());
 
         tag(BlockTags.FALL_DAMAGE_RESETTING).add(ModBlocks.SUNCROWN_SAND.get());
 

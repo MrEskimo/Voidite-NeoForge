@@ -2,7 +2,7 @@
   "type": "minecraft:huge_fungus",
   "config": {
     "decor_state": {
-      "Name": "voiditemod:block_of_voidite"
+      "Name": "voiditemod:hard_sage_fruit"
     },
     "hat_state": {
       "Name": "voiditemod:sage_wart_block"
@@ -19,7 +19,7 @@
       "Name": "voiditemod:sage_stem"
     },
     "valid_base_block": {
-      "Name": "voiditemod:suncrown_turf",
+      "Name": "voiditemod:sage_moss",
       "Properties": {
         "snowy": "false"
       }

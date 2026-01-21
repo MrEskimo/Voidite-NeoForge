@@ -4,9 +4,12 @@ import net.eskimo.voiditemod.VoiditeMod;
 import net.eskimo.voiditemod.block.custom.*;
 import net.eskimo.voiditemod.item.ModItems;
 import net.eskimo.voiditemod.worldgen.tree.ModTreeGrowers;
+import net.minecraft.network.chat.Component;
 import net.minecraft.util.ColorRGBA;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
@@ -14,7 +17,10 @@ import net.minecraft.world.level.block.state.properties.WoodType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import org.checkerframework.checker.units.qual.C;
 
+import java.util.List;
+import java.util.Locale;
 import java.util.function.Supplier;
 
 public class ModBlocks {
@@ -111,11 +117,41 @@ public class ModBlocks {
             () -> new ModSaplingBlock(ModTreeGrowers.SUNCROWN_OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING), ModBlocks.SUNCROWN_TURF::get));
 
     public static final DeferredBlock<Block> SAGE_FUNGUS = registerBlock("sage_fungus",
-            () -> new ModSaplingBlock(ModTreeGrowers.GREEN_FUNGUS, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING), ModBlocks.SUNCROWN_TURF::get));
+            () -> new ModSaplingBlock(ModTreeGrowers.GREEN_FUNGUS, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING), ModBlocks.SAGE_MOSS::get));
     public static final DeferredBlock<Block> SAGE_WART_BLOCK = registerBlock("sage_wart_block",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_WART_BLOCK)));
     public static final DeferredBlock<Block> SAGE_STEM = registerBlock("sage_stem",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.MUSHROOM_STEM)));
+
+    public static final DeferredBlock<Block> SAGE_PLANKS = registerBlock("sage_planks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)));
+    public static final DeferredBlock<SlabBlock> SAGE_SLAB = registerBlock("sage_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SLAB)));
+    public static final DeferredBlock<StairBlock> SAGE_STAIRS = registerBlock("sage_stairs",
+            () -> new StairBlock(ModBlocks.SAGE_PLANKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_STAIRS)));
+
+    public static final DeferredBlock<PressurePlateBlock> SAGE_PRESSURE_PLATE = registerBlock("sage_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PRESSURE_PLATE)));
+    public static final DeferredBlock<ButtonBlock> SAGE_BUTTON = registerBlock("sage_button",
+            () -> new ButtonBlock(BlockSetType.OAK, 1, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_BUTTON)));
+
+    public static final DeferredBlock<FenceBlock> SAGE_FENCE = registerBlock("sage_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_FENCE)));
+    public static final DeferredBlock<FenceGateBlock> SAGE_FENCE_GATE = registerBlock("sage_fence_gate",
+            () -> new FenceGateBlock(WoodType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_FENCE_GATE)));
+
+    public static final DeferredBlock<DoorBlock> SAGE_DOOR = registerBlock("sage_door",
+            () -> new DoorBlock(BlockSetType.OAK,  BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR)));
+    public static final DeferredBlock<TrapDoorBlock> SAGE_TRAPDOOR = registerBlock("sage_trapdoor",
+            () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR)));
+
+    public static final DeferredBlock<GrassBlock> SAGE_MOSS = registerBlock("sage_moss",
+            () -> new CustomGrass(BlockBehaviour.Properties.ofFullCopy(Blocks.MOSS_BLOCK)));
+    public static final DeferredBlock<TallGrassBlock> SAGE_GRASS = registerBlock("sage_grass",
+            () -> new ModTallGrassBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SHORT_GRASS),  ModBlocks.SAGE_MOSS::get));
+    public static final DeferredBlock<TallGrassBlock> SAGE_BLOOM = registerBlock("sage_bloom",
+            () -> new ModTallGrassBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SHORT_GRASS), ModBlocks.SAGE_MOSS::get));
 
     public static final DeferredBlock<SlabBlock> SUNCROWN_OAK_SLAB = registerBlock("suncrown_oak_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SLAB)));
@@ -167,6 +203,20 @@ public class ModBlocks {
             () -> new CelestaleeFurnaceBlock(BlockBehaviour.Properties.of()));
     public static final DeferredBlock<HammerOfEndBlock> DHADE = registerBlock("hammer_of_end",
             () -> new HammerOfEndBlock(BlockBehaviour.Properties.of()));
+
+    public static final DeferredBlock<Block> HARD_SAGE_FRUIT = registerBlock("hard_sage_fruit",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
+                    .emissiveRendering((pState, pLevel, pPos) -> true)
+                    .lightLevel(state -> 6))
+            {
+                @Override
+                public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                    tooltipComponents.add(Component.translatable("tooltip.voiditemod.hard_sage_fruit"));
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
+    public static final DeferredBlock<Block> TREATED_SAGE_FRUIT = registerBlock("treated_sage_fruit",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
     //
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

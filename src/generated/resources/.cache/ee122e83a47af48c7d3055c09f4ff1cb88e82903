@@ -1,10 +1,11 @@
-// 1.21.1	2025-09-07T17:21:21.1029018	Tags for minecraft:block mod id voiditemod
+// 1.21.1	2026-01-20T15:58:41.8865875	Tags for minecraft:block mod id voiditemod
 f9fe943b64c2c8743bfccc4660a153b414e50fc1 data/minecraft/tags/block/fall_damage_resetting.json
-1cd0f7623f9525fbb52532fd04ed7fa2444faf87 data/minecraft/tags/block/fence_gates.json
+458e18ed8dc42b23e7679b6c44aaaa04c3468b2f data/minecraft/tags/block/fence_gates.json
 4f5ff09cb00b17d61e71ef61ef51ba82ef2bf216 data/minecraft/tags/block/logs_that_burn.json
-011dd36cfd491a25d6f51a465f6903e9e86a93ea data/minecraft/tags/block/mineable/pickaxe.json
+b788249a3d1d7ea2534bf3c190eaf999274bab83 data/minecraft/tags/block/mineable/axe.json
+ded08cb05ff637e6574f3e80ad3a8837d15edad4 data/minecraft/tags/block/mineable/pickaxe.json
 075bd3793ddefcd409d58e1d9d8d702cb3856428 data/minecraft/tags/block/mineable/shovel.json
-c9e83c15f705c69b8715aaad68bf780c708bd46c data/minecraft/tags/block/needs_diamond_tool.json
+3bb32992814825e89be009fb75e234ef2bffceb1 data/minecraft/tags/block/needs_diamond_tool.json
 726738fda57f55946e091b5618dcb81db0764738 data/minecraft/tags/block/needs_iron_tool.json
 e876784e5e7319a2919d28b0e9e5d578c91a78f8 data/minecraft/tags/block/walls.json
-cf96c004f04392734e972c341739ec9aef0e9a1e data/minecraft/tags/block/wooden_fences.json
+d4cfec8ac9f5f49d5f9485bbe0f6212271950582 data/minecraft/tags/block/wooden_fences.json

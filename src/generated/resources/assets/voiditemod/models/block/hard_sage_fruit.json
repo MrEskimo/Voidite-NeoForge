@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "voiditemod:block/hard_sage_fruit"
+  }
+}

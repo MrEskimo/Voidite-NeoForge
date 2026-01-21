@@ -17,7 +17,11 @@
     "voiditemod:suncrown_sandstone_slab",
     "voiditemod:suncrown_sandstone_stairs",
     "voiditemod:smooth_suncrown_sandstone",
+    "voiditemod:smooth_suncrown_sandstone_slab",
+    "voiditemod:smooth_suncrown_sandstone_stairs",
     "voiditemod:celestalee_furnace",
-    "voiditemod:hammer_of_end"
+    "voiditemod:hammer_of_end",
+    "voiditemod:treated_sage_fruit",
+    "voiditemod:hard_sage_fruit"
   ]
 }

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "A": {
+      "item": "minecraft:iron_block"
+    },
+    "B": {
+      "item": "voiditemod:treated_sage_fruit"
+    },
+    "C": {
+      "item": "minecraft:anvil"
+    },
+    "D": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "BCB",
+    "D D",
+    "BAB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "voiditemod:hammer_of_end"
+  }
+}

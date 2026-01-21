@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "sage",
+  "ingredients": [
+    {
+      "item": "voiditemod:sage_planks"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "voiditemod:sage_button"
+  }
+}

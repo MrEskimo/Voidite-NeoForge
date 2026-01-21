@@ -18,6 +18,7 @@ public class ModSurfaceRules {
     private static final SurfaceRules.RuleSource END_STONE = makeStateRule(Blocks.END_STONE);
     private static final SurfaceRules.RuleSource STONE = makeStateRule(Blocks.STONE);
     private static final SurfaceRules.RuleSource END_SLUDGE = makeStateRule(ModBlocks.END_SLUDGE.get());
+    private static final SurfaceRules.RuleSource SAGE_MOSS = makeStateRule(ModBlocks.SAGE_MOSS.get());
 
     private static void registerSurfaceRules()
     {
@@ -33,6 +34,9 @@ public class ModSurfaceRules {
                 SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.isBiome(ModBiomes.SUNCROWN_PLAINS),
                                 SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR, CHORUS_TURF)),
                         SurfaceRules.ifTrue(SurfaceRules.ON_CEILING, END_SLUDGE)),
+
+                SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.isBiome(ModBiomes.SAGE_FOREST),
+                                SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR, SAGE_MOSS))),
 
                 SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.isBiome(ModBiomes.TEST_BIOME),
                                 SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR, RAW_VOIDITE)),
