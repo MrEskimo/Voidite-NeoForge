@@ -1,0 +1,33 @@
+{
+  "name": "Suncrown Oak Planks",
+  "icon": "voiditemod:suncrown_oak_planks",
+  "category": "voiditemod:suncrown_category",
+  "pages": [
+    {
+      "type": "spotlight",
+      "anchor": "suncrown_oak_planks",
+      "item": "voiditemod:suncrown_oak_planks",
+      "text": "Are crafted from $(l:blocks/suncrown_oak)suncrown oak logs/$. Can be crafted into stairs, slabs, fences, buttons, pressure plates and even doors and trapdoors"
+    },
+    {
+      "type": "crafting",
+      "recipe": "voiditemod:suncrown_oak_slab",
+      "recipe2": "voiditemod:suncrown_oak_stairs"
+    },
+    {
+      "type": "crafting",
+      "recipe": "voiditemod:suncrown_oak_fence",
+      "recipe2": "voiditemod:suncrown_oak_fence_gate"
+    },
+    {
+      "type": "crafting",
+      "recipe": "voiditemod:suncrown_oak_door",
+      "recipe2": "voiditemod:suncrown_oak_trapdoor"
+    },
+    {
+      "type": "crafting",
+      "recipe": "voiditemod:suncrown_oak_button",
+      "recipe2": "voiditemod:suncrown_oak_pressure_plate"
+    }
+  ]
+}

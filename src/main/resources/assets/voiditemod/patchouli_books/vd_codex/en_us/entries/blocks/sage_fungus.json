@@ -1,0 +1,25 @@
+{
+  "name": "Sage Fungus",
+  "icon": "voiditemod:sage_fungus",
+  "category": "voiditemod:sage_category",
+  "pages": [
+    {
+      "type": "spotlight",
+      "anchor": "sage_fungus",
+      "item": "voiditemod:sage_fungus",
+      "text": "A simple fungus which can be grown into the lagre variant which is needed to get $(l:blocks/sage_fruit)Sage Fruit/$"
+    },
+    {
+      "type": "spotlight",
+      "anchor": "sage_wart_block",
+      "item": "voiditemod:sage_wart_block",
+      "text": "A hard type off fungus which needs to be mine with a axe. Can be turned into $(l:blocks/sage_plank)planks/$"
+    },
+    {
+      "type": "spotlight",
+      "anchor": "sage_stem",
+      "item": "voiditemod:sage_stem",
+      "text": "The stem of the fungus. Can not be crafted into something and is purely used for decorations"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "End Sludge Bricks",
+  "icon": "voiditemod:end_sludge_bricks",
+  "category": "voiditemod:suncrown_category",
+  "pages": [
+    {
+      "type": "spotlight",
+      "anchor": "end_sludge_bricks",
+      "item": "voiditemod:end_sludge_bricks",
+      "text": "You can craft this using some $(l:blocks/packed_end_sludge)packed end sludge/$. Can be made into stairs, slabs, and walls"
+    },
+    {
+      "type": "crafting",
+      "recipe": "voiditemod:end_sludge_bricks",
+      "recipe2": "voiditemod:end_sludge_bricks_slab"
+    },
+    {
+      "type": "crafting",
+      "recipe": "voiditemod:end_sludge_bricks_stairs",
+      "recipe2": "voiditemod:end_sludge_bricks_wall"
+    }
+  ]
+}

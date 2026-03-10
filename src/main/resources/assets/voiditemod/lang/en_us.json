@@ -30,6 +30,11 @@
   "block.voiditemod.glowing_void_berry_bush": "Glowing Void Berry Bush",
   "block.voiditemod.sincehe_potato_crop": "Sincehe Potato Crop",
 
+  "item.minecraft.potion.effect.glowing_potion": "Glowing Potion",
+  "item.minecraft.splash_potion.effect.glowing_potion": "Glowing Splash Potion",
+  "item.minecraft.lingering_potion.effect.glowing_potion": "Glowing Lingering Potion",
+
+
   "block.voiditemod.end_sludge_bricks_slab": "End Sludge Bricks Slab",
   "block.voiditemod.end_sludge_bricks_stairs": "End Sludge Bricks Stairs",
   "block.voiditemod.end_sludge_bricks_wall": "End Sludge Bricks Wall",

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "voiditemod:suncrown_sandstone"
+  },
+  "result": {
+    "count": 1,
+    "id": "voiditemod:smooth_suncrown_sandstone"
+  }
+}

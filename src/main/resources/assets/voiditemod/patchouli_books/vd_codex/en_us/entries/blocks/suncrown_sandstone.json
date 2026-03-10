@@ -1,0 +1,18 @@
+{
+  "name": "Suncrown Sandstone",
+  "icon": "voiditemod:suncrown_sandstone",
+  "category": "voiditemod:suncrown_category",
+  "pages": [
+    {
+      "type": "spotlight",
+      "anchor": "suncrown_sandstone",
+      "item": "voiditemod:suncrown_sandstone",
+      "text": "Crafted using $(l:blocks/suncrown_sand)suncrown sand/$. Can be turned into stairs, slabs and even a smooth version"
+    },
+    {
+      "type": "crafting",
+      "recipe": "voiditemod:suncrown_sandstone_stairs",
+      "recipe2": "voiditemod:suncrown_sandstone_slab"
+    }
+  ]
+}

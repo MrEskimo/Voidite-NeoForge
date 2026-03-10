@@ -1,0 +1,13 @@
+{
+  "name": "Suncrown Sand",
+  "icon": "voiditemod:suncrown_sand",
+  "category": "voiditemod:suncrown_category",
+  "pages": [
+    {
+      "type": "spotlight",
+      "anchor": "suncrown_sand",
+      "item": "voiditemod:suncrown_sand",
+      "text": "You can find this dotted about in the suncrown biomes. Mining it using a shovel allows you to pick it up and craft the $(l:blocks/suncrown_sandstone) sandstone version/$. It falls slower than normal sand allowing you to make temporary bridges using it"
+    }
+  ]
+}

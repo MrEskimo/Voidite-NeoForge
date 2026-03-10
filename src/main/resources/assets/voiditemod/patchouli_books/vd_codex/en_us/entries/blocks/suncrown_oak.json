@@ -1,0 +1,23 @@
+{
+  "name": "Suncrown Oak",
+  "icon": "voiditemod:suncrown_oak_log",
+  "category": "voiditemod:suncrown_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "These trees can be found in the $(item)suncrown forest/$"
+    },
+    {
+      "type": "spotlight",
+      "anchor": "suncrown_oak_log",
+      "item": "voiditemod:suncrown_oak_log",
+      "text": "The trunk of the suncrown oaks, can be turned into $(l:blocks/suncrown_oak_planks)planks/$. Can be turned into wood as any other log"
+    },
+    {
+      "type": "spotlight",
+      "anchor": "stripped_suncrown_oak_log",
+      "item": "voiditemod:stripped_suncrown_oak_log",
+      "text": "A stripped version of the log, can be turned into wood as any other log"
+    }
+  ]
+}

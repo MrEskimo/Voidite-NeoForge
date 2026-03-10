@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-21T17:20:42.473214	Loot Tables
+// 1.21.1	2026-03-04T18:30:44.6178804	Loot Tables
 ca875cb82aac2d11f79bca096e43c653d0a489b9 data/voiditemod/loot_table/blocks/block_of_smile.json
 393ea87df00721c44d2e50e3c76052daf604abc9 data/voiditemod/loot_table/blocks/block_of_voidite.json
 ded6aec5b05cb171f9b9c850f6f03cefe77091d0 data/voiditemod/loot_table/blocks/celestalee_furnace.json
@@ -59,6 +59,6 @@ f1a0bc96eacbfecdf59ff3a2d92828d24a5f3e6e data/voiditemod/loot_table/blocks/suncr
 d063212cd5da103b1fa6e59064dd7aee642c54da data/voiditemod/loot_table/blocks/suncrown_sandstone.json
 b164624cd37cc3553caea429550718a999c67921 data/voiditemod/loot_table/blocks/suncrown_sandstone_slab.json
 28a8a214ccb59dd999941e25cfe0cf0efef274cb data/voiditemod/loot_table/blocks/suncrown_sandstone_stairs.json
-2639a6882b9a7ee73b6f093a4901a3093639d6ae data/voiditemod/loot_table/blocks/suncrown_turf.json
+de4937b6af5c121a2366ee2412cf43ebf958b56d data/voiditemod/loot_table/blocks/suncrown_turf.json
 bb56d2c72180182355ce14558d6a1b5c078c6ca8 data/voiditemod/loot_table/blocks/treated_sage_fruit.json
 7ae7a55cf88dd32cb0c0b45d9617030c992c462e data/voiditemod/loot_table/blocks/voidite_ore.json

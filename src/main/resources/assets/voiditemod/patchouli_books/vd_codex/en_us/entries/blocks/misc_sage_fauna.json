@@ -1,0 +1,19 @@
+{
+  "name": "Miscellaneous Fauna",
+  "icon": "voiditemod:sage_grass",
+  "category": "voiditemod:sage_category",
+  "pages": [
+    {
+      "type": "spotlight",
+      "anchor": "sage_grass",
+      "item": "voiditemod:sage_grass",
+      "text": "You can find this dotted about in the $(item)Sage Forest/$"
+    },
+    {
+      "type": "spotlight",
+      "anchor": "sage_bloom",
+      "item": "voiditemod:sage_bloom",
+      "text": "A diffrent type of the $(item)Sage grass/$"
+    }
+  ]
+}

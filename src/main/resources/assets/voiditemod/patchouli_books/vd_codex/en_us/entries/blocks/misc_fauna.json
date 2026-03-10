@@ -1,0 +1,19 @@
+{
+  "name": "Miscellaneous Fauna",
+  "icon": "voiditemod:glowing_void_berries",
+  "category": "voiditemod:suncrown_category",
+  "pages": [
+    {
+      "type": "spotlight",
+      "anchor": "glowing_void_berries",
+      "item": "voiditemod:glowing_void_berries",
+      "text": "You can find this dotted about on berry bushes that emit a slight glow in the suncrown biomes. Eating it restores one hunger bar and has a slight change of giving you glowing, can there for be used to make potions of glowing"
+    },
+    {
+      "type": "spotlight",
+      "anchor": "sincehe_potatoes",
+      "item": "voiditemod:sincehe_potato",
+      "text": "A crop you can find in the suncrown biomes. Does not require light to grow but has to be planted on $(l:blocks/suncrown_turf)suncrown turf/$. Eating it restores 3.5 hunger bars and also gives you water breathing, if you want to find out why try using a anagram solver"
+    }
+  ]
+}

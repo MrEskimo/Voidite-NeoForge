@@ -1,0 +1,13 @@
+{
+  "name": "Sage Moss",
+  "icon": "voiditemod:sage_moss",
+  "category": "voiditemod:sage_category",
+  "pages": [
+    {
+      "type": "spotlight",
+      "anchor": "sage_moss",
+      "item": "voiditemod:sage_moss",
+      "text": "This is the main block you'll find in the Sage forest. Not capable of supporting much life execpt the mushroom trees and some grass"
+    }
+  ]
+}

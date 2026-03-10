@@ -1,0 +1,19 @@
+{
+  "name": "Sage Fruit",
+  "icon": "voiditemod:hard_sage_fruit",
+  "category": "voiditemod:sage_category",
+  "pages": [
+    {
+      "type": "spotlight",
+      "anchor": "hard_sage_fruit",
+      "item": "voiditemod:hard_sage_fruit",
+      "text": "This is the fruit of the $(l:blocks/sage_fungus)Sage Fungus/$ need to be treated in a $(l:blocks/celestalee_furnace)Celestalee Furnace/$"
+    },
+    {
+      "type": "spotlight",
+      "anchor": "treated_sage_fruit",
+      "item": "voiditemod:treated_sage_fruit",
+      "text": "The treated version of the fruit you'll find naturally. Can be used to make the $(l:blocks/hammer_of_the_end)DHADE/$ which is used to process voidite"
+    }
+  ]
+}

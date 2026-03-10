@@ -1,0 +1,17 @@
+{
+  "name": "Celestalee Furnace",
+  "icon": "voiditemod:celestalee_furnace",
+  "category": "voiditemod:voidite_category",
+  "pages": [
+    {
+      "type": "spotlight",
+      "anchor": "celestalee_furnace",
+      "item": "voiditemod:celestalee_furnace",
+      "text": "This is the first machine you'll have to make to process voidite. It needs you to find the NOT DONE BIOME"
+    },
+    {
+      "type": "crafting",
+      "recipe": "voiditemod:celestalee_furnace"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Suncrown Grasses",
+  "icon": "voiditemod:suncrown_grass",
+  "category": "voiditemod:suncrown_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "These plants grow on $(l:blocks/suncrown_turf)Suncrown turf/$. You can harvest them with shears"
+    },
+    {
+      "type": "spotlight",
+      "anchor": "suncrown_grass",
+      "item": "voiditemod:suncrown_grass",
+      "text": "The most common grass you'll find in the suncrown biomes"
+    },
+    {
+      "type": "spotlight",
+      "anchor": "short_suncrown_grass",
+      "item": "voiditemod:short_suncrown_grass",
+      "text": "A shorter version of the normal grass"
+    },
+    {
+      "type": "spotlight",
+      "anchor": "flowering_suncrown_grass",
+      "item": "voiditemod:flowering_suncrown_grass",
+      "text": "A variation of the normal grass which gives of a small amount of light"
+    }
+  ]
+}

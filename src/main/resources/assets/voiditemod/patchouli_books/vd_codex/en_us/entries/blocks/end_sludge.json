@@ -1,0 +1,13 @@
+{
+  "name": "End Sludge",
+  "icon": "voiditemod:end_sludge",
+  "category": "voiditemod:suncrown_category",
+  "pages": [
+    {
+      "type": "spotlight",
+      "anchor": "end_sludge",
+      "item": "voiditemod:end_sludge",
+      "text": "You can find this dotted about in the suncrown biomes. Mining it using a shovel allows you to pick it up and craft the $(l:blocks/packed_end_sludge) packed version/$"
+    }
+  ]
+}

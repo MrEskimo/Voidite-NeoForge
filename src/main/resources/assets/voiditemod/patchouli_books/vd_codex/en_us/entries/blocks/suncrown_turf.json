@@ -1,0 +1,13 @@
+{
+  "name": "Suncrown Turf",
+  "icon": "voiditemod:suncrown_turf",
+  "category": "voiditemod:suncrown_category",
+  "pages": [
+    {
+      "type": "spotlight",
+      "anchor": "suncrown_turf",
+      "item": "voiditemod:suncrown_turf",
+      "text": "This is the main block you'll find in the suncrown biomes. Mining in using a pickaxe yields endstone, but with silktouch you can pick it up"
+    }
+  ]
+}

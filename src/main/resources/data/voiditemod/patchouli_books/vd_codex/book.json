@@ -1,0 +1,7 @@
+{
+  "name": "End Exploration Codex",
+  "landing_text": "Welcome to the End, it's has gotten some new biomes and blocks since you last saw it and this codex will help you understand the new features",
+  "version": 1,
+  "creative_tab": "minecraft:tools_and_utilities",
+  "use_resource_pack": true
+}

@@ -1,0 +1,37 @@
+{
+  "name": "Sage Planks",
+  "icon": "voiditemod:sage_planks",
+  "category": "voiditemod:sage_category",
+  "pages": [
+    {
+      "type": "spotlight",
+      "anchor": "sage_planks",
+      "item": "voiditemod:sage_planks",
+      "text": "Can be crafted from the outer part of the $(l:blocks/sage_fungus)Sage Fungus/$. can be turned into slabs, stairs, fences, door and a button which is only pressed down for one singular tick"
+    },
+    {
+      "type": "crafting",
+      "recipe": "voiditemod:sage_planks"
+    },
+    {
+      "type": "crafting",
+      "recipe": "voiditemod:sage_slab",
+      "recipe2": "voiditemod:sage_stairs"
+    },
+    {
+      "type": "crafting",
+      "recipe": "voiditemod:sage_fence",
+      "recipe2": "voiditemod:sage_fence_gate"
+    },
+    {
+      "type": "crafting",
+      "recipe": "voiditemod:sage_door",
+      "recipe2": "voiditemod:sage_trapdoor"
+    },
+    {
+      "type": "crafting",
+      "recipe": "voiditemod:sage_pressure_plate",
+      "recipe2": "voiditemod:sage_button"
+    }
+  ]
+}

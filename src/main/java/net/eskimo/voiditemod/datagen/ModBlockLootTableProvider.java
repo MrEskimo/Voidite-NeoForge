@@ -13,6 +13,7 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SweetBerryBushBlock;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
@@ -24,6 +25,8 @@ import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 
 import java.util.Set;
+
+import static net.minecraft.world.level.block.Blocks.END_STONE;
 
 
 public class ModBlockLootTableProvider extends BlockLootSubProvider {
@@ -104,8 +107,9 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         add(ModBlocks.FLOWERING_SUNCROWN_GRASS.get(),
                 createShearsOnlyDrop(ModBlocks.FLOWERING_SUNCROWN_GRASS.get()));
 
-        this.add(ModBlocks.SUNCROWN_TURF.get(),
-                createSilkTouchOnlyTable(ModBlocks.SUNCROWN_TURF.get()));
+        this.add(ModBlocks.SUNCROWN_TURF.get(), block ->
+                createSingleItemTableWithSilkTouch(block, END_STONE));
+
 
         this.add(ModBlocks.SUNCROWN_OAK_LEAVES.get(), block ->
                createLeavesDrops(block, ModBlocks.SUNCROWN_OAK_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));

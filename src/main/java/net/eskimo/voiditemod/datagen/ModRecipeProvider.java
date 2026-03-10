@@ -126,6 +126,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         stairBuilder(ModBlocks.SUNCROWN_SANDSTONE_STAIRS.get(), Ingredient.of(ModBlocks.SUNCROWN_SANDSTONE.get())).group("suncrown_sandstone")
                 .unlockedBy(getHasName(ModBlocks.SUNCROWN_SANDSTONE.get()), has(ModBlocks.SUNCROWN_SANDSTONE.get())).save(pRecipeOutput)
         ;
+        smeltingResultFromBase(pRecipeOutput, ModBlocks.SMOOTH_SUNCROWN_SANDSTONE.get(), ModBlocks.SUNCROWN_SANDSTONE.get());
         slab(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_SUNCROWN_SANDSTONE_SLAB.get(), ModBlocks.SMOOTH_SUNCROWN_SANDSTONE.get());
         stairBuilder(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE_STAIRS.get(), Ingredient.of(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE.get())).group("smooth_suncrown_sandstone")
                 .unlockedBy(getHasName(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE.get()), has(ModBlocks.SMOOTH_SUNCROWN_SANDSTONE.get())).save(pRecipeOutput);
@@ -158,6 +159,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('D', Items.STICK)
                 .unlockedBy(getHasName(ModBlocks.TREATED_SAGE_FRUIT.get()), has(ModBlocks.TREATED_SAGE_FRUIT.get())).save(pRecipeOutput);
 
-        twoByTwoPacker(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SAGE_PLANKS.get(), ModBlocks.SAGE_WART_BLOCK.get());
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SAGE_PLANKS.get(), 4)
+                .requires(ModBlocks.SAGE_WART_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.SAGE_WART_BLOCK.get()), has(ModBlocks.SAGE_WART_BLOCK.get())).save(pRecipeOutput);
     }
 }

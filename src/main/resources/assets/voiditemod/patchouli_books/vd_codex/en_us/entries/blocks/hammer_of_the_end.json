@@ -1,0 +1,17 @@
+{
+  "name": "DHADE",
+  "icon": "voiditemod:hammer_of_end",
+  "category": "voiditemod:voidite_category",
+  "pages": [
+    {
+      "type": "spotlight",
+      "anchor": "hammer_of_the_end",
+      "item": "voiditemod:hammer_of_end",
+      "text": "This is the seconde machine you'll have to make to process voidite. It needs you to find the $(item)Sage Forest/$ and harvest the $(l:blocks/sage_fruit)Hard fruit/$ with a pickaxe. When you have treated the fruit you can craft this machine"
+    },
+    {
+      "type": "crafting",
+      "recipe": "voiditemod:hammer_of_end"
+    }
+  ]
+}

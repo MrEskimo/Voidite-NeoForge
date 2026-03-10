@@ -1,17 +1,13 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "category": "building",
-  "key": {
-    "#": {
+  "ingredients": [
+    {
       "item": "voiditemod:sage_wart_block"
     }
-  },
-  "pattern": [
-    "##",
-    "##"
   ],
   "result": {
-    "count": 1,
+    "count": 4,
     "id": "voiditemod:sage_planks"
   }
 }

@@ -1,0 +1,37 @@
+{
+  "name": "Voidite",
+  "icon": "voiditemod:voidite_ingot",
+  "category": "voiditemod:voidite_category",
+  "pages": [
+    {
+      "type": "spotlight",
+      "anchor": "raw_voidite",
+      "item": "voiditemod:raw_voidite",
+      "text": "Around the end you've probably come across some voidite ore, mining it with a diamond pickaxe or higher you get the raw ore. On it's own it can't be used for much"
+    },
+    {
+      "type": "spotlight",
+      "anchor": "voidite_ingot",
+      "item": "voiditemod:voidite_ingot",
+      "text": "After smelting the raw voidite you're left with the ingot which needs further processing to be useful. In a $(l:blocks/celestalee_furnace)Celestalee Furnace/$ you can make $(item)Annealed voidite ingots/$"
+    },
+    {
+      "type": "spotlight",
+      "anchor": "annealed_voidite",
+      "item": "voiditemod:annealed_voidite_ingot",
+      "text": "After heating the normal ingot you get this, still not what you need but a step closer. Now you have to find the resources to make the $(l:blocks/hammer_of_the_end)DHADE/$ where you can continue working this metal"
+    },
+    {
+      "type": "spotlight",
+      "anchor": "voidite_plate",
+      "item": "voiditemod:voidite_plate",
+      "text": "After pressing the annealed ingots you get these plates which needs to be heated once more in the $(l:blocks/celestalee_furnace)Celestalee Furnace/$ to make it more malleable "
+    },
+    {
+      "type": "spotlight",
+      "anchor": "annealed_plate",
+      "item": "voiditemod:annealed_voidite_plate",
+      "text": "After all that work you've hopefully explored a big piece of the end and have enough to finally make some armor and tools"
+    }
+  ]
+}
