@@ -2,6 +2,7 @@
   "name": "Miscellaneous Fauna",
   "icon": "voiditemod:sage_grass",
   "category": "voiditemod:sage_category",
+  "advancement": "voiditemod:found_sage",
   "pages": [
     {
       "type": "spotlight",

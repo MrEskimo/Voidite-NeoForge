@@ -2,6 +2,7 @@
   "name": "Miscellaneous Fauna",
   "icon": "voiditemod:glowing_void_berries",
   "category": "voiditemod:suncrown_category",
+  "advancement": "voiditemod:found_suncrown",
   "pages": [
     {
       "type": "spotlight",

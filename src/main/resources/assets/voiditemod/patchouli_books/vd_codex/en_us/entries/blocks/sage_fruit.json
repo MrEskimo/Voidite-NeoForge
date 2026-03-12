@@ -2,6 +2,7 @@
   "name": "Sage Fruit",
   "icon": "voiditemod:hard_sage_fruit",
   "category": "voiditemod:sage_category",
+  "advancement": "voiditemod:found_sage",
   "pages": [
     {
       "type": "spotlight",

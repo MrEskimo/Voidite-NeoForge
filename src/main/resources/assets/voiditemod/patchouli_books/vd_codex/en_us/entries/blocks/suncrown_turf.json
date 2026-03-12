@@ -2,6 +2,7 @@
   "name": "Suncrown Turf",
   "icon": "voiditemod:suncrown_turf",
   "category": "voiditemod:suncrown_category",
+  "advancement": "voiditemod:found_suncrown",
   "pages": [
     {
       "type": "spotlight",

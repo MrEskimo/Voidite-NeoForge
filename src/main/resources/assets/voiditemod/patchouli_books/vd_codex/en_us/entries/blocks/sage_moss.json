@@ -2,6 +2,7 @@
   "name": "Sage Moss",
   "icon": "voiditemod:sage_moss",
   "category": "voiditemod:sage_category",
+  "advancement": "voiditemod:found_sage",
   "pages": [
     {
       "type": "spotlight",

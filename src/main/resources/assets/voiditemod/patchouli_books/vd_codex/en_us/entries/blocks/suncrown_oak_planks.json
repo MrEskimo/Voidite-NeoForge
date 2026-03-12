@@ -2,6 +2,7 @@
   "name": "Suncrown Oak Planks",
   "icon": "voiditemod:suncrown_oak_planks",
   "category": "voiditemod:suncrown_category",
+  "advancement": "voiditemod:found_suncrown",
   "pages": [
     {
       "type": "spotlight",

@@ -1,0 +1,35 @@
+{
+  "criteria": {
+    "vd_root": {
+      "conditions": {
+        "block": "minecraft:end_gateway"
+      },
+      "trigger": "minecraft:enter_block"
+    }
+  },
+
+  "display": {
+    "background": "voiditemod:textures/gui/advancements/backgrounds/voidite.png",
+    "description": {
+      "translate": "A New End For You To Explore"
+    },
+    "icon": {
+      "count": 1,
+      "id": "voiditemod:voidite_ingot"
+    },
+    "title": {
+      "translate": "Voidite"
+    }
+  },
+  "requirements": [
+    [
+      "vd_root"
+    ]
+  ],
+  "rewards": {
+      "loot": [
+        "voiditemod:give_codex"
+      ]
+},
+  "sends_telemetry_event": true
+}

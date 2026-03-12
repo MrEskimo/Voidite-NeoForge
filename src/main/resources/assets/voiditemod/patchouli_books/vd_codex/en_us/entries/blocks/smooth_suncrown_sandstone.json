@@ -2,6 +2,7 @@
   "name": "Smooth Suncrown Sandstone",
   "icon": "voiditemod:smooth_suncrown_sandstone",
   "category": "voiditemod:suncrown_category",
+  "advancement": "voiditemod:found_suncrown",
   "pages": [
     {
       "type": "spotlight",

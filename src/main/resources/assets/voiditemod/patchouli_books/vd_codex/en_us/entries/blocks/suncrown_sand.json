@@ -2,6 +2,7 @@
   "name": "Suncrown Sand",
   "icon": "voiditemod:suncrown_sand",
   "category": "voiditemod:suncrown_category",
+  "advancement": "voiditemod:found_suncrown",
   "pages": [
     {
       "type": "spotlight",

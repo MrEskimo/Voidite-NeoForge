@@ -2,6 +2,7 @@
   "name": "Suncrown Grasses",
   "icon": "voiditemod:suncrown_grass",
   "category": "voiditemod:suncrown_category",
+  "advancement": "voiditemod:found_suncrown",
   "pages": [
     {
       "type": "patchouli:text",

@@ -2,6 +2,7 @@
   "name": "Sage Planks",
   "icon": "voiditemod:sage_planks",
   "category": "voiditemod:sage_category",
+  "advancement": "voiditemod:found_sage",
   "pages": [
     {
       "type": "spotlight",

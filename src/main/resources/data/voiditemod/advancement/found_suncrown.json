@@ -1,0 +1,39 @@
+{
+  "parent": "voiditemod:root",
+  "criteria": {
+    "in_suncrown": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biomes": "voiditemod:suncrown_forest"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Find A Suncrown Forest"
+    },
+    "icon": {
+      "count": 1,
+      "id": "voiditemod:suncrown_turf"
+    },
+    "title": {
+      "translate": "Suncrown"
+    }
+  },
+  "requirements": [
+    [
+      "in_suncrown"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

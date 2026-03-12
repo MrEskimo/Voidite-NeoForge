@@ -2,6 +2,7 @@
   "name": "End Sludge Bricks",
   "icon": "voiditemod:end_sludge_bricks",
   "category": "voiditemod:suncrown_category",
+  "advancement": "voiditemod:found_suncrown",
   "pages": [
     {
       "type": "spotlight",

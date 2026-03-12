@@ -2,6 +2,7 @@
   "name": "Sage Fungus",
   "icon": "voiditemod:sage_fungus",
   "category": "voiditemod:sage_category",
+  "advancement": "voiditemod:found_sage",
   "pages": [
     {
       "type": "spotlight",
@@ -13,7 +14,7 @@
       "type": "spotlight",
       "anchor": "sage_wart_block",
       "item": "voiditemod:sage_wart_block",
-      "text": "A hard type off fungus which needs to be mine with a axe. Can be turned into $(l:blocks/sage_plank)planks/$"
+      "text": "A hard type off fungus which needs to be mine with a axe. Can be turned into $(l:blocks/sage_planks)planks/$"
     },
     {
       "type": "spotlight",

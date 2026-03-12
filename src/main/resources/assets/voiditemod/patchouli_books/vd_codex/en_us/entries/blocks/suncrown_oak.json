@@ -2,6 +2,7 @@
   "name": "Suncrown Oak",
   "icon": "voiditemod:suncrown_oak_log",
   "category": "voiditemod:suncrown_category",
+  "advancement": "voiditemod:found_suncrown",
   "pages": [
     {
       "type": "patchouli:text",

@@ -2,6 +2,7 @@
   "name": "Packed End Sludge",
   "icon": "voiditemod:packed_end_sludge",
   "category": "voiditemod:suncrown_category",
+  "advancement": "voiditemod:found_suncrown",
   "pages": [
     {
       "type": "spotlight",
