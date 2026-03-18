@@ -1,13 +1,13 @@
 package net.eskimo.voiditemod.worldgen.biome.surface;
 
 import net.eskimo.voiditemod.block.ModBlocks;
-import net.eskimo.voiditemod.VoiditeMod;
-import net.eskimo.voiditemod.worldgen.ModSurfaceRuleData;
 import net.eskimo.voiditemod.worldgen.biome.ModBiomes;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.SurfaceRules;
-import terrablender.api.SurfaceRuleManager;
+import net.minecraft.world.level.levelgen.placement.CaveSurface;
+
+import static net.minecraft.world.level.levelgen.SurfaceRules.stoneDepthCheck;
 
 public class ModSurfaceRules {
     private static final SurfaceRules.RuleSource DIRT = makeStateRule(Blocks.DIRT);
@@ -19,11 +19,17 @@ public class ModSurfaceRules {
     private static final SurfaceRules.RuleSource STONE = makeStateRule(Blocks.STONE);
     private static final SurfaceRules.RuleSource END_SLUDGE = makeStateRule(ModBlocks.END_SLUDGE.get());
     private static final SurfaceRules.RuleSource SAGE_MOSS = makeStateRule(ModBlocks.SAGE_MOSS.get());
+    private static final SurfaceRules.RuleSource AMINARIA = makeStateRule(ModBlocks.AMINARIA_REGOLITH.get());
+    private static final SurfaceRules.RuleSource AIR = makeStateRule(Blocks.AIR);
 
-    private static void registerSurfaceRules()
-    {
-        SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.END, VoiditeMod.MOD_ID, ModSurfaceRuleData.end());
+    public static final SurfaceRules.ConditionSource EXTREMELY_DEEP_UNDER_FLOOR;
+    public static final SurfaceRules.ConditionSource NO_UNDER_FLOOR;
+
+    static {
+        EXTREMELY_DEEP_UNDER_FLOOR = stoneDepthCheck(0, true, 55, CaveSurface.FLOOR);
+        NO_UNDER_FLOOR = stoneDepthCheck(0, true, 250, CaveSurface.FLOOR);
     }
+
 
     public static SurfaceRules.RuleSource makeRules() {
         SurfaceRules.ConditionSource isAtOrAboveWaterLevel = SurfaceRules.waterBlockCheck(-1, 0);
@@ -32,19 +38,37 @@ public class ModSurfaceRules {
 
         return SurfaceRules.sequence(
                 SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.isBiome(ModBiomes.SUNCROWN_PLAINS),
-                                SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR, CHORUS_TURF)),
-                        SurfaceRules.ifTrue(SurfaceRules.ON_CEILING, END_SLUDGE)),
+                                SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR, CHORUS_TURF))),
+                SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.isBiome(ModBiomes.SUNCROWN_PLAINS),
+                        SurfaceRules.ifTrue(SurfaceRules.ON_CEILING, END_SLUDGE))),
 
                 SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.isBiome(ModBiomes.SAGE_FOREST),
                                 SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR, SAGE_MOSS))),
 
-                SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.isBiome(ModBiomes.TEST_BIOME),
-                                SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR, RAW_VOIDITE)),
-                        SurfaceRules.ifTrue(SurfaceRules.ON_CEILING, VOIDITE)),
-
                 SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.isBiome(ModBiomes.SUNCROWN_FOREST),
-                                SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR, CHORUS_TURF)),
-                        SurfaceRules.ifTrue(SurfaceRules.ON_CEILING, END_SLUDGE)),
+                                SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR, CHORUS_TURF))),
+                SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.isBiome(ModBiomes.SUNCROWN_FOREST),
+                        SurfaceRules.ifTrue(SurfaceRules.ON_CEILING, END_SLUDGE))),
+
+                SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.isBiome(ModBiomes.AMINARIA_PIT),
+                                SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR, AIR))),
+
+                SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.isBiome(ModBiomes.AMINARIA_PIT),
+                        SurfaceRules.ifTrue(SurfaceRules.ON_CEILING, AMINARIA))),
+                SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.isBiome(ModBiomes.AMINARIA_PIT),
+                                SurfaceRules.ifTrue(ModSurfaceRules.NO_UNDER_FLOOR, AIR))),
+
+
+                /* to remove a biomes floor fully
+                SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.isBiome(ModBiomes.AMINARIA_PIT),
+                                SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR, AIR))),
+
+                SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.isBiome(ModBiomes.AMINARIA_PIT),
+                                SurfaceRules.ifTrue(ModSurfaceRules.NO_UNDER_FLOOR, AIR))),
+                SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.isBiome(ModBiomes.AMINARIA_PIT),
+                        SurfaceRules.ifTrue(SurfaceRules.ON_CEILING, AMINARIA))),
+                */
+
 
                         // Default to stone surface
                         SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR, STONE));

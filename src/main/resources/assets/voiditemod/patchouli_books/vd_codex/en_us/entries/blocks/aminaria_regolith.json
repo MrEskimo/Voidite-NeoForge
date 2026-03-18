@@ -1,0 +1,14 @@
+{
+  "name": "Aminaria Regolith",
+  "icon": "voiditemod:aminaria_regolith",
+  "category": "voiditemod:aminaria",
+  "advancement": "voiditemod:found_aminaria",
+  "pages": [
+    {
+      "type": "spotlight",
+      "anchor": "aminaria_regolith",
+      "item": "voiditemod:aminaria_regolith",
+      "text": "This is the dark dust you can find at the bottom of the pit, not much use. Is the only block $(l:blocks/creeping_vines)Creeping Vines/$ can grow on"
+    }
+  ]
+}

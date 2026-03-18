@@ -23,6 +23,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.SMILE.get());
         basicItem(ModItems.RAW_VOIDITE.get());
         basicItem(ModItems.VOIDITE_INGOT.get());
+        basicItem(ModItems.PRESSED_WEEPING_AMINARIA.get());
         tallGrassItem(ModBlocks.SUNCROWN_GRASS);
         tallGrassItem(ModBlocks.SHORT_SUNCROWN_GRASS);
         tallGrassItem(ModBlocks.FLOWERING_SUNCROWN_GRASS);
@@ -41,6 +42,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         saplingItem(ModBlocks.SUNCROWN_OAK_SAPLING);
         saplingItem(ModBlocks.SAGE_FUNGUS);
+        saplingItem(ModBlocks.CREEPING_VINE);
 
         buttonItem(ModBlocks.SUNCROWN_OAK_BUTTON, ModBlocks.SUNCROWN_OAK_PLANKS);
         buttonItem(ModBlocks.SAGE_BUTTON, ModBlocks.SAGE_PLANKS);

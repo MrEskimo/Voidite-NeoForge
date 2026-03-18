@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_pressed_weeping_aminaria": {
+      "conditions": {
+        "items": [
+          {
+            "items": "voiditemod:pressed_weeping_aminaria"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "voiditemod:packed_aminaria"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_pressed_weeping_aminaria"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "voiditemod:packed_aminaria"
+    ]
+  }
+}

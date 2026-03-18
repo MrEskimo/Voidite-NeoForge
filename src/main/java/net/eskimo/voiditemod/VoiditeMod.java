@@ -11,12 +11,14 @@ import net.eskimo.voiditemod.screen.ModMenuTypes;
 import net.eskimo.voiditemod.screen.custom.CelestaleeFurnaceScreen;
 import net.eskimo.voiditemod.screen.custom.HammerOfEndMenu;
 import net.eskimo.voiditemod.screen.custom.HammerOfEndScreen;
+import net.eskimo.voiditemod.worldgen.ModFeatures;
 import net.eskimo.voiditemod.worldgen.biome.ModBiomes;
 import net.eskimo.voiditemod.worldgen.biome.ModTerrablender;
 import net.eskimo.voiditemod.worldgen.biome.surface.ModSurfaceRules;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.ComposterBlock;
 import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
+import net.neoforged.neoforge.client.event.ViewportEvent;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -65,6 +67,8 @@ public class VoiditeMod {
         ModLootModifiers.register(modEventBus);
         ModPotions.register(modEventBus);
 
+        ModFeatures.register(modEventBus);
+
         ModTerrablender.registerBiomes();
 
         // Register the item to a creative tab
@@ -97,19 +101,6 @@ public class VoiditeMod {
 
     }
 
-    // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
-    @EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    public static class ClientModEvents {
-        @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event) {
-        }
-
-        @SubscribeEvent
-        public static void registerScreens(RegisterMenuScreensEvent event) {
-            event.register(ModMenuTypes.CELESTALEE_FURNACE_MENU.get(), CelestaleeFurnaceScreen::new);
-            event.register(ModMenuTypes.HAMMER_OF_END_MENU.get(), HammerOfEndScreen::new);
-        }
-    }
     public static void setupTerraBlender() {
         ModBiomes.setupTerraBlender();
     }

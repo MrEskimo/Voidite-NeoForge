@@ -110,6 +110,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.SAGE_GRASS.get());
                         output.accept(ModBlocks.SAGE_BLOOM.get());
 
+                        output.accept(ModBlocks.AMINARIA_REGOLITH.get());
+                        output.accept(ModBlocks.WEEPING_AMINARIA.get());
+                        output.accept(ModItems.PRESSED_WEEPING_AMINARIA.get());
+                        output.accept(ModBlocks.CREEPING_VINE.get());
+
 
                     }).build());
 

@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "voiditemod:pressed_weeping_aminaria"
+    },
+    {
+      "item": "voiditemod:pressed_weeping_aminaria"
+    },
+    {
+      "item": "voiditemod:pressed_weeping_aminaria"
+    },
+    {
+      "item": "voiditemod:pressed_weeping_aminaria"
+    },
+    {
+      "item": "voiditemod:pressed_weeping_aminaria"
+    },
+    {
+      "item": "voiditemod:pressed_weeping_aminaria"
+    },
+    {
+      "item": "voiditemod:pressed_weeping_aminaria"
+    },
+    {
+      "item": "voiditemod:pressed_weeping_aminaria"
+    },
+    {
+      "item": "voiditemod:pressed_weeping_aminaria"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "voiditemod:packed_aminaria"
+  }
+}

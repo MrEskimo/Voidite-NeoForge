@@ -1,0 +1,39 @@
+{
+  "parent": "voiditemod:root",
+  "criteria": {
+    "in_aminaria": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biomes": "voiditemod:aminaria_pit"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "Find A Aminaria Pit"
+    },
+    "icon": {
+      "count": 1,
+      "id": "voiditemod:aminaria_regolith"
+    },
+    "title": {
+      "translate": "Aminaria"
+    }
+  },
+  "requirements": [
+    [
+      "in_aminaria"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

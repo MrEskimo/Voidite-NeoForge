@@ -115,6 +115,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
         tag(BlockTags.FALL_DAMAGE_RESETTING).add(ModBlocks.SUNCROWN_SAND.get());
 
+        tag(BlockTags.CLIMBABLE).add(ModBlocks.CREEPING_VINE.get());
+
       //  tag(ModTags.Blocks.SUNCROWN_OAK_ROOT_REPLACEABLE)
       //          .add(ModBlocks.SUNCROWN_TURF.get())
       //          .add(ModBlocks.END_SLUDGE.get())

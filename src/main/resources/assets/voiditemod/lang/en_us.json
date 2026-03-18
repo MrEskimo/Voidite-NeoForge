@@ -95,5 +95,12 @@
   "block.voiditemod.sage_grass": "Sage Grass",
   "block.voiditemod.sage_bloom": "Sage Bloom",
 
+  "block.voiditemod.creeping_vine": "Creeping Vines",
+
+  "block.voiditemod.aminaria_regolith": "Aminaria Regolith",
+  "block.voiditemod.weeping_aminaria": "Weeping Aminaria",
+  "block.voiditemod.packed_aminaria": "Packed Aminaria",
+  "item.voiditemod.pressed_weeping_aminaria": "Pressed Weeping Aminaria",
+
   "creativetab.voiditemod.end_stuff": "End Stuff"
 }

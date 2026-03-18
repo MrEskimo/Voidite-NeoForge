@@ -33,6 +33,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('A', ModItems.SMILE.get())
                 .unlockedBy(getHasName(ModItems.SMILE.get()), has(ModItems.SMILE.get())).save(pRecipeOutput);
 
+        threeByThreePacker(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.PACKED_AMINARIA.get(), ModItems.PRESSED_WEEPING_AMINARIA);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PACKED_END_SLUDGE.get())
                 .requires(ModBlocks.END_SLUDGE.get())
                 .requires(Items.WHEAT)

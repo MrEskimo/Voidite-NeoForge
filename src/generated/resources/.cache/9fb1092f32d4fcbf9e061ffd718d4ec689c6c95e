@@ -1,4 +1,4 @@
-// 1.21.1	2026-03-07T10:44:19.569444	Recipes
+// 1.21.1	2026-03-16T17:35:06.8464892	Recipes
 625fdac6442a716b580d65f06b502425481cbdb5 data/minecraft/advancement/recipes/building_blocks/voidite_ingot.json
 aced8ba1f8a8414dfcfe0e42200027ed54372462 data/minecraft/advancement/recipes/misc/block_of_voidite.json
 935de5a212e885891a38c3ac58e14185dde49ff3 data/minecraft/advancement/recipes/misc/voidite_ingot_from_blasting_raw_voidite.json
@@ -18,6 +18,7 @@ fe7474ca62419aaaffe7e1019566c18442724e6a data/minecraft/recipe/voidite_ingot_fro
 779ae10d1d83894b6e50292d96310b2c13fbc1f1 data/voiditemod/advancement/recipes/building_blocks/end_sludge_bricks_stairs.json
 6137f75488af3cc69ddebd5f6aeca6deb5f770f9 data/voiditemod/advancement/recipes/building_blocks/end_sludge_bricks_wall.json
 8e7edd31909f9d4df9e86bae8984e5e96a3c18fd data/voiditemod/advancement/recipes/building_blocks/end_stone_brick_pillar.json
+89dd6248e13d1996a1971995246bc67d3c0523aa data/voiditemod/advancement/recipes/building_blocks/packed_aminaria.json
 d476e0e643526900ab07b91b8646f14d6f340f31 data/voiditemod/advancement/recipes/building_blocks/packed_end_sludge.json
 aa1a03fbf5d6fb0654fc0367110421e601478b0b data/voiditemod/advancement/recipes/building_blocks/packed_end_sludge_slab.json
 e67706ca9f54bb01555f07039faa95bf184c820d data/voiditemod/advancement/recipes/building_blocks/packed_end_sludge_stairs.json
@@ -62,6 +63,7 @@ ba80cc615e3e8a34e8387a91adee62f5c8a89057 data/voiditemod/recipe/end_sludge_brick
 84f36f3505decae122e172862442458f1da2f856 data/voiditemod/recipe/end_sludge_bricks_wall.json
 f8c1a0773ee359a3f0c3fcc3fb80fb66d3118d1d data/voiditemod/recipe/end_stone_brick_pillar.json
 c67fc19d257c45951c9f227c068ae77494303818 data/voiditemod/recipe/hammer_of_end.json
+2122db93fc6c650a851d918a1b8430d1f12a73a8 data/voiditemod/recipe/packed_aminaria.json
 9965d493354b16fd9dbebb71548b51372c6465c0 data/voiditemod/recipe/packed_end_sludge.json
 08213cc0220cab4f935971f7e8c1beb138fd9c7e data/voiditemod/recipe/packed_end_sludge_slab.json
 c9e6a7014f71b42adb4d08f230d615b655e28871 data/voiditemod/recipe/packed_end_sludge_stairs.json

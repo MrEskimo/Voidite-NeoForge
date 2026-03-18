@@ -25,6 +25,16 @@ public class ModRecipes {
                 }
             });
 
+    public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<HammerOfTheEndRecipe>> HAMMER_OF_THE_END_SERIALIZER =
+            SERIALIZERS.register("hammer_of_the_end", HammerOfTheEndRecipe.Serializer::new);
+    public static final DeferredHolder<RecipeType<?>, RecipeType<HammerOfTheEndRecipe>> HAMMER_OF_THE_END_TYPE =
+            TYPES.register("hammer_of_the_end", () -> new RecipeType<HammerOfTheEndRecipe>() {
+                @Override
+                public String toString() {
+                    return "hammer_of_the_end";
+                }
+            });
+
 
     public static void register(IEventBus eventBus) {
         SERIALIZERS.register(eventBus);

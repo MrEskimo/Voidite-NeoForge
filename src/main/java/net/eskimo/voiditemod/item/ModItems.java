@@ -39,6 +39,8 @@ public class ModItems {
     public static final DeferredItem<Item> ANNEALED_VOIDITE_PLATE = ITEMS.register("annealed_voidite_plate",
             () -> new Item(new Item.Properties()));
     //.durability(1000)
+    public static final DeferredItem<Item> PRESSED_WEEPING_AMINARIA = ITEMS.register("pressed_weeping_aminaria",
+            () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
 
 
     public static void register(IEventBus eventBus) {

@@ -78,6 +78,11 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.SAGE_FENCE.get());
         dropSelf(ModBlocks.SAGE_FENCE_GATE.get());
 
+        dropSelf(ModBlocks.AMINARIA_REGOLITH.get());
+        dropSelf(ModBlocks.WEEPING_AMINARIA.get());
+        dropSelf(ModBlocks.PACKED_AMINARIA.get());
+        dropSelf(ModBlocks.CREEPING_VINE.get());
+
         dropSelf(ModBlocks.SAGE_TRAPDOOR.get());
         this.add(ModBlocks.SAGE_DOOR.get(),
                 block -> createDoorTable(ModBlocks.SAGE_DOOR.get()));

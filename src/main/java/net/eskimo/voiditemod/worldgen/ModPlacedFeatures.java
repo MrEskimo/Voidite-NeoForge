@@ -29,6 +29,8 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> SUNCROWN_OAK_FOREST_PLACED_KEY = registerKey("suncrown_oak_forest_placed_key");
     public static final ResourceKey<PlacedFeature> SUNCROWN_SAND_PLACED_KEY = registerKey("suncrown_sand_placed_key");
     public static final ResourceKey<PlacedFeature> SAGE_FUNGUS_PLACED_KEY = registerKey("sage_fungus_placed_key");
+    public static final ResourceKey<PlacedFeature> CREEPING_VINES_PLACED_KEY = registerKey("creeping_vines_placed_key");
+    public static final ResourceKey<PlacedFeature> WEEPING_AMINARIA_PLACED_KEY = registerKey("weeping_aminaria_placed_key");
 
 
 
@@ -73,6 +75,11 @@ public class ModPlacedFeatures {
         register(context, SUNCROWN_SAND_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.SUNCROWN_SAND_BLOB),
                 List.of(RarityFilter.onAverageOnceEvery(1), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
+        register(context, CREEPING_VINES_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.CREEPING_VINES),
+                List.of(RarityFilter.onAverageOnceEvery(4), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
+
+        register(context, WEEPING_AMINARIA_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.WEEPING_AMINARIA),
+                List.of(RarityFilter.onAverageOnceEvery(16), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome()));
 
     }
 

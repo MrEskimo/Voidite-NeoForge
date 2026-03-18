@@ -17,10 +17,8 @@ import net.minecraft.world.level.block.state.properties.WoodType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import org.checkerframework.checker.units.qual.C;
 
 import java.util.List;
-import java.util.Locale;
 import java.util.function.Supplier;
 
 public class ModBlocks {
@@ -197,6 +195,18 @@ public class ModBlocks {
                     BlockBehaviour.Properties.ofFullCopy(Blocks.SANDSTONE_STAIRS)));
     public static final DeferredBlock<SlabBlock> SMOOTH_SUNCROWN_SANDSTONE_SLAB = registerBlock("smooth_suncrown_sandstone_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SMOOTH_SANDSTONE_SLAB)));
+
+    public static final DeferredBlock<Block> AMINARIA_REGOLITH = registerBlock("aminaria_regolith",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLESTONE)));
+    public static final DeferredBlock<Block> CREEPING_VINE = registerBlock("creeping_vine",
+            () -> new CreepingVinesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLESTONE)
+                    .noCollission()
+                    .emissiveRendering((pState, pLevel, pPos) -> true)
+                    .lightLevel(state -> 7)));
+    public static final DeferredBlock<Block> WEEPING_AMINARIA = registerBlock("weeping_aminaria",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CRYING_OBSIDIAN)));
+    public static final DeferredBlock<Block> PACKED_AMINARIA = registerBlock("packed_aminaria",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OBSIDIAN)));
 
     //IMPORTANT Celesta lee DHADE
     public static final DeferredBlock<CelestaleeFurnaceBlock> CELESTALEE = registerBlock("celestalee_furnace",

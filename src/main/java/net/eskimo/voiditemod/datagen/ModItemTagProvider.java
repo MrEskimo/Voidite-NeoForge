@@ -21,8 +21,8 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
-        //tag(ModTags.Items.SOME ITEM TAG)
-        //        .add(ModItems.ITEM IN THAT TAG.get())
+        //tag(ModTags.Items.SOME ITEM FOG)
+        //        .add(ModItems.ITEM IN THAT FOG.get())
 
         tag(ItemTags.LOGS_THAT_BURN)
                 .add(ModBlocks.SUNCROWN_OAK_LOG.get().asItem())

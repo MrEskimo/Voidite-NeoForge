@@ -1,0 +1,9 @@
+{
+  "type": "voiditemod:hammer_of_the_end",
+  "ingredient": {
+    "item": "voiditemod:annealed_voidite_ingot"
+  },
+  "result": {
+    "id": "voiditemod:voidite_plate"
+  }
+}

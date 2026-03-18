@@ -3,6 +3,7 @@ package net.eskimo.voiditemod.worldgen;
 import net.eskimo.voiditemod.VoiditeMod;
 import net.eskimo.voiditemod.block.ModBlocks;
 import net.eskimo.voiditemod.block.custom.SincehePotatoCropBlock;
+import net.minecraft.core.Direction;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.data.worldgen.features.FeatureUtils;
@@ -11,10 +12,13 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.random.SimpleWeightedRandomList;
 import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.util.valueproviders.IntProvider;
 import net.minecraft.util.valueproviders.UniformInt;
+import net.minecraft.util.valueproviders.WeightedListInt;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SweetBerryBushBlock;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
@@ -44,6 +48,9 @@ public class ModConfiguredFeatures {
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> SUNCROWN_OAK_KEY = registerKey("suncrown_oak");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GREEN_WART_KEY = registerKey("green");
+
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CREEPING_VINES = registerKey("creeping_vines");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> WEEPING_AMINARIA = registerKey("weeping_aminaria");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest endReplaceables = new BlockMatchTest(Blocks.END_STONE);
@@ -117,6 +124,13 @@ public class ModConfiguredFeatures {
         register(context, SUNCROWN_SAND_BLOB, Feature.REPLACE_BLOBS,
                 new ReplaceSphereConfiguration(Blocks.END_STONE.defaultBlockState(),
                         ModBlocks.SUNCROWN_SAND.get().defaultBlockState(), UniformInt.of(3, 7)));
+
+
+        register(context, CREEPING_VINES, ModFeatures.CREEPING_VINES.get(),
+            new CreepingVinesConfig(4,2,16));
+
+        register(context, WEEPING_AMINARIA, Feature.BLOCK_PILE,
+                new BlockPileConfiguration(BlockStateProvider.simple(ModBlocks.WEEPING_AMINARIA.get())));
 
     }
 

@@ -1,6 +1,9 @@
 package net.eskimo.voiditemod.block.entity;
 
 import net.eskimo.voiditemod.item.ModItems;
+import net.eskimo.voiditemod.recipe.HammerOfTheEndRecipe;
+import net.eskimo.voiditemod.recipe.HammerOfTheEndRecipeInput;
+import net.eskimo.voiditemod.recipe.ModRecipes;
 import net.eskimo.voiditemod.screen.custom.CelestaleeFurnaceMenu;
 import net.eskimo.voiditemod.screen.custom.HammerOfEndMenu;
 import net.minecraft.core.BlockPos;
@@ -18,11 +21,14 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.RecipeHolder;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.items.ItemStackHandler;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.Optional;
 
 public class HammerOfEndBlockEntity extends BlockEntity implements MenuProvider {
     public final ItemStackHandler itemHandler = new ItemStackHandler(3) {
@@ -122,7 +128,8 @@ public class HammerOfEndBlockEntity extends BlockEntity implements MenuProvider 
     }
 
     private void craftItem() {
-        ItemStack output = new ItemStack(ModItems.VOIDITE_PLATE.get());
+        Optional<RecipeHolder<HammerOfTheEndRecipe>> recipe = getCurrentRecipe();
+        ItemStack output = recipe.get().value().output();
 
         itemHandler.extractItem(INPUT_SLOT, 1, false);
         itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(output.getItem(),
@@ -147,10 +154,19 @@ public class HammerOfEndBlockEntity extends BlockEntity implements MenuProvider 
     }
 
     private boolean hasRecipe() {
-        ItemStack output = new ItemStack(ModItems.VOIDITE_PLATE.get());
+        Optional<RecipeHolder<HammerOfTheEndRecipe>> recipe = getCurrentRecipe();
+        if(recipe.isEmpty()) {
+            return false;
+        }
 
-        return itemHandler.getStackInSlot(INPUT_SLOT).is(ModItems.ANNEALED_VOIDITE_INGOT) &&
-                canInsertAmountIntoOutputSlot(output.getCount()) && canInsertItemIntoOutputSlot(output);
+        ItemStack output = recipe.get().value().output();
+
+        return canInsertAmountIntoOutputSlot(output.getCount()) && canInsertItemIntoOutputSlot(output);
+    }
+
+    private Optional<RecipeHolder<HammerOfTheEndRecipe>> getCurrentRecipe() {
+        return this.level.getRecipeManager()
+                .getRecipeFor(ModRecipes.HAMMER_OF_THE_END_TYPE.get(), new HammerOfTheEndRecipeInput(itemHandler.getStackInSlot(INPUT_SLOT)), level);
     }
 
     private boolean canInsertItemIntoOutputSlot(ItemStack output) {

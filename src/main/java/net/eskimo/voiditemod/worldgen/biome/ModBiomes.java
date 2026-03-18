@@ -2,6 +2,7 @@ package net.eskimo.voiditemod.worldgen.biome;
 
 import net.eskimo.voiditemod.VoiditeMod;
 import net.eskimo.voiditemod.worldgen.ModPlacedFeatures;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BiomeDefaultFeatures;
 import net.minecraft.data.worldgen.BootstrapContext;
@@ -23,6 +24,8 @@ public class ModBiomes {
             ResourceLocation.fromNamespaceAndPath(VoiditeMod.MOD_ID, "suncrown_forest"));
     public static final ResourceKey<Biome> SAGE_FOREST = ResourceKey.create(Registries.BIOME,
             ResourceLocation.fromNamespaceAndPath(VoiditeMod.MOD_ID, "sage_forest"));
+    public static final ResourceKey<Biome> AMINARIA_PIT = ResourceKey.create(Registries.BIOME,
+            ResourceLocation.fromNamespaceAndPath(VoiditeMod.MOD_ID, "aminaria_pit"));
 
 
     public static void boostrap(BootstrapContext<Biome> context) {
@@ -35,12 +38,14 @@ public class ModBiomes {
         register(context, ModBiomes.SUNCROWN_PLAINS, ModBiomes.chorusBiome(context));
         register(context, ModBiomes.SUNCROWN_FOREST, ModBiomes.suncrownForest(context));
         register(context, ModBiomes.SAGE_FOREST, ModBiomes.sageForest(context));
+        register(context, ModBiomes.AMINARIA_PIT, ModBiomes.aminariaPit(context));
     }
     public static void setupTerraBlender()
     {
         registerMidlandsBiome(ModBiomes.SUNCROWN_PLAINS, 2);
         registerHighlandsBiome(ModBiomes.SUNCROWN_FOREST,2);
         registerHighlandsBiome(ModBiomes.SAGE_FOREST,1);
+        registerHighlandsBiome(ModBiomes.AMINARIA_PIT,1);
 
     }
 
@@ -201,6 +206,35 @@ public class ModBiomes {
                             .waterFogColor(329011)
                             .skyColor(0)
                             .fogColor(10518688)
+                            .ambientMoodSound(AmbientMoodSettings.LEGACY_CAVE_SETTINGS).build())
+                    .build();
+        }
+    public static Biome aminariaPit(BootstrapContext<Biome> context) {
+            MobSpawnSettings.Builder spawnBuilder = new MobSpawnSettings.Builder();
+
+           // spawnBuilder.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(EntityType.ENDERMAN, 5, 4, 4));
+           // BiomeDefaultFeatures.endSpawns(spawnBuilder);
+
+            BiomeGenerationSettings.Builder biomeBuilder =
+                    new BiomeGenerationSettings.Builder(context.lookup(Registries.PLACED_FEATURE), context.lookup(Registries.CONFIGURED_CARVER));
+            //we need to follow the same order as vanilla biomes for the BiomeDefaultFeatures
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.CREEPING_VINES_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.WEEPING_AMINARIA_PLACED_KEY);
+
+
+
+            return new Biome.BiomeBuilder()
+                    .hasPrecipitation(false)
+                    .downfall(0.8f)
+                    .temperature(0.7f)
+                    .generationSettings(biomeBuilder.build())
+                    .mobSpawnSettings(spawnBuilder.build())
+                    .specialEffects((new BiomeSpecialEffects.Builder())
+                            .waterColor(4159204)
+                            .waterFogColor(329011)
+                            .skyColor(0)
+                            .ambientParticle(new AmbientParticleSettings(ParticleTypes.ASH, 100.0F))
+                            .fogColor(0)
                             .ambientMoodSound(AmbientMoodSettings.LEGACY_CAVE_SETTINGS).build())
                     .build();
         }

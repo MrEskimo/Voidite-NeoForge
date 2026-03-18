@@ -1,0 +1,18 @@
+{
+  "name": "Weeping Aminaria",
+  "icon": "voiditemod:weeping_aminaria",
+  "category": "voiditemod:aminaria",
+  "advancement": "voiditemod:found_aminaria",
+  "pages": [
+    {
+      "type": "spotlight",
+      "anchor": "weeping_aminaria",
+      "item": "voiditemod:weeping_aminaria",
+      "text": "In the darkness of the pit these collect in clumps illuminating their surroundings. If pressed in a $(l:blocks/hammer_of_the_end)DHADE/$ it turns into ingots, which can be made into a block used for the $(l:blocks/celestalee_furnace)Celestalee Furnace/$"
+    },
+    {
+      "type": "crafting",
+      "recipe": "voiditemod:packed_aminaria"
+    }
+  ]
+}

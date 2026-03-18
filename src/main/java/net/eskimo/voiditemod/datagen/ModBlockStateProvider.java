@@ -39,6 +39,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         blockWithItem(ModBlocks.SUNCROWN_OAK_PLANKS);
 
+        blockWithItem(ModBlocks.AMINARIA_REGOLITH);
+        blockWithItem(ModBlocks.WEEPING_AMINARIA);
+        blockWithItem(ModBlocks.PACKED_AMINARIA);
+        saplingBlock(ModBlocks.CREEPING_VINE);
+
         stairsBlock(ModBlocks.SUNCROWN_OAK_STAIRS.get(), blockTexture(ModBlocks.SUNCROWN_OAK_PLANKS.get()));
 
         slabBlock(ModBlocks.SUNCROWN_OAK_SLAB.get(), blockTexture(ModBlocks.SUNCROWN_OAK_PLANKS.get()), blockTexture(ModBlocks.SUNCROWN_OAK_PLANKS.get()));

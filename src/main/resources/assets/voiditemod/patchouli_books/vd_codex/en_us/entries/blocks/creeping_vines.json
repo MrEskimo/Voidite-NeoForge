@@ -1,0 +1,14 @@
+{
+  "name": "Creeping Vines",
+  "icon": "voiditemod:creeping_vine",
+  "category": "voiditemod:aminaria",
+  "advancement": "voiditemod:found_aminaria",
+  "pages": [
+    {
+      "type": "spotlight",
+      "anchor": "creeping_vines",
+      "item": "voiditemod:creeping_vine",
+      "text": "They admit a faint glow, like the eyes need to see you. They get their name from the creepiness people say they get from the eyes, which are constantly looking for you. Why they constantly seek out to see you is unsure"
+    }
+  ]
+}
