@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "voiditemod:block/chained_eye",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "voiditemod:block/chained_eye"
+    },
+    "axis=z": {
+      "model": "voiditemod:block/chained_eye",
+      "x": 90
+    }
+  }
+}

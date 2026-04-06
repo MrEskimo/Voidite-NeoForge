@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "voiditemod:creeping_vine"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "voiditemod:lose_eye"
+  }
+}

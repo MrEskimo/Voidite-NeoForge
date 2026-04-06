@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:chain"
+    },
+    {
+      "item": "voiditemod:lose_eye"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "voiditemod:chained_eye"
+  }
+}

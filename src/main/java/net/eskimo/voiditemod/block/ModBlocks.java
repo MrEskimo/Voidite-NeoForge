@@ -203,6 +203,10 @@ public class ModBlocks {
                     .noCollission()
                     .emissiveRendering((pState, pLevel, pPos) -> true)
                     .lightLevel(state -> 7)));
+
+    public static final DeferredBlock<Block> CHAINED_EYE = registerBlock("chained_eye",
+            () -> new ChainBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.LANTERN)));
+
     public static final DeferredBlock<Block> WEEPING_AMINARIA = registerBlock("weeping_aminaria",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CRYING_OBSIDIAN)));
     public static final DeferredBlock<Block> PACKED_AMINARIA = registerBlock("packed_aminaria",

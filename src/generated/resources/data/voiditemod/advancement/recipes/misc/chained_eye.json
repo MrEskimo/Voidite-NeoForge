@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_lose_eye": {
+      "conditions": {
+        "items": [
+          {
+            "items": "voiditemod:lose_eye"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "voiditemod:chained_eye"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_lose_eye"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "voiditemod:chained_eye"
+    ]
+  }
+}

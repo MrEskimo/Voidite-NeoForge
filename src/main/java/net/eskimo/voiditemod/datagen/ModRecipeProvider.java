@@ -40,6 +40,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(Items.WHEAT)
                 .unlockedBy(getHasName(ModBlocks.END_SLUDGE.get()), has(ModBlocks.END_SLUDGE.get())).save(pRecipeOutput);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.LOSE_EYE.get(), 3)
+                        .requires(ModBlocks.CREEPING_VINE)
+                        .unlockedBy(getHasName(ModBlocks.CREEPING_VINE.get()), has(ModBlocks.CREEPING_VINE.get())).save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.CHAINED_EYE.get())
+                        .requires(Blocks.CHAIN)
+                        .requires(ModItems.LOSE_EYE.get())
+                        .unlockedBy(getHasName(ModItems.LOSE_EYE.get()), has(ModItems.LOSE_EYE.get())).save(pRecipeOutput);
+
         twoByTwoPacker(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_SLUDGE_BRICKS.get(), ModBlocks.PACKED_END_SLUDGE.get());
         twoByTwoPacker(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SUNCROWN_SANDSTONE.get(), ModBlocks.SUNCROWN_SAND.get());
 

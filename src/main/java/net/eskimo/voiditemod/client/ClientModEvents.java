@@ -24,7 +24,7 @@ import net.neoforged.neoforge.client.event.ViewportEvent;
 import static net.eskimo.voiditemod.VoiditeMod.MOD_ID;
 
 // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
-@EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+@EventBusSubscriber(modid = MOD_ID, value = Dist.CLIENT)
 public class ClientModEvents {
 
 
@@ -36,7 +36,7 @@ public class ClientModEvents {
         Holder<Biome> biome = level.getBiome(pos);
         if(biome.is(ModTags.Biomes.FOG)) {
             event.setFarPlaneDistance(10);
-            event.setNearPlaneDistance(5);
+            event.setNearPlaneDistance(2);
             event.setCanceled(true);
         }
     }

@@ -8,29 +8,20 @@ import net.eskimo.voiditemod.loot.ModLootModifiers;
 import net.eskimo.voiditemod.potion.ModPotions;
 import net.eskimo.voiditemod.recipe.ModRecipes;
 import net.eskimo.voiditemod.screen.ModMenuTypes;
-import net.eskimo.voiditemod.screen.custom.CelestaleeFurnaceScreen;
-import net.eskimo.voiditemod.screen.custom.HammerOfEndMenu;
-import net.eskimo.voiditemod.screen.custom.HammerOfEndScreen;
 import net.eskimo.voiditemod.worldgen.ModFeatures;
 import net.eskimo.voiditemod.worldgen.biome.ModBiomes;
-import net.eskimo.voiditemod.worldgen.biome.ModTerrablender;
 import net.eskimo.voiditemod.worldgen.biome.surface.ModSurfaceRules;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.ComposterBlock;
-import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
-import net.neoforged.neoforge.client.event.ViewportEvent;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
 
-import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
-import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
-import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
@@ -69,8 +60,6 @@ public class VoiditeMod {
 
         ModFeatures.register(modEventBus);
 
-        ModTerrablender.registerBiomes();
-
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
@@ -83,7 +72,6 @@ public class VoiditeMod {
             ComposterBlock.COMPOSTABLES.put(ModItems.SINCEHE_POTATO.get(), 0.3f);
             ComposterBlock.COMPOSTABLES.put(ModItems.SINCEHE_POTATO_SEEDS.get(), 0.1f);
 
-            SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, ModSurfaceRules.makeRules());
             SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.END, MOD_ID, ModSurfaceRules.makeRules());
         });
     }

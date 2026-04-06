@@ -41,6 +41,8 @@ public class ModItems {
     //.durability(1000)
     public static final DeferredItem<Item> PRESSED_WEEPING_AMINARIA = ITEMS.register("pressed_weeping_aminaria",
             () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
+    public static final DeferredItem<Item> LOSE_EYE = ITEMS.register("lose_eye",
+            () -> new Item(new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {

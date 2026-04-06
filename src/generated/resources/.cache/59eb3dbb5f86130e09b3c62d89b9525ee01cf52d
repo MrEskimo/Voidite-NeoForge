@@ -1,8 +1,9 @@
-// 1.21.1	2026-03-16T17:35:06.832174	Loot Tables
+// 1.21.1	2026-03-24T15:34:17.7336897	Loot Tables
 6575b8df8cbfca0d537cac9ae28569b1e92958f2 data/voiditemod/loot_table/blocks/aminaria_regolith.json
 ca875cb82aac2d11f79bca096e43c653d0a489b9 data/voiditemod/loot_table/blocks/block_of_smile.json
 393ea87df00721c44d2e50e3c76052daf604abc9 data/voiditemod/loot_table/blocks/block_of_voidite.json
 ded6aec5b05cb171f9b9c850f6f03cefe77091d0 data/voiditemod/loot_table/blocks/celestalee_furnace.json
+3ee628790ca024d123accad8a8b2df996360c162 data/voiditemod/loot_table/blocks/chained_eye.json
 530bbcf16bc21f2e51821e007186cff5fa2ef6e9 data/voiditemod/loot_table/blocks/chiseled_end_stone_brick_pillar.json
 75a6cbb06005f9bd07dd142780bcd06d9831887f data/voiditemod/loot_table/blocks/creeping_vine.json
 1724dcf661d895ff4348a307c488aea402ce8d9d data/voiditemod/loot_table/blocks/end_sludge.json

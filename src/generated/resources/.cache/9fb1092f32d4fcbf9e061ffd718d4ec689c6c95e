@@ -1,4 +1,4 @@
-// 1.21.1	2026-03-16T17:35:06.8464892	Recipes
+// 1.21.1	2026-03-24T15:34:17.7417207	Recipes
 625fdac6442a716b580d65f06b502425481cbdb5 data/minecraft/advancement/recipes/building_blocks/voidite_ingot.json
 aced8ba1f8a8414dfcfe0e42200027ed54372462 data/minecraft/advancement/recipes/misc/block_of_voidite.json
 935de5a212e885891a38c3ac58e14185dde49ff3 data/minecraft/advancement/recipes/misc/voidite_ingot_from_blasting_raw_voidite.json
@@ -43,6 +43,8 @@ b601e6543f512688d6541683f8857ba45790c136 data/voiditemod/advancement/recipes/bui
 9103f1cf4e608d55bd852b7019305c8c8a3d691c data/voiditemod/advancement/recipes/building_blocks/suncrown_sandstone_stairs.json
 f94fd4979fe43f07ffc2dde9b4f9117eb44ec9c3 data/voiditemod/advancement/recipes/decorations/sage_fence.json
 0f180b5b7fb6ea12e5a89669cc62c023daf8686d data/voiditemod/advancement/recipes/decorations/suncrown_oak_fence.json
+eb7bbf846d0cd9075048672529562d752579956f data/voiditemod/advancement/recipes/misc/chained_eye.json
+f2e82546591807a912745a40e793e5937b60fe2c data/voiditemod/advancement/recipes/misc/lose_eye.json
 df870c75feffcf9781ce5f2daf7a33f1d1f3ac91 data/voiditemod/advancement/recipes/misc/smile.json
 29238756b89df30be91d59f232e590658625cb13 data/voiditemod/advancement/recipes/redstone/hammer_of_end.json
 000bfab6cc0efc84bf286fd29338874f02a15fc7 data/voiditemod/advancement/recipes/redstone/sage_button.json
@@ -56,6 +58,7 @@ a24e76da270522bed5c36e122897d9dc05bc4e8b data/voiditemod/advancement/recipes/red
 935d243ae108d310c2ecfdebfa80b80427059abb data/voiditemod/advancement/recipes/redstone/suncrown_oak_pressure_plate.json
 324253ad6f9505cfe31fb5a349571c13a26e079f data/voiditemod/advancement/recipes/redstone/suncrown_oak_trapdoor.json
 a1067be06fbb1f2c58c0e5a3acf711e03e68aa9a data/voiditemod/recipe/block_of_smile.json
+a4967f02d36a72b2641b69c04d3e61e9382693fa data/voiditemod/recipe/chained_eye.json
 3e7d07dc93b8db9013abdf9043d89d301250c0bf data/voiditemod/recipe/chiseled_end_stone_brick_pillar.json
 63048b064e36d4779974f70f389ba2639e6fcdb2 data/voiditemod/recipe/end_sludge_bricks.json
 7fb974deebf2fce925012b8594ee6ed2b98dedaf data/voiditemod/recipe/end_sludge_bricks_slab.json
@@ -63,6 +66,7 @@ ba80cc615e3e8a34e8387a91adee62f5c8a89057 data/voiditemod/recipe/end_sludge_brick
 84f36f3505decae122e172862442458f1da2f856 data/voiditemod/recipe/end_sludge_bricks_wall.json
 f8c1a0773ee359a3f0c3fcc3fb80fb66d3118d1d data/voiditemod/recipe/end_stone_brick_pillar.json
 c67fc19d257c45951c9f227c068ae77494303818 data/voiditemod/recipe/hammer_of_end.json
+8ab391643b7c802d2d04609d2dffdc2ba3409b0f data/voiditemod/recipe/lose_eye.json
 2122db93fc6c650a851d918a1b8430d1f12a73a8 data/voiditemod/recipe/packed_aminaria.json
 9965d493354b16fd9dbebb71548b51372c6465c0 data/voiditemod/recipe/packed_end_sludge.json
 08213cc0220cab4f935971f7e8c1beb138fd9c7e data/voiditemod/recipe/packed_end_sludge_slab.json
