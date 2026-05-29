@@ -84,6 +84,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.CREEPING_VINE.get());
         dropSelf(ModBlocks.CHAINED_EYE.get());
 
+        dropSelf(ModBlocks.SILID_DUST.get());
+
         dropSelf(ModBlocks.SAGE_TRAPDOOR.get());
         this.add(ModBlocks.SAGE_DOOR.get(),
                 block -> createDoorTable(ModBlocks.SAGE_DOOR.get()));

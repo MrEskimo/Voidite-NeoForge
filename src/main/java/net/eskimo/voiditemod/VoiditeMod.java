@@ -2,6 +2,7 @@ package net.eskimo.voiditemod;
 
 import net.eskimo.voiditemod.block.ModBlocks;
 import net.eskimo.voiditemod.block.entity.ModBlockEntities;
+import net.eskimo.voiditemod.entity.ModEntities;
 import net.eskimo.voiditemod.item.ModCreativeModeTabs;
 import net.eskimo.voiditemod.item.ModItems;
 import net.eskimo.voiditemod.loot.ModLootModifiers;
@@ -59,6 +60,8 @@ public class VoiditeMod {
         ModPotions.register(modEventBus);
 
         ModFeatures.register(modEventBus);
+
+        ModEntities.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

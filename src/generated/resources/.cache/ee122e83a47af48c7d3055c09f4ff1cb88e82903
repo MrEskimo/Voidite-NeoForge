@@ -1,4 +1,4 @@
-// 1.21.1	2026-03-24T15:08:15.6862715	Tags for minecraft:block mod id voiditemod
+// 1.21.1	2026-05-24T17:12:43.1150548	Tags for minecraft:block mod id voiditemod
 a95bd0308d835fc367c56874a87391c72d4f1371 data/minecraft/tags/block/climbable.json
 f9fe943b64c2c8743bfccc4660a153b414e50fc1 data/minecraft/tags/block/fall_damage_resetting.json
 458e18ed8dc42b23e7679b6c44aaaa04c3468b2f data/minecraft/tags/block/fence_gates.json
@@ -8,5 +8,6 @@ ded08cb05ff637e6574f3e80ad3a8837d15edad4 data/minecraft/tags/block/mineable/pick
 075bd3793ddefcd409d58e1d9d8d702cb3856428 data/minecraft/tags/block/mineable/shovel.json
 3bb32992814825e89be009fb75e234ef2bffceb1 data/minecraft/tags/block/needs_diamond_tool.json
 726738fda57f55946e091b5618dcb81db0764738 data/minecraft/tags/block/needs_iron_tool.json
+9994f212884e8264af96eaba34aa7e89696d8994 data/minecraft/tags/block/overworld_carver_replaceables.json
 e876784e5e7319a2919d28b0e9e5d578c91a78f8 data/minecraft/tags/block/walls.json
 d4cfec8ac9f5f49d5f9485bbe0f6212271950582 data/minecraft/tags/block/wooden_fences.json

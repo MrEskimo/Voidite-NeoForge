@@ -7,6 +7,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.SurfaceRules;
 import net.minecraft.world.level.levelgen.placement.CaveSurface;
 
+import static net.minecraft.world.level.levelgen.SurfaceRules.sequence;
 import static net.minecraft.world.level.levelgen.SurfaceRules.stoneDepthCheck;
 
 public class ModSurfaceRules {
@@ -20,6 +21,7 @@ public class ModSurfaceRules {
     private static final SurfaceRules.RuleSource END_SLUDGE = makeStateRule(ModBlocks.END_SLUDGE.get());
     private static final SurfaceRules.RuleSource SAGE_MOSS = makeStateRule(ModBlocks.SAGE_MOSS.get());
     private static final SurfaceRules.RuleSource AMINARIA = makeStateRule(ModBlocks.AMINARIA_REGOLITH.get());
+    private static final SurfaceRules.RuleSource SILID = makeStateRule(ModBlocks.SILID_DUST.get());
     private static final SurfaceRules.RuleSource AIR = makeStateRule(Blocks.AIR);
 
     public static final SurfaceRules.ConditionSource EXTREMELY_DEEP_UNDER_FLOOR;
@@ -52,11 +54,23 @@ public class ModSurfaceRules {
 
                 SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.isBiome(ModBiomes.AMINARIA_PIT),
                                 SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR, AIR))),
-
                 SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.isBiome(ModBiomes.AMINARIA_PIT),
                         SurfaceRules.ifTrue(SurfaceRules.ON_CEILING, AMINARIA))),
                 SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.isBiome(ModBiomes.AMINARIA_PIT),
                                 SurfaceRules.ifTrue(ModSurfaceRules.NO_UNDER_FLOOR, AIR))),
+
+                SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.isBiome(ModBiomes.SILID),
+                        SurfaceRules.ifTrue(SurfaceRules.ON_FLOOR, END_STONE))),
+                SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.isBiome(ModBiomes.SILID),
+                                SurfaceRules.ifTrue(SurfaceRules.DEEP_UNDER_FLOOR, END_STONE))),
+
+                SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.isBiome(ModBiomes.SILID),
+                        SurfaceRules.ifTrue(SurfaceRules.VERY_DEEP_UNDER_FLOOR, SILID))),
+                SurfaceRules.sequence(SurfaceRules.ifTrue(SurfaceRules.isBiome(ModBiomes.SILID),
+                        SurfaceRules.ifTrue(ModSurfaceRules.EXTREMELY_DEEP_UNDER_FLOOR, AIR))),
+
+
+
 
 
                 /* to remove a biomes floor fully

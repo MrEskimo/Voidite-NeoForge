@@ -20,9 +20,7 @@ import net.minecraft.world.level.block.SweetBerryBushBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate;
-import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
-import net.minecraft.world.level.levelgen.feature.Feature;
-import net.minecraft.world.level.levelgen.feature.HugeFungusConfiguration;
+import net.minecraft.world.level.levelgen.feature.*;
 import net.minecraft.world.level.levelgen.feature.configurations.*;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
@@ -52,14 +50,18 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> CREEPING_VINES = registerKey("creeping_vines");
     public static final ResourceKey<ConfiguredFeature<?, ?>> WEEPING_AMINARIA = registerKey("weeping_aminaria");
 
+    public static final ResourceKey<ConfiguredFeature<?, ?>> NULL_ORE_KEY = registerKey("null_ore");
+
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest endReplaceables = new BlockMatchTest(Blocks.END_STONE);
+        RuleTest air = new BlockMatchTest(Blocks.AIR);
         var configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
         BlockPredicate blockpredicate = BlockPredicate.matchesBlocks(
                 Blocks.END_STONE,
                 ModBlocks.SUNCROWN_TURF.get()
         );
 
+        register(context, NULL_ORE_KEY, Feature.ORE, new OreConfiguration(air, ModBlocks.SILID_DUST.get().defaultBlockState(), 3));
 
         register(context, END_VOIDITE_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables, ModBlocks.VOIDITE_ORE.get().defaultBlockState(), 6));
 

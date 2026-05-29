@@ -2,6 +2,7 @@ package net.eskimo.voiditemod.item;
 
 import net.eskimo.voiditemod.VoiditeMod;
 import net.eskimo.voiditemod.block.ModBlocks;
+import net.eskimo.voiditemod.item.custom.VKItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.item.Rarity;
@@ -43,6 +44,9 @@ public class ModItems {
             () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
     public static final DeferredItem<Item> LOSE_EYE = ITEMS.register("lose_eye",
             () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> VK = ITEMS.register("vk",
+            () -> new VKItem(new Item.Properties().stacksTo(16)));
 
 
     public static void register(IEventBus eventBus) {

@@ -1,6 +1,5 @@
 package net.eskimo.voiditemod.datagen;
 
-import net.eskimo.voiditemod.item.ModItems;
 import net.eskimo.voiditemod.worldgen.ModBiomeModifiers;
 import net.eskimo.voiditemod.worldgen.ModConfiguredFeatures;
 import net.eskimo.voiditemod.worldgen.ModPlacedFeatures;
@@ -11,8 +10,6 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.common.data.DataMapProvider;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
-import net.neoforged.neoforge.registries.datamaps.builtin.FurnaceFuel;
-import net.neoforged.neoforge.registries.datamaps.builtin.NeoForgeDataMaps;
 
 import java.util.concurrent.CompletableFuture;
 

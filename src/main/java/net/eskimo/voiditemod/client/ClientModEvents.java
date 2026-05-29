@@ -1,18 +1,16 @@
 package net.eskimo.voiditemod.client;
 
+import net.eskimo.voiditemod.entity.ModEntities;
+import net.eskimo.voiditemod.entity.client.VKProjectileRenderer;
 import net.eskimo.voiditemod.screen.ModMenuTypes;
 import net.eskimo.voiditemod.screen.custom.CelestaleeFurnaceScreen;
 import net.eskimo.voiditemod.screen.custom.HammerOfEndScreen;
 import net.eskimo.voiditemod.util.ModTags;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;
-import net.minecraft.client.player.LocalPlayer;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Holder;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.tags.BiomeTags;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.biome.Biome;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -43,6 +41,7 @@ public class ClientModEvents {
 
     @SubscribeEvent
     public static void onClientSetup(FMLClientSetupEvent event) {
+        EntityRenderers.register(ModEntities.VK.get(), VKProjectileRenderer::new);
     }
 
     @SubscribeEvent

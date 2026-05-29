@@ -18,6 +18,7 @@ import java.util.List;
 
 public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> END_VOIDITE_ORE_PLACED_KEY = registerKey("end_voidite_ore_placed_key");
+    public static final ResourceKey<PlacedFeature> NULL_ORE_PLACED_KEY = registerKey("null");
     public static final ResourceKey<PlacedFeature> GLOWING_VOID_BERRY_BUSH_PLACED_KEY = registerKey("glowing_void_berry_bush_placed_key");
     public static final ResourceKey<PlacedFeature> VOID_GRASS_PATCH_PLACED_KEY = registerKey("void_grass_patch_placed_key");
     public static final ResourceKey<PlacedFeature> SHORT_SC_GRASS_PATCH_PLACED_KEY = registerKey("short_sc_grass_patch_placed_key");
@@ -31,6 +32,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> SAGE_FUNGUS_PLACED_KEY = registerKey("sage_fungus_placed_key");
     public static final ResourceKey<PlacedFeature> CREEPING_VINES_PLACED_KEY = registerKey("creeping_vines_placed_key");
     public static final ResourceKey<PlacedFeature> WEEPING_AMINARIA_PLACED_KEY = registerKey("weeping_aminaria_placed_key");
+    public static final ResourceKey<PlacedFeature> DENSE_CHORUS_PLACED_KEY = registerKey("dense_chorus_placed_key");
 
 
 

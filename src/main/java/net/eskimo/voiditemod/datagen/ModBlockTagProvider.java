@@ -5,6 +5,7 @@ import net.eskimo.voiditemod.block.ModBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 
 import java.util.concurrent.CompletableFuture;
@@ -95,6 +96,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.DHADE.get())
                 .add(ModBlocks.HARD_SAGE_FRUIT.get())
                 .add(ModBlocks.TREATED_SAGE_FRUIT.get());
+
+        tag(BlockTags.OVERWORLD_CARVER_REPLACEABLES)
+                .add(Blocks.END_STONE);
 
         tag(BlockTags.WALLS)
                 .add(ModBlocks.END_SLUDGE_BRICKS_WALL.get())

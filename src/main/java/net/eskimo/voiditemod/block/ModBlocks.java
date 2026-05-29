@@ -233,6 +233,14 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
     //
 
+    public static final DeferredBlock<Block> SILID_DUST = registerBlock("silid_dust",
+            () -> new ColoredFallingBlock(new ColorRGBA(11173120),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.SAND)) {
+                @Override
+                protected int getDelayAfterPlace() {
+                    return 100;
+                }});
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

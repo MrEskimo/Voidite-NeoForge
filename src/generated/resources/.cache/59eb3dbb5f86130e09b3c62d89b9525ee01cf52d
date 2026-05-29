@@ -1,4 +1,4 @@
-// 1.21.1	2026-03-24T15:34:17.7336897	Loot Tables
+// 1.21.1	2026-04-21T16:38:04.3739223	Loot Tables
 6575b8df8cbfca0d537cac9ae28569b1e92958f2 data/voiditemod/loot_table/blocks/aminaria_regolith.json
 ca875cb82aac2d11f79bca096e43c653d0a489b9 data/voiditemod/loot_table/blocks/block_of_smile.json
 393ea87df00721c44d2e50e3c76052daf604abc9 data/voiditemod/loot_table/blocks/block_of_voidite.json
@@ -39,6 +39,7 @@ e4e79ef353c5c2fbe9387772547a1de539f92b09 data/voiditemod/loot_table/blocks/sage_
 61215b5bf4b4684905d29d49374722ca779648e2 data/voiditemod/loot_table/blocks/sage_trapdoor.json
 0aa4a41e2f73029489d48ded100c1026ddfa2938 data/voiditemod/loot_table/blocks/sage_wart_block.json
 832d9bedd128857ae1e0784ca027036553b768c5 data/voiditemod/loot_table/blocks/short_suncrown_grass.json
+9bb497f972455d0381c6256691459dc6aa1c5478 data/voiditemod/loot_table/blocks/silid_dust.json
 7fc4f16b3863f33377704f4f17919a9682bd52a9 data/voiditemod/loot_table/blocks/sincehe_potato_crop.json
 6a4d11c92640dcc3b048a968c709afc12127b6f2 data/voiditemod/loot_table/blocks/smooth_suncrown_sandstone.json
 ef3f046e9eebb8342b7698e96b2b63b033e72cd1 data/voiditemod/loot_table/blocks/smooth_suncrown_sandstone_slab.json

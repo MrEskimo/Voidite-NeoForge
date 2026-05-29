@@ -112,8 +112,10 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModBlocks.AMINARIA_REGOLITH.get());
                         output.accept(ModBlocks.WEEPING_AMINARIA.get());
-                        output.accept(ModItems.PRESSED_WEEPING_AMINARIA.get());
+                        output.accept(ModItems.PRESSED_WEEPING_AMINARIA);
                         output.accept(ModBlocks.CREEPING_VINE.get());
+
+                        output.accept(ModItems.VK);
 
 
                     }).build());
